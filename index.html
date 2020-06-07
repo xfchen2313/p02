@@ -1,0 +1,676 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>P01: Process</title>
+	<link href="css/style.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Khand:wght@300;400;500&family=Lato:wght@100;300;400&display=swap" rel="stylesheet"> 
+</head>
+
+<body>
+	<nav>
+		<ul class="ul-list">
+			<li><a href="index.html">Style Guide</a></li>
+			<li><a href="wireframes.html">Wireframes</a></li>
+			<li><a href="citations.html">Citations</a></li>
+		</ul>
+	</nav>
+	<h1>Style Guide & Pattern Library</h1>
+	<h2>Basic Interactive Elements</h2>
+	<section>
+		<h3>In-text Link</h3>
+		<p><strong>Name: </strong></p>
+		<p><strong>Example: </strong></p>
+		<p class="body-txt">Click <a href="wireframes.html" class="links">HERE</a> for wireframes.</p>
+		<p><strong>Code: </strong></p> 
+		<div class="container grid-wrapper">
+			<div class="columns">
+				<h4>HTML</h4>
+				<code>
+					&lt;p class="body-txt"&gt;Click &lt;a href="wireframes.html" class="links"&gt;HERE&lt;/a&gt; for wireframes.&lt;/p&gt;
+				</code>
+			</div>
+			<div class="columns">
+				<h4>CSS</h4>
+				<code>
+					.links { <br>
+						color: #ffbe00; <br>
+						text-decoration: none; <br>
+					} <br><br>
+
+					a:hover.links { <br>
+						color: #ff9900; <br>
+						text-decoration: underline; <br>
+					}
+				</code>
+			</div>
+	    </div>		
+		
+		<h3>Call to Action Button</h3>
+		<p><strong>Name: </strong></p>
+		<p><strong>Example: </strong></p>
+		<a href="citations.html" class="button">Click me for citations!</a>
+		<p><strong>Code: </strong></p> 
+		<div class="container grid-wrapper">
+			<div class="columns">
+				<h4>HTML</h4>
+				<code>
+					&lt;a href="citations.html" class="button"&gt;Click me for citations!&lt;/a&gt;
+				</code>
+			</div>
+			<div class="columns">
+				<h4>CSS</h4>
+				<code>
+					.button { <br>
+						font-family: "Khand", sans-serif; <br>
+						background-color: white; <br>
+						border: solid 2px; <br>
+						padding: 1em; <br>
+						display: inline-block; <br>
+						text-decoration: none; <br>
+					} <br><br>
+
+					.button:hover { <br>
+						background-color: black; <br>
+						color: white; <br>
+					} <br><br>
+
+					.button:visited { <br>
+						color: #ffbe00; <br>
+					}
+				</code>
+			</div>
+	    </div>		
+		
+		<h3>Submit & Reset Button for Forms</h3>
+		<p><strong>Name: </strong> </p>
+		<p><strong>Example: </strong></p>
+		<form action="/action_page.php" method="get" class="body-txt">
+			<label for="txt">Try typing here:</label>
+			<input type="text" id="txt" name="txt">
+			<button type="submit" value="Submit">Submit</button>
+			<button type="reset" value="Reset">Reset</button>
+		</form>
+		<p><strong>Code: </strong></p> 
+		<div class="container grid-wrapper">
+			<div class="columns">
+				<h4>HTML</h4>
+				<code>
+					&lt;form action="/action_page.php" method="get" class="body-txt"&gt; <br>
+						&lt;label for="txt"&gt;Try typing here:&lt;/label&gt; <br>
+						&lt;input type="text" id="txt" name="txt"&gt; <br>
+						&lt;button type="submit" value="Submit"&gt;Submit&lt;/button&gt; <br>
+						&lt;button type="reset" value="Reset"&gt;Reset&lt;/button&gt;  <br>
+					&lt;/form&gt;
+				</code>
+			</div>
+			<div class="columns">
+				<h4>CSS</h4>
+				<code>
+					input { <br>
+						width: 100%; <br>
+					}
+				</code>
+			</div>
+	    </div>		
+		
+		<h3>Text Input Field with Label</h3>
+		<p><strong>Name: </strong> Text Input</p>
+		<p><strong>Example: </strong></p>
+		<form action="/action_page.php" class="body-txt">
+			<label for="txtin">Text Input</label>
+			<input type="text" id="txtin" name="textinput" placeholder="Start typing here...">
+		</form>
+		<p><strong>Code: </strong></p> 
+		<div class="container grid-wrapper">
+			<div class="columns">
+				<h4>HTML</h4>
+				<code>
+					&lt;form action="/action_page.php" class="body-txt"&gt; <br>
+						&lt;label for="txtin"&gt;Text Input&lt;/label&gt; <br>
+						&lt;input type="text" id="txtin" name="textinput" placeholder="Start typing here..."&gt; <br>
+					&lt;/form&gt;
+				</code>
+			</div>
+			<div class="columns">
+				<h4>CSS</h4>
+				<code>
+					input { <br>
+						width: 100%; <br>
+					}
+				</code>
+			</div>
+	    </div>		
+		
+		<h3>Website Colour Swatches</h3>
+		<p><strong>Name: </strong>Colour Guide</p>
+		<p><strong>Example: </strong></p>
+		<div class="grid-wrapper swatch-wrapper body-txt">
+			<div id="main-color"><p>Main Text/Background Colour <br> #ffffff</p></div>
+			<div id="other-main-color"><p>Main Text/Background Colour <br> #000000</p></div>
+			<div id="secondary-color"><p>Secondary Colour/Emphasis <br> #ffbe00</p></div>
+		</div>
+		<p><strong>Code: </strong></p> 
+		<div class="container grid-wrapper">
+			<div class="columns">
+				<h4>HTML</h4>
+				<code>
+					&lt;div class="grid-wrapper swatch-wrapper body-txt"&gt; <br>
+						&lt;div id="main-color"&gt;&lt;p&gt;Main Text/Background Colour &lt;br&gt; #ffffff&lt;/p&gt;&lt;/div&gt; <br>
+						&lt;div id="other-main-color"&gt;&lt;p&gt;Main Text/Background Colour &lt;br&gt; #000000&lt;/p&gt;&lt;/div&gt; <br>
+						&lt;div id="secondary-color"&gt;&lt;p&gt;Secondary Colour/Emphasis &lt;br&gt; #ffbe00&lt;/p&gt;&lt;/div&gt; <br>
+					&lt;/div&gt;
+				</code>
+			</div>
+			<div class="columns">
+				<h4>CSS</h4>
+				<code>
+					#main-color { <br>
+						background-color: white; <br>
+						text-align: center; <br>
+					} <br><br>
+
+					#other-main-color { <br>
+						background-color: black; <br>
+						color: white; <br>
+						text-align: center; <br>
+					} <br><br>
+
+					#secondary-color { <br>
+						background-color: #ffbe00; <br>
+						text-align: center; <br>
+					}
+				</code>
+			</div>
+	    </div>		
+	</section>
+	
+	<h2>Text Styling</h2>
+	<section>
+		<h3>Headings</h3>
+		<p><strong>Name: </strong>Heading Styles</p>
+		<p><strong>Example: </strong></p>
+		<h1 class="header">Brand Heading</h1>
+		<h2 class="main-header">Article Heading</h2>
+		<h3 class="sub-header">Sub Heading</h3>
+		<p><strong>Code: </strong></p>
+		<div class="container grid-wrapper">
+			<div class="columns">
+				<h4>HTML</h4>
+				<code>
+					&lt;h1 class="header"&gt;Brand Heading&lt;/h1&gt;<br>
+					&lt;h2 class="main-header"&gt;Article Heading&lt;/h2&gt;<br>
+					&lt;h3 class="sub-header"&gt;Sub Heading&lt;/h3&gt;
+				</code>
+			</div>
+			<div class="columns">
+				<h4>CSS</h4>
+				<code>
+					.header { <br>
+						font-family: "Impact", "DIN Condensed Bold", Helvetica, sans-serif; <br>
+						font-size: 3em; <br>
+					} <br><br>
+
+					.main-header { <br>
+						font-family: "Khand", sans-serif; <br>
+					} <br><br>
+
+					.sub-header { <br>
+						font-family: "Khand", sans-serif; <br>
+						font-weight: 300; <br>
+					} <br><br>
+				</code>
+			</div>
+	    </div>
+		
+		<h3>Paragraph</h3>
+		<p><strong>Name: </strong>Paragraph Style</p>
+		<p><strong>Example: </strong></p>
+		<p class="body-txt">Cat ipsum dolor sit amet, kitty singapura for puma. Tabby mouser abyssinian , tomcat so mouser lynx savannah. Balinese american bobtail. Russian blue. Singapura kitten bengal turkish angora so balinese and siamese, so ocelot. Scottish fold puma or thai, yet russian blue savannah. Balinese kitty. Puma. Siamese ocelot. Bengal panther for leopard so siberian. Tabby norwegian forest but cougar norwegian forest and leopard leopard or siberian. Jaguar tom donskoy or malkin panther so havana brown cougar. Burmese. Norwegian forest maine coon but puma bombay. </p>
+		<p><strong>Code: </strong></p>
+		<div class="container grid-wrapper">
+			<div class="columns">
+				<h4>HTML</h4>
+				<code>
+					&lt;p&gt;Cat ipsum dolor sit amet, kitty singapura for puma. Tabby mouser abyssinian , tomcat so mouser lynx savannah. Balinese american bobtail. Russian blue. Singapura kitten bengal turkish angora so balinese and siamese, so ocelot. Scottish fold puma or thai, yet russian blue savannah. Balinese kitty. Puma. Siamese ocelot. Bengal panther for leopard so siberian. Tabby norwegian forest but cougar norwegian forest and leopard leopard or siberian. Jaguar tom donskoy or malkin panther so havana brown cougar. Burmese. Norwegian forest maine coon but puma bombay. &lt;/p&gt;
+				</code>
+			</div>
+			<div class="columns">
+				<h4>CSS</h4>
+				<code>
+					.body-txt { <br>
+						font-family: "Lato", sans-serif; <br>
+						font-weight: 300; <br>
+					}
+				</code>
+			</div>
+	    </div>
+			
+		<h3>Bulleted Lists</h3>
+		<p><strong>Name: </strong>Bulleted List Style</p>
+		<p><strong>Example: </strong></p>
+		<ul class="body-txt ul-list">
+			<li>Munchkin</li>
+			<li>Snowshoe</li>
+			<li>Scottish Fold</li>
+			<li>Turkish Van</li>
+			<li>Russian Blue</li>
+		</ul>
+		<p><strong>Code: </strong></p>
+		<div class="container grid-wrapper">
+			<div class="columns">
+				<h4>HTML</h4>
+				<code>
+					&lt;ul class="body-txt ul-list"&gt; <br>
+						&lt;li&gt;Munchkin&lt;/li&gt; <br>
+						&lt;li&gt;Snowshoe&lt;/li&gt; <br>
+						&lt;li&gt;Scottish Fold&lt;/li&gt; <br>
+						&lt;li&gt;Turkish Van&lt;/li&gt; <br>
+						&lt;li&gt;Russian Blue&lt;/li&gt; <br>
+					&lt;/ul&gt;
+				</code>
+			</div>
+			<div class="columns">
+				<h4>CSS</h4>
+				<code>
+					ul { <br>
+						list-style: none; <br>
+					} <br><br>
+
+					.ul-list li::before {<br>
+						content: "\2022";  <br>
+						color: #ffbe00; <br>
+						font-weight: bold; <br>
+						display: inline-block; <br>
+						width: 1em; <br>
+						margin-left: -1em; <br>
+					}
+				</code>
+			</div>
+	    </div>
+			
+		<h3>Numbered Lists</h3>
+		<p><strong>Name: </strong>Numbered List Style</p>
+		<p><strong>Example: </strong></p>
+		<ol class="body-txt">
+			<li>Munchkin</li>
+			<li>Snowshoe</li>
+			<li>Scottish Fold</li>
+			<li>Turkish Van</li>
+			<li>Russian Blue</li>
+		</ol>
+		<p><strong>Code: </strong></p> 
+		<div class="container grid-wrapper">
+			<div class="columns">
+				<h4>HTML</h4>
+				<code>
+					&lt;ol class="body-txt"&gt; <br>
+						&lt;li&gt;Munchkin&lt;/li&gt; <br>
+						&lt;li&gt;Snowshoe&lt;/li&gt; <br>
+						&lt;li&gt;Scottish Fold&lt;/li&gt; <br>
+						&lt;li&gt;Turkish Van&lt;/li&gt; <br>
+						&lt;li&gt;Russian Blue&lt;/li&gt; <br>
+					&lt;/ol&gt;
+				</code>
+			</div>
+			<div class="columns">
+				<h4>CSS</h4>
+				<code>
+					none
+				</code>
+			</div>
+	    </div>		
+	</section>
+	
+	<h2>Modular Pattern Elements</h2>
+	<section>
+		<h3>Main Navigation Module</h3>
+		<p><strong>Name: </strong>Main Navigation</p>
+		<p><strong>Example: </strong></p>
+		<div class="grid-wrapper header-wrapper">
+			<div class="columns headerstyle">
+				<img src="img/logo.png" class="logo">
+				<h1 class="header" id="inline">Nekomatan</h1>
+			</div>
+			<div class="columns headerstyle">
+				<ul class="navbar">
+					<li class="navbar-item"><a href="#">Featured</a></li>
+					<li class="navbar-item"><a href="#">Shop</a></li>
+					<li class="navbar-item"><a href="#">About</a></li>
+					<li class="navbar-item"><a href="#">Cart</a></li>
+				</ul>
+			</div>
+		</div>
+		<p><strong>Code: </strong></p> 
+		<div class="container grid-wrapper">
+			<div class="columns">
+				<h4>HTML</h4>
+				<code>
+					&lt;div class="grid-wrapper header-wrapper"&gt; <br>
+							&lt;div class="columns headerstyle"&gt; <br>
+								&lt;img src="img/logo.png" class="logo"&gt; <br>
+								&lt;h1 class="header" id="inline"&gt;Nekomatan&lt;/h1&gt; <br>
+							&lt;/div&gt; <br>
+							&lt;div class="columns headerstyle"&gt; <br>
+								&lt;ul class="navbar"&gt; <br>
+									&lt;li class="navbar-item"&gt;&lt;a href="#"&gt;Featured&lt;/a&gt;&lt;/li&gt; <br>
+									&lt;li class="navbar-item"&gt;&lt;a href="#"&gt;Shop&lt;/a&gt;&lt;/li&gt; <br>
+									&lt;li class="navbar-item"&gt;&lt;a href="#"&gt;About&lt;/a&gt;&lt;/li&gt; <br>
+									&lt;li class="navbar-item"&gt;&lt;a href="#"&gt;Cart&lt;/a&gt;&lt;/li&gt; <br>
+								&lt;/ul&gt; <br>
+							&lt;/div&gt; <br>
+					&lt;/div&gt;
+				</code>
+			</div>
+			<div class="columns">
+				<h4>CSS</h4>
+				<code>
+					*, *::after, *::before{ <br>
+						box-sizing: border-box; <br>
+					} <br><br>
+
+					.grid-wrapper{ <br>
+						display: -webkit-flex; <br>
+						display: -ms-flex; <br>
+						display: flex; <br>
+					} <br><br>
+
+					.header-wrapper > *{ <br>
+						flex-grow: 1; <br>
+						justify-content: space-between; <br>
+						align-items: flex-end; <br>
+						background-color: white; <br>
+					} <br><br>
+
+					.navbar { <br>
+						list-style-type: none; <br>
+						margin: 0; <br>
+						padding: 0; <br>
+						overflow: hidden; <br>
+						background-color: white; <br>
+					} <br><br>
+
+					.navbar-item { <br>
+						float: right; <br>
+					} <br><br>
+
+					.navbar-item a { <br>
+						color: black; <br>
+						display: block; <br>
+						font-family: "Khand", sans-serif; <br>
+						text-align: right; <br>
+						padding: 1em; <br>
+						text-decoration: none; <br>
+					} <br><br>
+
+					.navbar-item a:hover { <br>
+						color: #ffbe00; <br>
+					} <br><br>
+
+					.logo { <br>
+						width:3em; <br>
+					} <br><br>
+
+					div.headerstyle { <br>
+						padding: 0em; <br>
+					} <br><br>
+
+					#inline { <br>
+						display: inline; <br>
+					}
+				</code>
+			</div>
+	    </div>		
+		
+		<h3>Product Detailed Listing</h3>
+		<p><strong>Name: </strong>Product Listing</p>
+		<p><strong>Example: </strong></p>
+		<div class="grid-wrapper header-wrapper">
+			<div class="header-wrapper">
+				<div class="columns headerstyle">
+						<img src="img/logo.png" class="logo">
+						<h1 class="header" id="inline">Nekomatan</h1>
+				</div>
+				<div class="columns headerstyle">
+					<ul class="navbar">
+						<li class="navbar-item"><a href="#">Featured</a></li>
+						<li class="navbar-item"><a href="#">Shop</a></li>
+						<li class="navbar-item"><a href="#">About</a></li>
+						<li class="navbar-item"><a href="#">Cart</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="columns content">
+				<img src="img/product.jpg" class="product">
+				<p class="body-txt">Cat ipsum dolor sit amet, kitty singapura for puma. Tabby mouser abyssinian , tomcat so mouser lynx savannah. Balinese american bobtail. Russian blue. Singapura kitten bengal turkish angora so balinese and siamese, so ocelot. Scottish fold puma or thai, yet russian blue savannah. Balinese kitty. Puma. Siamese ocelot. Bengal panther for leopard so siberian. Tabby norwegian forest but cougar norwegian forest and leopard leopard or siberian. Jaguar tom donskoy or malkin panther so havana brown cougar. Burmese. Norwegian forest maine coon but puma bombay. </p>
+			</div>
+		</div>
+		<p><strong>Code: </strong></p> 
+		<div class="container grid-wrapper">
+			<div class="columns">
+				<h4>HTML</h4>
+				<code>
+					&lt;div class="grid-wrapper header-wrapper"&gt; <br>
+ &lt;div class="header-wrapper"&gt; <br>
+ &lt;div class="columns headerstyle"&gt; <br>
+ &lt;img src="img/logo.png" class="logo"&gt; <br>
+ &lt;h1 class="header" id="inline"&gt;Nekomatan&lt;/h1&gt; <br>
+ &lt;/div&gt; <br>
+ &lt;div class="columns headerstyle"&gt; <br>
+ &lt;ul class="navbar"&gt; <br>
+ &lt;li class="navbar-item"&gt;&lt;a href="#"&gt;Featured&lt;/a&gt;&lt;/li&gt; <br>
+ &lt;li class="navbar-item"&gt;&lt;a href="#"&gt;Shop&lt;/a&gt;&lt;/li&gt; <br>
+ &lt;li class="navbar-item"&gt;&lt;a href="#"&gt;About&lt;/a&gt;&lt;/li&gt; <br>
+ &lt;li class="navbar-item"&gt;&lt;a href="#"&gt;Cart&lt;/a&gt;&lt;/li&gt; <br>
+ &lt;/ul&gt; <br>
+ &lt;/div&gt; <br>
+ &lt;/div&gt; <br>
+ &lt;div class="columns content"&gt; <br>
+ &lt;img src="img/product.jpg" class="product"&gt; <br>
+ &lt;p class="body-txt"&gt;Cat ipsum dolor sit amet, kitty singapura for puma. Tabby mouser abyssinian , tomcat so mouser lynx savannah. Balinese american bobtail. Russian blue. Singapura kitten bengal turkish angora so balinese and siamese, so ocelot. Scottish fold puma or thai, yet russian blue savannah. Balinese kitty. Puma. Siamese ocelot. Bengal panther for leopard so siberian. Tabby norwegian forest but cougar norwegian forest and leopard leopard or siberian. Jaguar tom donskoy or malkin panther so havana brown cougar. Burmese. Norwegian forest maine coon but puma bombay. &lt;/p&gt; <br>
+ &lt;/div&gt; <br>
+ &lt;/div&gt;
+				</code>
+			</div>
+			<div class="columns">
+				<h4>CSS</h4>
+				<code>
+					*, *::after, *::before{ <br>
+						box-sizing: border-box; <br>
+					} <br><br>
+
+					.grid-wrapper{ <br>
+						display: -webkit-flex; <br>
+						display: -ms-flex; <br>
+						display: flex; <br>
+					} <br><br>
+
+					.header-wrapper > *{ <br>
+						flex-grow: 1; <br>
+						justify-content: space-between; <br>
+						align-items: flex-end; <br>
+						background-color: white; <br>
+					} <br><br>
+
+					.navbar { <br>
+						list-style-type: none; <br>
+						margin: 0; <br>
+						padding: 0; <br>
+						overflow: hidden; <br>
+						background-color: white; <br>
+					} <br><br>
+
+					.navbar-item { <br>
+						float: right; <br>
+					} <br><br>
+
+					.navbar-item a { <br>
+						color: black; <br>
+						display: block; <br>
+						font-family: "Khand", sans-serif; <br>
+						text-align: right; <br>
+						padding: 1em; <br>
+						text-decoration: none; <br>
+					} <br><br>
+
+					.navbar-item a:hover { <br>
+						color: #ffbe00; <br>
+					} <br><br>
+
+					.logo { <br>
+						width:3em; <br>
+					} <br><br>
+
+					div.headerstyle { <br>
+						padding: 0em; <br>
+					} <br><br>
+
+					#inline { <br>
+						display: inline; <br>
+					}
+					
+					.body-txt { <br>
+						font-family: "Lato", sans-serif; <br>
+						font-weight: 300; <br>
+					}
+				</code>
+			</div>
+	    </div>		
+		
+		<h3>Website Grid Structure</h3>
+		<p><strong>Name: </strong>Grid Structure</p>
+		<p><strong>Example: </strong></p>
+		<div class="grid-wrapper content-wrapper" id="black">
+			<div class="header-wrapper" id="dkgrey">
+				<div class="columns headerstyle" id="grey"><p>Header 1</p></div>
+				<div class="columns headerstyle" id="grey"><p>Header 2</p></div>
+			</div>
+			<div class="columns content" id="grey"><p>Content</p></div>
+		</div>
+		<p><strong>Code: </strong></p> 
+		<div class="container grid-wrapper">
+			<div class="columns">
+				<h4>HTML</h4>
+				<code>
+					&lt;div class="grid-wrapper content-wrapper" id="black"&gt; <br>
+						&lt;div class="header-wrapper"&gt; <br>
+							&lt;div class="columns headerstyle"&gt;&lt;p&gt;Header 1&lt;/p&gt;&lt;/div&gt; <br>
+							&lt;div class="columns headerstyle"&gt;&lt;p&gt;Header 2&lt;/p&gt;&lt;/div&gt; <br>
+						&lt;/div&gt; <br>
+						&lt;div class="columns content"&gt;&lt;p&gt;Content&lt;/p&gt;&lt;/div&gt; <br>
+					&lt;/div&gt;
+				</code>
+			</div>
+			<div class="columns">
+				<h4>CSS</h4>
+				<code>
+					*, *::after, *::before{ <br>
+						box-sizing: border-box; <br>
+					} <br><br>
+
+					.grid-wrapper{ <br>
+						display: -webkit-flex; <br>
+						display: -ms-flex; <br>
+						display: flex; <br>
+					} <br><br>
+
+					.header-wrapper > *{ <br>
+						flex-grow: 1; <br>
+						justify-content: space-between; <br>
+						align-items: flex-end; <br>
+						background-color: white; <br>
+					} <br><br>
+
+					div.content-wrapper > *{ <br>
+						flex-grow: 1; <br>
+						flex-flow: column wrap; <br>
+						flex-basis: 100%; <br>
+					} <br><br>
+
+					.columns { <br>
+						padding-bottom: 3em; <br>
+						padding-right: 1em; <br>
+					} <br><br>
+
+
+					@media all and (max-width: 30em){ <br>
+						.grid-wrapper{ <br>
+							flex-flow: column wrap; <br>
+						} <br><br>
+					}
+				</code>
+			</div>
+	    </div>		
+		
+		<h3>Product Review</h3>
+		<p><strong>Name: </strong>Product Review</p>
+		<p><strong>Example: </strong></p>	
+		<form action="/action_page.php" method="get" class="body-txt">
+			<!-- Pure CSS Star Rating Widget-->
+			<fieldset class="rating">
+				<input type="radio" id="star5" name="rating" value="5" /><label class = "full" for="star5" title="Awesome - 5 stars"></label>
+				<input type="radio" id="star4" name="rating" value="4" /><label class = "full" for="star4" title="Pretty good - 4 stars"></label>
+				<input type="radio" id="star3" name="rating" value="3" /><label class = "full" for="star3" title="Meh - 3 stars"></label>
+				<input type="radio" id="star2" name="rating" value="2" /><label class = "full" for="star2" title="Kinda bad - 2 stars"></label>
+				<input type="radio" id="star1" name="rating" value="1" /><label class = "full" for="star1" title="Sucks big time - 1 star"></label>
+			</fieldset>
+			<input type="text" id="review" name="review" placeholder="Write your review here...">
+			<button type="submit" value="Submit">Submit</button>
+		</form>
+		<p><strong>Code: </strong></p> 
+		<div class="container grid-wrapper">
+			<div class="columns">
+				<h4>HTML</h4>
+				<code>
+					&lt;form action="/action_page.php" method="get" class="body-txt"&gt; <br>
+						&lt;fieldset class="rating"&gt; <br>
+							&lt;input type="radio" id="star5" name="rating" value="5" /&gt;&lt;label class = "full" for="star5" title="Awesome - 5 stars"&gt;&lt;/label&gt; <br>
+							&lt;input type="radio" id="star4" name="rating" value="4" /&gt;&lt;label class = "full" for="star4" title="Pretty good - 4 stars"&gt;&lt;/label&gt; <br>
+							&lt;input type="radio" id="star3" name="rating" value="3" /&gt;&lt;label class = "full" for="star3" title="Meh - 3 stars"&gt;&lt;/label&gt; <br>
+							&lt;input type="radio" id="star2" name="rating" value="2" /&gt;&lt;label class = "full" for="star2" title="Kinda bad - 2 stars"&gt;&lt;/label&gt; <br>
+							&lt;input type="radio" id="star1" name="rating" value="1" /&gt;&lt;label class = "full" for="star1" title="Sucks big time - 1 star"&gt;&lt;/label&gt; <br>
+						&lt;/fieldset&gt; <br>
+						&lt;input type="text" id="review" name="review" placeholder="Write your review here..."&gt; <br>
+						&lt;button type="submit" value="Submit"&gt;Submit&lt;/button&gt; <br>
+					&lt;/form&gt;
+				</code>
+			</div>
+			<div class="columns">
+				<h4>CSS</h4>
+				<code>
+					fieldset, label { margin: 0; padding: 0; } <br><br>
+
+					.rating {  <br>
+						border: none; <br>
+						float: left; <br>
+					} <br><br>
+
+					.rating > input { display: none; }  <br>
+					.rating > label:before {  <br>
+						margin: 5px; <br>
+						font-size: 1.25em; <br>
+						display: inline-block; <br>
+						content: "\2605"; <br>
+					} <br><br>
+
+					.rating > label {  <br>
+						color: #ddd;  <br>
+						float: right;  <br>
+					} <br><br>
+
+					.rating > input:checked ~ label, <br>
+					.rating:not(:checked) > label:hover,  <br>
+					.rating:not(:checked) > label:hover ~ label { color: #FFD700;  }  <br><br>
+
+					.rating > input:checked + label:hover,  <br>
+					.rating > input:checked ~ label:hover, <br>
+					.rating > label:hover ~ input:checked ~ label,  <br>
+					.rating > input:checked ~ label:hover ~ label { color: #FFED85;  } 
+				</code>
+			</div>
+	    </div>		
+	</section>
+	
+	
+</body>
+</html>
