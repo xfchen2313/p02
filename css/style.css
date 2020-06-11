@@ -228,10 +228,8 @@ body{ margin: 20px; }
 	display: -webkit-flex;
 	display:  -ms-flex;
 	display:  flex;
-
-	flex-wrap:  -webkit-flex;
-	flex-wrap:  -ms-flex;
-	flex-wrap: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
 
 	justify-content: space-around;
 	margin-left:  auto;
@@ -241,19 +239,23 @@ body{ margin: 20px; }
 }
 
 .box-item{
-width: 250px;
-height:  250px;
+height: 30%;
+width: 30%;
 flex: 1 1 30%;
-object-fit: cover;
+
 }
 
-.flex-main-item{
+.flex-row1{
+	display: inline-block;
+	transition:  background-color 0.5s ease-out;
+}
+.flex-row2{
 	display: inline-block;
 	transition:  background-color 0.5s ease-out;
 }
 
 @media(max-width: 30em){
 	.box-item{
-		flex:1 1 100%;
+		flex: 1 1 100%;
 	}
 }
