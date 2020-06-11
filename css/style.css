@@ -223,3 +223,28 @@ body{ margin: 20px; }
 .rating > input:checked ~ label:hover,
 .rating > label:hover ~ input:checked ~ label, 
 .rating > input:checked ~ label:hover ~ label { color: #FFED85;  } 
+
+.box{
+	display: -webkit-flex;
+	display:  -ms-flex;
+	display:  flex;
+
+	flex-wrap:  -webkit-flex;
+	flex-wrap:  -ms-flex;
+	flex-wrap: flex;
+
+	justify-content: space-around;
+	margin-left:  auto;
+	margin-right:  auto;
+	width: 80%;
+	align-content: center;
+}
+
+.box-item{
+width: 250px;
+height:  250px;
+flex: 1 1 30%;
+object-fit: cover;
+
+
+}
