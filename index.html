@@ -95,7 +95,7 @@
 		<h3>Submit & Reset Button for Forms</h3>
 		<p><strong>Name: </strong> </p>
 		<p><strong>Example: </strong></p>
-		<form action="/action_page.php" method="get" class="body-txt">
+		<form action="/action_page.php" method="get" class="form">
 			<label for="txt">Try typing here:</label>
 			<input type="text" id="txt" name="txt">
 			<button type="submit" value="Submit">Submit</button>
@@ -106,20 +106,30 @@
 			<div class="columns">
 				<h4>HTML</h4>
 				<code>
-					&lt;form action="/action_page.php" method="get" class="body-txt"&gt; <br>
-						&lt;label for="txt"&gt;Try typing here:&lt;/label&gt; <br>
-						&lt;input type="text" id="txt" name="txt"&gt; <br>
-						&lt;button type="submit" value="Submit"&gt;Submit&lt;/button&gt; <br>
-						&lt;button type="reset" value="Reset"&gt;Reset&lt;/button&gt;  <br>
+					&lt;form action=&quot;/action_page.php&quot; method=&quot;get&quot; class=&quot;form&quot;&gt;<br>
+					&lt;label for=&quot;txt&quot;&gt;Try typing here:&lt;/label&gt;<br>
+					&lt;input type=&quot;text&quot; id=&quot;txt&quot; name=&quot;txt&quot;&gt;<br>
+					&lt;button type=&quot;submit&quot; value=&quot;Submit&quot;&gt;Submit&lt;/button&gt;<br>
+					&lt;button type=&quot;reset&quot; value=&quot;Reset&quot;&gt;Reset&lt;/button&gt;<br>
 					&lt;/form&gt;
 				</code>
 			</div>
 			<div class="columns">
 				<h4>CSS</h4>
 				<code>
-					input { <br>
-						width: 100%; <br>
-					}
+					input {<br>
+						width: 100%;<br>
+						height: 5em;<br>
+						
+					}<br><br>
+
+
+					.form{<br>
+						max-width: 70%;<br>
+						padding-right: 10em;<br>
+						font-family: "Lato", sans-serif;<br>
+						font-weight: 300;<br>
+					}<br><br>
 				</code>
 			</div>
 	    </div>		
@@ -127,7 +137,7 @@
 		<h3>Text Input Field with Label</h3>
 		<p><strong>Name: </strong> Text Input</p>
 		<p><strong>Example: </strong></p>
-		<form action="/action_page.php" class="body-txt">
+		<form action="/action_page.php" class="form">
 			<label for="txtin">Text Input</label>
 			<input type="text" id="txtin" name="textinput" placeholder="Start typing here...">
 		</form>
@@ -136,18 +146,28 @@
 			<div class="columns">
 				<h4>HTML</h4>
 				<code>
-					&lt;form action="/action_page.php" class="body-txt"&gt; <br>
-						&lt;label for="txtin"&gt;Text Input&lt;/label&gt; <br>
-						&lt;input type="text" id="txtin" name="textinput" placeholder="Start typing here..."&gt; <br>
+					&lt;form action=&quot;/action_page.php&quot; class=&quot;form&quot;&gt;<br>
+					&lt;label for=&quot;txtin&quot;&gt;Text Input&lt;/label&gt;<br>
+					&lt;input type=&quot;text&quot; id=&quot;txtin&quot; name=&quot;textinput&quot; placeholder=&quot;Start typing here...&quot;&gt;<br>
 					&lt;/form&gt;
 				</code>
 			</div>
 			<div class="columns">
 				<h4>CSS</h4>
 				<code>
-					input { <br>
-						width: 100%; <br>
-					}
+					input {<br>
+						width: 100%;<br>
+						height: 5em;<br>
+						
+					}<br><br>
+
+
+					.form{<br>
+						max-width: 70%;<br>
+						padding-right: 10em;<br>
+						font-family: "Lato", sans-serif;<br>
+						font-weight: 300;<br>
+					}<br><br>
 				</code>
 			</div>
 	    </div>		
@@ -200,7 +220,7 @@
 		<h3>Headings</h3>
 		<p><strong>Name: </strong>Heading Styles</p>
 		<p><strong>Example: </strong></p>
-		<h1 class="header">Brand Heading</h1>
+		<h1 class="logo-name">BRAND HEADING</h1>
 		<h2 class="main-header">Article Heading</h2>
 		<h3 class="sub-header">Sub Heading</h3>
 		<p><strong>Code: </strong></p>
@@ -435,187 +455,137 @@
 		<h3>Product Detailed Listing</h3>
 		<p><strong>Name: </strong>Product Listing</p>
 		<p><strong>Example: </strong></p>
+		<div class="product-list">
 		<div class="grid-wrapper header-wrapper">
-			<div class="header-wrapper">
-				<div class="columns headerstyle">
-						<img src="img/logo.png" class="logo">
-						<h1 class="header" id="inline">Nekomatan</h1>
-				</div>
-				<div class="columns headerstyle">
-					<ul class="navbar">
-						<li class="navbar-item"><a href="#">Featured</a></li>
-						<li class="navbar-item"><a href="#">Shop</a></li>
-						<li class="navbar-item"><a href="#">About</a></li>
-						<li class="navbar-item"><a href="#">Cart</a></li>
-					</ul>
-				</div>
+			<div class="columns headerstyle">
+				<img src="img/logo.png" class="logo">
+				<h1 class="logo-name" id="inline">NEKOMATAN</h1>
 			</div>
-			<div class="columns content">
-				<img src="img/product.jpg" class="product">
-				<p class="body-txt">Cat ipsum dolor sit amet, kitty singapura for puma. Tabby mouser abyssinian , tomcat so mouser lynx savannah. Balinese american bobtail. Russian blue. Singapura kitten bengal turkish angora so balinese and siamese, so ocelot. Scottish fold puma or thai, yet russian blue savannah. Balinese kitty. Puma. Siamese ocelot. Bengal panther for leopard so siberian. Tabby norwegian forest but cougar norwegian forest and leopard leopard or siberian. Jaguar tom donskoy or malkin panther so havana brown cougar. Burmese. Norwegian forest maine coon but puma bombay. </p>
+			<div class="columns headerstyle">
+				<ul class="navbar">
+					<li class="navbar-item"><a href="#">Featured</a></li>
+					<li class="navbar-item"><a href="#">Shop</a></li>
+					<li class="navbar-item"><a href="#">About</a></li>
+					<li class="navbar-item"><a href="#">Cart</a></li>
+				</ul>
 			</div>
+		</div>
+			   <div class="container grid-wrapper">
+			   		<div class="columns content">
+						<img src="img/product.jpg" class="product">
+			  		 </div>
+
+					<div class="columns content">
+						<div class="product-text">
+							<h2 class="product-header">Product Name</h2><h3 class="product-price">$20</h3>
+						</div>
+						<p class="product-body-txt">Cat ipsum dolor sit amet, kitty singapura for puma. Tabby mouser abyssinian , tomcat so mouser lynx savannah. Balinese american bobtail. Russian blue. Singapura kitten bengal turkish angora so balinese and siamese, so ocelot. Scottish fold puma or thai, yet russian blue savannah. Balinese kitty. Puma. Siamese ocelot. Bengal panther for leopard so siberian. Tabby norwegian forest but cougar norwegian forest and leopard leopard or siberian. Jaguar tom donskoy or malkin panther so havana brown cougar. Burmese. Norwegian forest maine coon but puma bombay. </p>
+					</div>
+
+			   </div>
 		</div>
 		<p><strong>Code: </strong></p> 
 		<div class="container grid-wrapper">
 			<div class="columns">
 				<h4>HTML</h4>
 				<code>
-					&lt;div class="grid-wrapper header-wrapper"&gt; <br>
- &lt;div class="header-wrapper"&gt; <br>
- &lt;div class="columns headerstyle"&gt; <br>
- &lt;img src="img/logo.png" class="logo"&gt; <br>
- &lt;h1 class="header" id="inline"&gt;Nekomatan&lt;/h1&gt; <br>
- &lt;/div&gt; <br>
- &lt;div class="columns headerstyle"&gt; <br>
- &lt;ul class="navbar"&gt; <br>
- &lt;li class="navbar-item"&gt;&lt;a href="#"&gt;Featured&lt;/a&gt;&lt;/li&gt; <br>
- &lt;li class="navbar-item"&gt;&lt;a href="#"&gt;Shop&lt;/a&gt;&lt;/li&gt; <br>
- &lt;li class="navbar-item"&gt;&lt;a href="#"&gt;About&lt;/a&gt;&lt;/li&gt; <br>
- &lt;li class="navbar-item"&gt;&lt;a href="#"&gt;Cart&lt;/a&gt;&lt;/li&gt; <br>
- &lt;/ul&gt; <br>
- &lt;/div&gt; <br>
- &lt;/div&gt; <br>
- &lt;div class="columns content"&gt; <br>
- &lt;img src="img/product.jpg" class="product"&gt; <br>
- &lt;p class="body-txt"&gt;Cat ipsum dolor sit amet, kitty singapura for puma. Tabby mouser abyssinian , tomcat so mouser lynx savannah. Balinese american bobtail. Russian blue. Singapura kitten bengal turkish angora so balinese and siamese, so ocelot. Scottish fold puma or thai, yet russian blue savannah. Balinese kitty. Puma. Siamese ocelot. Bengal panther for leopard so siberian. Tabby norwegian forest but cougar norwegian forest and leopard leopard or siberian. Jaguar tom donskoy or malkin panther so havana brown cougar. Burmese. Norwegian forest maine coon but puma bombay. &lt;/p&gt; <br>
- &lt;/div&gt; <br>
+					&lt;div class=&quot;product-list&quot;&gt;<br>
+ &lt;div class=&quot;grid-wrapper header-wrapper&quot;&gt;<br>
+ &lt;div class=&quot;columns headerstyle&quot;&gt;<br>
+ &lt;img src=&quot;img/logo.png&quot; class=&quot;logo&quot;&gt;<br>
+ &lt;h1 class=&quot;logo-name&quot; id=&quot;inline&quot;&gt;NEKOMATAN&lt;/h1&gt;<br>
+ &lt;/div&gt;<br>
+ &lt;div class=&quot;columns headerstyle&quot;&gt;<br>
+ &lt;ul class=&quot;navbar&quot;&gt;<br>
+ &lt;li class=&quot;navbar-item&quot;&gt;&lt;a href=&quot;#&quot;&gt;Featured&lt;/a&gt;&lt;/li&gt;<br>
+ &lt;li class=&quot;navbar-item&quot;&gt;&lt;a href=&quot;#&quot;&gt;Shop&lt;/a&gt;&lt;/li&gt;<br>
+ &lt;li class=&quot;navbar-item&quot;&gt;&lt;a href=&quot;#&quot;&gt;About&lt;/a&gt;&lt;/li&gt;<br>
+ &lt;li class=&quot;navbar-item&quot;&gt;&lt;a href=&quot;#&quot;&gt;Cart&lt;/a&gt;&lt;/li&gt;<br>
+ &lt;/ul&gt;<br>
+ &lt;/div&gt;<br>
+ &lt;/div&gt;<br>
+ &lt;div class=&quot;container grid-wrapper&quot;&gt;<br>
+ &lt;div class=&quot;columns content&quot;&gt;<br>
+ &lt;img src=&quot;img/product.jpg&quot; class=&quot;product&quot;&gt;<br>
+ &lt;/div&gt;<br><br>
+
+ &lt;div class=&quot;columns content&quot;&gt;<br>
+ &lt;div class=&quot;product-text&quot;&gt;<br>
+ &lt;h2 class=&quot;product-header&quot;&gt;Product Name&lt;/h2&gt;&lt;h3 class=&quot;product-price&quot;&gt;$20&lt;/h3&gt;<br>
+ &lt;/div&gt;<br>
+ &lt;p class=&quot;product-body-txt&quot;&gt;Cat ipsum dolor sit amet, kitty singapura for puma. Tabby mouser abyssinian , tomcat so mouser lynx savannah. Balinese american bobtail. Russian blue. Singapura kitten bengal turkish angora so balinese and siamese, so ocelot. Scottish fold puma or thai, yet russian blue savannah. Balinese kitty. Puma. Siamese ocelot. Bengal panther for leopard so siberian. Tabby norwegian forest but cougar norwegian forest and leopard leopard or siberian. Jaguar tom donskoy or malkin panther so havana brown cougar. Burmese. Norwegian forest maine coon but puma bombay. &lt;/p&gt;<br>
+ &lt;/div&gt;<br>
+
+ &lt;/div&gt;<br>
  &lt;/div&gt;
 				</code>
 			</div>
 			<div class="columns">
 				<h4>CSS</h4>
 				<code>
-					*, *::after, *::before{ <br>
-						box-sizing: border-box; <br>
-					} <br><br>
+					.product {<br>
+	width:70%;<br>
+	padding-top: 5em;<br>
+	padding-left: 10em;<br>
+}<br><br>
 
-					.grid-wrapper{ <br>
-						display: -webkit-flex; <br>
-						display: -ms-flex; <br>
-						display: flex; <br>
-					} <br><br>
+.product-text{<br>
+	display: inline;<br>
+	margin-top: 5em;<br>
+}<br><br>
 
-					.header-wrapper > *{ <br>
-						flex-grow: 1; <br>
-						justify-content: space-between; <br>
-						align-items: flex-end; <br>
-						background-color: white; <br>
-					} <br><br>
+.product-price{<br>
+	display: inline;<br>
+	
+}<br><br>
 
-					.navbar { <br>
-						list-style-type: none; <br>
-						margin: 0; <br>
-						padding: 0; <br>
-						overflow: hidden; <br>
-						background-color: white; <br>
-					} <br><br>
 
-					.navbar-item { <br>
-						float: right; <br>
-					} <br><br>
+.product-body-txt {<br>
+	font-family: "Lato", sans-serif;<br>
+	font-weight: 300;<br>
+	padding-top: 7em;<br>
+}<br><br>
 
-					.navbar-item a { <br>
-						color: black; <br>
-						display: block; <br>
-						font-family: "Khand", sans-serif; <br>
-						text-align: right; <br>
-						padding: 1em; <br>
-						text-decoration: none; <br>
-					} <br><br>
+.navbar {<br>
+	list-style-type: none;<br>
+	margin: 0;<br>
+	padding: 0;<br>
+	overflow: hidden;<br>
+	background-color: white;<br>
+}<br><br>
 
-					.navbar-item a:hover { <br>
-						color: #ffbe00; <br>
-					} <br><br>
+.navbar-item {<br>
+	float: right;<br>
+}<br><br>
 
-					.logo { <br>
-						width:3em; <br>
-					} <br><br>
+.navbar-item a {<br>
+	color: black;<br>
+	display: block;<br>
+	font-family: "Khand", sans-serif;<br>
+	text-align: right;<br>
+	padding: 1em;<br>
+	text-decoration: none;<br>
+}<br><br>
 
-					div.headerstyle { <br>
-						padding: 0em; <br>
-					} <br><br>
+.navbar-item a:hover {<br>
+	color: #ffbe00;<br>
+}<br><br>
 
-					#inline { <br>
-						display: inline; <br>
-					}
-					
-					.body-txt { <br>
-						font-family: "Lato", sans-serif; <br>
-						font-weight: 300; <br>
-					}
+.logo {<br>
+	width:6em;<br>
+}<br><br>
+
+
+
 				</code>
 			</div>
 	    </div>		
 		
-		<h3>Website Grid Structure</h3>
-		<p><strong>Name: </strong>Grid Structure</p>
-		<p><strong>Example: </strong></p>
-		<div class="grid-wrapper content-wrapper" id="black">
-			<div class="header-wrapper" id="dkgrey">
-				<div class="columns headerstyle" id="grey"><p>Header 1</p></div>
-				<div class="columns headerstyle" id="grey"><p>Header 2</p></div>
-			</div>
-			<div class="columns content" id="grey"><p>Content</p></div>
-		</div>
-		<p><strong>Code: </strong></p> 
-		<div class="container grid-wrapper">
-			<div class="columns">
-				<h4>HTML</h4>
-				<code>
-					&lt;div class="grid-wrapper content-wrapper" id="black"&gt; <br>
-						&lt;div class="header-wrapper"&gt; <br>
-							&lt;div class="columns headerstyle"&gt;&lt;p&gt;Header 1&lt;/p&gt;&lt;/div&gt; <br>
-							&lt;div class="columns headerstyle"&gt;&lt;p&gt;Header 2&lt;/p&gt;&lt;/div&gt; <br>
-						&lt;/div&gt; <br>
-						&lt;div class="columns content"&gt;&lt;p&gt;Content&lt;/p&gt;&lt;/div&gt; <br>
-					&lt;/div&gt;
-				</code>
-			</div>
-			<div class="columns">
-				<h4>CSS</h4>
-				<code>
-					*, *::after, *::before{ <br>
-						box-sizing: border-box; <br>
-					} <br><br>
-
-					.grid-wrapper{ <br>
-						display: -webkit-flex; <br>
-						display: -ms-flex; <br>
-						display: flex; <br>
-					} <br><br>
-
-					.header-wrapper > *{ <br>
-						flex-grow: 1; <br>
-						justify-content: space-between; <br>
-						align-items: flex-end; <br>
-						background-color: white; <br>
-					} <br><br>
-
-					div.content-wrapper > *{ <br>
-						flex-grow: 1; <br>
-						flex-flow: column wrap; <br>
-						flex-basis: 100%; <br>
-					} <br><br>
-
-					.columns { <br>
-						padding-bottom: 3em; <br>
-						padding-right: 1em; <br>
-					} <br><br>
-
-
-					@media all and (max-width: 30em){ <br>
-						.grid-wrapper{ <br>
-							flex-flow: column wrap; <br>
-						} <br><br>
-					}
-				</code>
-			</div>
-	    </div>		
 		
 		<h3>Product Review</h3>
 		<p><strong>Name: </strong>Product Review</p>
 		<p><strong>Example: </strong></p>	
-		<form action="/action_page.php" method="get" class="body-txt">
+		<form action="/action_page.php" method="get" class="form">
 			<!-- Pure CSS Star Rating Widget-->
 			<fieldset class="rating">
 				<input type="radio" id="star5" name="rating" value="5" /><label class = "full" for="star5" title="Awesome - 5 stars"></label>
@@ -632,7 +602,7 @@
 			<div class="columns">
 				<h4>HTML</h4>
 				<code>
-					&lt;form action="/action_page.php" method="get" class="body-txt"&gt; <br>
+					&lt;form action="/action_page.php" method="get" class="form"&gt; <br>
 						&lt;fieldset class="rating"&gt; <br>
 							&lt;input type="radio" id="star5" name="rating" value="5" /&gt;&lt;label class = "full" for="star5" title="Awesome - 5 stars"&gt;&lt;/label&gt; <br>
 							&lt;input type="radio" id="star4" name="rating" value="4" /&gt;&lt;label class = "full" for="star4" title="Pretty good - 4 stars"&gt;&lt;/label&gt; <br>
@@ -683,6 +653,10 @@
 	
 
 	<section id="flexbox">
+		<h3>Product Listing</h3>
+		<p><strong>Name: </strong>Flexbox</p>
+		<p><strong>Example: </strong></p>	
+
 
 		<div class="flex-row1, box">	
 
@@ -730,7 +704,108 @@
 				</div>
 			</div>
 			
-			
+		</div>
+
+	<p><strong>Code: </strong></p> 
+		<div class="container grid-wrapper">
+			<div class="columns">
+				<h4>HTML</h4>
+				<code>
+					&lt;div class=&quot;flex-row1, box&quot;&gt; <br><br>
+					&lt;div class=&quot;flex-main-item box-item&quot;&gt;<br>
+					&lt;img src=&quot;img/product.jpg&quot; &gt;<br>
+					&lt;div class=&quot;overlay&quot;;&gt;<br>
+					&lt;div class=&quot;label&quot;&gt; Product Name &lt;/div&gt;<br>
+					&lt;/div&gt;<br>
+					&lt;/div&gt;<br><br>
+					&lt;div class=&quot;flex-main-item box-item&quot;&gt;<br>
+					&lt;img src=&quot;img/product.jpg&quot; &gt;<br>
+					&lt;div class=&quot;overlay&quot;;&gt;<br>
+					&lt;div class=&quot;label&quot;&gt; Product Name &lt;/div&gt;<br>
+					&lt;/div&gt;<br>
+					&lt;/div&gt;<br><br>
+					&lt;div class=&quot;flex-main-item box-item&quot;&gt;<br>
+					&lt;img src=&quot;img/product.jpg&quot; &gt;<br>
+					&lt;div class=&quot;overlay&quot;;&gt;<br>
+					&lt;div class=&quot;label&quot;&gt; Product Name &lt;/div&gt;<br>
+					&lt;/div&gt;<br>
+					&lt;/div&gt;<br>
+				 &lt;/div&gt;
+
+				 &lt;div class=&quot;flex-row2, box&quot;&gt; <br><br>
+					&lt;div class=&quot;flex-main-item box-item&quot;&gt;<br>
+					&lt;img src=&quot;img/product.jpg&quot; &gt;<br>
+					&lt;div class=&quot;overlay&quot;;&gt;<br>
+					&lt;div class=&quot;label&quot;&gt; Product Name &lt;/div&gt;<br>
+					&lt;/div&gt;<br>
+					&lt;/div&gt;<br><br>
+					&lt;div class=&quot;flex-main-item box-item&quot;&gt;<br>
+					&lt;img src=&quot;img/product.jpg&quot; &gt;<br>
+					&lt;div class=&quot;overlay&quot;;&gt;<br>
+					&lt;div class=&quot;label&quot;&gt; Product Name &lt;/div&gt;<br>
+					&lt;/div&gt;<br>
+					&lt;/div&gt;<br><br>
+					&lt;div class=&quot;flex-main-item box-item&quot;&gt;<br>
+					&lt;img src=&quot;img/product.jpg&quot; &gt;<br>
+					&lt;div class=&quot;overlay&quot;;&gt;<br>
+					&lt;div class=&quot;label&quot;&gt; Product Name &lt;/div&gt;<br>
+					&lt;/div&gt;<br>
+					&lt;/div&gt;<br>
+				 &lt;/div&gt;
+
+				</code>
+			</div>
+			<div class="columns">
+				<h4>CSS</h4>
+				<code>
+					.box{<br>
+						display: -webkit-flex;<br>
+						display:  -ms-flex;<br>
+						display:  flex;<br>
+						flex-wrap: wrap;<br>
+						
+
+						justify-content: space-around;<br>
+						margin-left:  auto;<br>
+						margin-right:  auto;<br>
+						width: 80%;<br>
+						align-content: center;<br>
+					}<br><br>
+
+					.flex-row1{<br>
+						display: inline-block;<br>
+						transition:  background-color 0.5s ease-out;<br>
+					}<br><br>
+					.flex-row2{<br>
+						display: inline-block;<br>
+						transition:  background-color 0.5s ease-out;<br>
+					}<br><br>
+
+					.box-item:hover {<br>
+						height:35%;<br>
+						width:35%;<br>
+						opacity: 0.6;<br>
+					}<br><br>
+					.box-item{<br>
+						height: 30%;<br>
+						width: 30%;<br>
+						padding: 1em 1em;<br>
+						flex: 1 1 30%;<br>
+						transition: .5s ease;<br>
+					}<br><br>
+
+					.label{<br>
+						font-family: Din Condensed;<br>
+					}<br><br>
+
+
+					@media(max-width: 50em){<br>
+						.box-item{<br>
+							flex: 1 1 100%;<br>
+						}<br>
+					}
+				</code>
+			</div>
 		</div>
 
 
