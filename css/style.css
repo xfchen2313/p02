@@ -229,20 +229,13 @@ body{ margin: 20px; }
 	display:  -ms-flex;
 	display:  flex;
 	flex-wrap: wrap;
-	flex-direction: row;
+	
 
 	justify-content: space-around;
 	margin-left:  auto;
 	margin-right:  auto;
 	width: 80%;
 	align-content: center;
-}
-
-.box-item{
-height: 30%;
-width: 30%;
-flex: 1 1 30%;
-
 }
 
 .flex-row1{
@@ -254,7 +247,31 @@ flex: 1 1 30%;
 	transition:  background-color 0.5s ease-out;
 }
 
-@media(max-width: 30em){
+.box-item:hover {
+	height:35%;
+	width:35%;
+	opacity: 0.6;
+}
+.box-item{
+	height: 30%;
+	width: 30%;
+	padding: 1em 1em;
+	flex: 1 1 30%;
+	transition: .5s ease;
+}
+
+.label{
+	font-family: Din Condensed;
+}
+
+
+
+
+
+
+
+
+@media(max-width: 50em){
 	.box-item{
 		flex: 1 1 100%;
 	}
