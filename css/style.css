@@ -5,7 +5,8 @@
 .grid-wrapper{
 	display: -webkit-flex;
 	display: -ms-flex;
-	display: flex;
+	
+	
 }
 
 .swatch-wrapper > *{
@@ -23,6 +24,16 @@
 	justify-content: space-between;
 	align-items: flex-end;
 	background-color: white;
+	
+}
+
+.nav-header{
+	display: flex;
+	max-width: 70em;
+    margin-left: auto;
+    margin-right: auto;
+	align-items: center;
+	margin-bottom: 5em;
 }
 
 div.content-wrapper > *{
@@ -47,6 +58,8 @@ div.content-wrapper > *{
 img {
 	width: 100%;
 }
+
+
 
 code {
 	background-color: #d9d9d9;
@@ -85,11 +98,19 @@ a:hover.links {
 	text-decoration: underline;
 }
 
+.logo-name{
+	font-family: "Din Condensed";
+	font-size: 4em;
+	position: relative;
+	top: -10px;
+}
 .header {
 	font-family: "Impact", "DIN Condensed Bold", Helvetica, sans-serif;
 	font-size: 3em;
 }
 
+
+}
 .main-header {
 	font-family: "Khand", sans-serif;
 }
@@ -99,7 +120,27 @@ a:hover.links {
 	font-weight: 300;
 }
 
+h1{
+	font-family: "Impact", "DIN Condensed Bold", Helvetica, sans-serif;
+	font-size: 3em;
+}
+
+h2{
+	
+	font-family: "Khand", sans-serif;
+}
+
+h3{
+	font-family: "Khand", sans-serif;
+	font-weight: 300;
+}
+
 .body-txt {
+	font-family: "Lato", sans-serif;
+	font-weight: 300;
+}
+
+p{
 	font-family: "Lato", sans-serif;
 	font-weight: 300;
 }
@@ -148,7 +189,7 @@ a:hover.links {
 }
 
 .logo {
-	width:3em;
+	width:6em;
 }
 
 .product {
