@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Module p1</title>
+	<link href="style.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Khand:wght@300;400;500&family=Lato:wght@100;300;400&display=swap" rel="stylesheet"> 
+</head>
+
+<body>
+	<h1>News Carousel</h1>
+	<div class="slideshow">
+		<div class="slide fade">
+			<img src="img/img1.jpg">
+		</div>
+		
+		<div class="slide fade">
+			<img src="img/img2.jpg">
+		</div>
+		
+		<div class="slide fade">
+			<img src="img/img3.jpg">
+		</div>
+		
+		<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+		<a class="next" onclick="plusSlides(1)">&#10095;</a>
+	</div>
+
+	<div class="dots">
+		<span class="dot" onclick="currentSlide(1)"></span>
+		<span class="dot" onclick="currentSlide(2)"></span>
+		<span class="dot" onclick="currentSlide(3)"></span>
+	</div>
+	<script src="script.js"></script>
+	
+	
+	<h1>Article Module</h1>
+		<div class="articlecontainer">
+			<div class="imgbox">
+				<img src="img/img1.jpg">
+			</div>
+			<div class="articleText">
+				<h2>Header Here</h2>
+				<p>Cat ipsum dolor sit amet, kitty singapura for puma. Tabby mouser abyssinian , tomcat so mouser lynx savannah. Balinese american bobtail. Russian blue. Singapura kitten bengal turkish angora so balinese and siamese, so ocelot. Scottish fold puma or thai, yet russian blue savannah. Balinese kitty. Puma. Siamese ocelot. Bengal panther for leopard so siberian. Tabby norwegian forest but cougar norwegian forest and leopard leopard or siberian. Jaguar tom donskoy or malkin panther so havana brown cougar. Burmese. Norwegian forest maine coon but puma bombay.</p>
+			</div>
+		</div>
+		
+		
+	<h1>About Module</h1>
+		<div class="textgridcontainer">
+		<div class="aboutimgbox">
+			<img src="img/aboutimg.png">
+		</div>
+		<div class="abouttextbox">
+			<p>Cat ipsum dolor sit amet, kitty singapura for puma. Tabby mouser abyssinian , tomcat so mouser lynx savannah. Balinese american bobtail. Russian blue. Singapura kitten bengal turkish angora so balinese and siamese, so ocelot. Scottish fold puma or thai, yet russian blue savannah. Balinese kitty. Puma. Siamese ocelot. Bengal panther for leopard so siberian. Tabby norwegian forest but cougar norwegian forest and leopard leopard or siberian. Jaguar tom donskoy or malkin panther so havana brown cougar. Burmese. Norwegian forest maine coon but puma bombay.</p>
+		</div>
+		</div>
+		
+	<!--https://www.w3schools.com/html/html_form_input_types.asp-->
+	<h1>Contact Form</h1>
+	<div class="formcontainer">
+		<form action="/action_page.php" method="get" class="body-txt">
+			<label for="name">Name</label>
+			<input type="text" id="name" name="name">
+			
+			<label for="email">Email</label>
+			<input type="email" id="email" name="email">
+			
+			<label for="comment">Comment</label>
+			<textarea id="comment" name="comment"></textarea>
+			
+			<input type="submit" value="Submit" class="button">
+		</form>
+	</div>
+	
+	
+	<h1>Checkout Form</h1>
+	<div class="formcontainer">
+		<form action="/action_page.php" method="get" class="body-txt">
+		<div class="row">
+			<div class="col">
+				<label for="fname">First Name</label>
+				<input type="text" id="fname" name="fname">
+			</div>
+			
+			<div class="col">
+				<label for="lname">Last Name</label>
+				<input type="text" id="lname" name="lname">
+			</div>
+		</div>
+		
+		<div class="row">
+			<label for="add1">Address 1</label>
+			<input type="text" id="add1" name="add1">
+		</div>
+		
+		<div class="row">	
+			<label for="add2">Address 2</label>
+			<input type="text" id="add2" name="add2">
+		</div>
+		
+		<div class="row">	
+			<label for="city">City</label>
+			<input type="text" id="city" name="city">
+		</div>
+		
+		<div class="row">
+			<div class="col">
+				<label for="province">Province/State</label>
+				<input type="text" id="province" name="province">
+			</div>
+			
+			<div class="col">
+				<label for="zip">ZIP</label>
+				<input type="text" id="zip" name="zip" placeholder="V6B 3W8">
+			</div>
+		</div>	
+		
+		<div class="row">	
+			<label for="country">Country</label>
+			<select id="country" name="country">
+				<option value="canada">Canada</option>
+				<option value="usa">USA</option>
+			</select>
+		</div>
+		
+		<div class="row">
+			<label for="phone">Phone</label>
+			<input type="tel" id="phone" name="phone" placeholder="6046748110">
+		</div>
+		
+		<div class="row">
+			<input type="submit" value="Submit" class="button">
+		</div>
+		</form>
+	</div>
+</body>
+</html>
