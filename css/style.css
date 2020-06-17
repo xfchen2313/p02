@@ -457,6 +457,9 @@ fieldset, label { margin: 0; padding: 0; }
 #cart-d{
 	padding-right: 1rem;
 }
+#total{
+	float: right;
+}
 
 #pay{
 	float: right;
