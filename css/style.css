@@ -34,8 +34,42 @@
     margin-left: auto;
     margin-right: auto;
 	align-items: center;
-	margin-bottom: 5em;
+	margin-bottom: 1em;
 }
+
+.sidenav {
+  width: 130px;
+  position:fixed;
+  z-index: 1;
+  top: 150px;
+  left: 15px;
+  background: rgb(201, 201, 201);
+  overflow-x: hidden;
+  padding: 8px 0;
+}
+
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 18px;
+  color: rgb(0, 0, 0);
+  display: block;
+}
+
+.sidenav a:hover {
+  color: #5a5a5a;
+}
+
+body{ margin: 20px; }
+
+#main {
+margin-left: 150px; 
+  
+  padding: 0px 10px;
+}
+
+
+
 
 div.content-wrapper > *{
 	flex-grow: 1;
@@ -209,10 +243,17 @@ p{
 }
 
 .product {
-	width:70%;
-	padding-top: 5em;
-	padding-left: 10em;
+	width:100%;
+	padding-top: 2em;
+	padding-left: 2em;
 }
+
+.columns content . product{
+
+
+}
+	
+
 
 .product-text{
 	display: inline;
@@ -228,7 +269,7 @@ p{
 .product-body-txt {
 	font-family: "Lato", sans-serif;
 	font-weight: 300;
-	padding-top: 7em;
+	padding-top: 2em;
 }
 
 div.headerstyle {
@@ -269,7 +310,7 @@ div.headerstyle {
 
 /**Pure CSS Star Rating Widget**/
 fieldset, label { margin: 0; padding: 0; }
-body{ margin: 20px; }
+
 
 /****** Style Star Rating Widget *****/
 
@@ -353,8 +394,25 @@ body{ margin: 20px; }
 	display: block;
 	align-self: center;
 	border: 1px black;
-	
-	
 }
 
+.price{
+	font-size: 20px;
+	position: relative;
+	font-weight: normal;
+	text-align: right;
+}
 
+.prod-name{
+	font-size: 1.5rem;
+}
+
+#footer {
+	background-color: #ededed ;
+	width: 100%;
+	text-align: center;
+	align-content: center;
+	align-items: center;
+	padding-top: 50px;
+	padding-bottom: 80px;
+}
