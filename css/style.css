@@ -6,7 +6,6 @@
 	display: -webkit-flex;
 	display: -ms-flex;
 	display: flex;
-	
 }
 
 .swatch-wrapper > *{
@@ -361,17 +360,21 @@ fieldset, label { margin: 0; padding: 0; }
 	transition:  background-color 0.5s ease-out;
 }
 
-.box-item:hover {
-	height:35%;
-	width:35%;
-	opacity: 0.6;
-}
+
 .box-item{
 	height: 30%;
 	width: 30%;
 	padding: 1em 1em;
 	flex: 1 1 30%;
 	transition: .5s ease;
+}
+
+.box-item:hover {
+	
+	height:35% !important;
+	width:35% !important;
+
+	opacity: 0.6;
 }
 
 .label{
@@ -469,3 +472,57 @@ fieldset, label { margin: 0; padding: 0; }
  #cart-list{
 	 padding-bottom: 3em;
  }
+
+
+ .holder {
+  position: relative;
+  text-align: center;
+  color: black;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+ #about{
+	 display: inline-flex;
+	 flex-direction: column;
+	 flex-wrap: wrap;
+ }
+
+ .hub-img:hover {
+	opacity: 0.3;
+}
+
+#about1{
+	height:40rem;
+	object-fit: cover;
+	opacity: 80%
+	
+
+}
+
+
+#about2{
+	height:20rem;
+	object-fit: cover;
+	opacity: 80%
+	
+
+}
+
+#about3{
+	position: relative;
+	top: -0.25rem;
+	height:20rem;
+	object-fit: cover;
+	opacity: 80%
+	
+}
+
+.hub-img:hover {
+	opacity: 0.6;
+}
