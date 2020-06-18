@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Nekomatan's Shop of Things</title>
+	<link href="sophie/style.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Khand:wght@300;400;500&family=Lato:wght@100;300;400&display=swap" rel="stylesheet"> 
+</head>
+
+<body>
+	<div class="grid-wrapper header-wrapper">
+		<div class="columns headerstyle">
+			<img src="img/logo.png" class="logo">
+			<h1 class="header" id="inline">NEKOMATAN</h1>
+		</div>
+		<div class="columns headerstyle">
+			<ul class="navbar">
+				<li class="navbar-item"><a href="featured.html">Featured</a></li>
+				<li class="navbar-item"><a href="shop.html">Shop</a></li>
+				<li class="navbar-item"><a href="about-hub.html">About</a></li>
+				<li class="navbar-item"><a href="cart.html">Cart</a></li>
+			</ul>
+		</div>
+	</div>
+	
+	<div class="articlecontainer">
+		<h1>Shipping Information</h1>
+		<form action="/action_page.php" method="get" class="body-txt">
+		<div class="row">
+			<div class="col">
+				<label for="fname">First Name</label>
+				<input type="text" id="fname" name="fname">
+			</div>
+			
+			<div class="col">
+				<label for="lname">Last Name</label>
+				<input type="text" id="lname" name="lname">
+			</div>
+		</div>
+		
+		<div class="row">
+			<label for="add1">Address 1</label>
+			<input type="text" id="add1" name="add1">
+		</div>
+		
+		<div class="row">	
+			<label for="add2">Address 2</label>
+			<input type="text" id="add2" name="add2">
+		</div>
+		
+		<div class="row">	
+			<label for="city">City</label>
+			<input type="text" id="city" name="city">
+		</div>
+		
+		<div class="row">
+			<div class="col">
+				<label for="province">Province/State</label>
+				<input type="text" id="province" name="province">
+			</div>
+			
+			<div class="col">
+				<label for="zip">ZIP</label>
+				<input type="text" id="zip" name="zip" placeholder="V6B 3W8">
+			</div>
+		</div>	
+		
+		<div class="row">	
+			<label for="country">Country</label>
+			<select id="country" name="country">
+				<option value="canada">Canada</option>
+				<option value="usa">USA</option>
+			</select>
+		</div>
+		
+		<div class="row">
+			<label for="phone">Phone</label>
+			<input type="tel" id="phone" name="phone" placeholder="6046748110">
+		</div>
+		
+		<div class="row">
+			<input type="submit" value="Submit" class="button">
+		</div>
+		</form>
+	</div>
+</body>
+<footer id="footer">
+    
+	<p>Created by Sophie Chen and Sebastian Peng for IAT 339 Summer 2020</p>
+	<img src="img/logo.png" class="logo">
+	<p>Copyright Nekomatan 2020</p>
+
+	</footer>
+</html>
