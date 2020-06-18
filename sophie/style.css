@@ -5,9 +5,34 @@ slidehow from https://www.w3schools.com/howto/howto_js_slideshow.asp
 	box-sizing: border-box;
 }
 
+body{ margin: 20px; }
+
 img {
 	width: 100%;
 	align: center; 
+}
+
+.logo-name{
+	font-family: "Din Condensed";
+	font-size: 4em;
+	position: relative;
+	top: -10px;
+}
+.header-wrapper > *{
+	flex-grow: 1;
+	justify-content: space-between;
+	align-items: flex-end;
+	background-color: white;
+	
+}
+
+.nav-header{
+	display: flex;
+	max-width: 70em;
+    margin-left: auto;
+    margin-right: auto;
+	align-items: center;
+	margin-bottom: 1em;
 }
 
 section:nth-of-type(even) {
@@ -150,7 +175,7 @@ div.headerstyle {
 }
 
 .logo {
-	width:3em;
+	width:5em;
 }
 
 .textgridcontainer {
