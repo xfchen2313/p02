@@ -1,0 +1,273 @@
+/**
+slidehow from https://www.w3schools.com/howto/howto_js_slideshow.asp
+**/
+* {
+	box-sizing: border-box;
+}
+
+img {
+	width: 100%;
+	align: center; 
+}
+
+section:nth-of-type(even) {
+	margin-top:7em;
+	margin-bottom: 7em;
+}
+
+h1, h2 {
+	font-family: "Khand", sans-serif;
+}
+
+p, label{
+	font-family: "Lato", sans-serif;
+	font-weight: 300;
+}
+
+.slideshow {
+	max-width: 100%;
+	position: relative;
+	margin: auto;
+}
+
+.slide {
+	display: none;
+}
+
+.prev, .next {
+	cursor: pointer;
+	position: absolute;
+	top: 50%;
+	width: auto;
+	margin-top: -22px;
+	padding: 16px;
+	color: white;
+	font-weight: bold;
+	font-size: 18px;
+	transition: 0.6s ease;
+	border-radius: 0 3px 3px 0;
+	user-select: none;
+}
+
+.next {
+	right: 0;
+	border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+	background-color: rgba(0,0,0,0.8);
+}
+
+.dots {
+	text-align: center;
+	margin-top: -2em;
+	position: relative;
+	z-index: 2;
+}
+
+.dot {
+	cursor: pointer;
+	height: 15px;
+	width: 15px;
+	margin: 0 1em;
+	background-color: #bbb;
+	border-radius: 50%;
+	display: inline-block;
+	transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+	background-color: #fff;
+}
+
+.fade {
+	-webkit-animation-name: fade;
+	-webkit-animation-duration: 1.5s;
+	animation-name: fade;
+	animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+	from {opacity: .4}
+	to {opacity: 1}
+}
+
+@keyframes fade {
+	from {opacity: .4}
+	to {opacity: 1}
+}
+
+.grid-wrapper{
+	display: -webkit-flex;
+	display: -ms-flex;
+	display: flex;
+}
+
+.header-wrapper > *{
+	flex-grow: 1;
+	justify-content: space-between;
+	align-items: flex-end;
+	background-color: white;
+}
+
+.columns {
+	padding-bottom: 3em;
+	padding-right: 1em;
+}
+
+.header {
+	font-family: "Impact", "DIN Condensed Bold", Helvetica, sans-serif;
+	font-size: 3em;
+}
+
+div.headerstyle {
+	padding: 0em;
+}
+
+.navbar {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: white;
+}
+
+.navbar-item {
+	float: right;
+}
+
+.navbar-item a {
+	color: black;
+	display: block;
+	font-family: "Khand", sans-serif;
+	text-align: right;
+	padding: 1em;
+	text-decoration: none;
+}
+
+.navbar-item a:hover {
+	color: #ffbe00;
+}
+
+.logo {
+	width:3em;
+}
+
+.textgridcontainer {
+	display: -webkit-flex;
+	display: -ms-flex;
+	display: flex;
+	flex-flow: row wrap;
+}
+
+.contactgridcontainer {
+	display: -webkit-flex;
+	display: -ms-flex;
+	display: flex;
+	flex-flow: row wrap-reverse;
+}
+
+.aboutimgbox {
+	max-width: 33%;
+	flex-grow: 1;
+}
+
+.abouttextbox {
+	max-width: 63%;
+	flex-grow: 2;
+	margin-left: 1em;
+
+}
+
+.col {
+	width: 50%;
+	float: left;
+}
+
+.col:nth-of-type(odd){
+	padding-right: 1em;
+}
+
+@media all and (max-width: 30em){
+	.textgridcontainer {
+		flex-flow: column wrap;
+	}
+	.aboutimgbox{
+		max-width: 100%;
+		margin: auto;
+	}
+	.abouttextbox {
+		max-width: 100%;
+		flex-grow: 2;
+		margin: auto;
+	}
+	.col{
+		width: 100%;
+	}
+	.col:nth-of-type(odd){
+		padding-right: 0em;
+	}
+}
+
+.articlecontainer {
+	width: 75%;
+	margin: auto;
+}
+
+/**
+https://www.w3schools.com/css/css_form.asp
+**/
+
+input {
+	width: 100%;
+	margin-bottom: 1em;
+}
+
+select {
+	width: 100%;
+	margin-bottom: 1em;
+}
+
+#comment {
+	height: 10em;
+	resize: none;
+	width: 100%;
+	margin-bottom: 1em;
+}
+
+#inline {
+	display: inline;
+}
+
+#footer {
+	background-color: #ededed ;
+	width: 100%;
+	text-align: center;
+	align-content: center;
+	align-items: center;
+	padding-top: 50px;
+	padding-bottom: 80px;
+}
+
+
+/**
+https://www.w3schools.com/css/tryit.asp?filename=trycss_form_button
+**/
+
+.button {
+	font-family: "Khand", sans-serif;
+	background-color: white;
+	border: solid 2px;
+	padding: 1em;
+	display: inline-block;
+	text-decoration: none;
+}
+
+.button:hover {
+	background-color: black;
+	color: white;
+}
+
+.button:visited {
+	color: #ffbe00;
+}
