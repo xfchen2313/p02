@@ -5,12 +5,13 @@ slidehow from https://www.w3schools.com/howto/howto_js_slideshow.asp
   box-sizing: border-box; 
 }
 
-body{ margin: 20px; }
+body{ margin: 0px; }
 
 img {
 	width: 100%;
 	align: center; 
 }
+
 
 .logo-name{
 	font-family: "Din Condensed";
@@ -18,7 +19,7 @@ img {
 	position: relative;
 	top: -10px;
 }
-.header-wrapper > *{
+.header-wrapper > {
 	flex-grow: 1;
 	justify-content: space-between;
 	align-items: flex-end;
@@ -33,6 +34,7 @@ img {
     margin-right: auto;
 	align-items: center;
 	margin-bottom: 1em;
+	margin-top: 2em;
 }
 
 .navbar-item {
@@ -58,6 +60,16 @@ img {
 section:nth-of-type(even) {
 	margin-top:7em;
 	margin-bottom: 7em;
+	
+}
+
+.section{
+	
+
+   max-width: 70rem;
+   display: block;
+   margin: auto;
+   margin-bottom: 10rem;
 }
 
 h1, h2 {
@@ -191,6 +203,10 @@ div.headerstyle {
 	display: -ms-flex;
 	display: flex;
 	flex-flow: row wrap-reverse;
+	max-width: 70rem;
+  
+   margin: auto;
+   margin-bottom: 10rem;
 }
 
 .aboutimgbox {
