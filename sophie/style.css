@@ -270,8 +270,10 @@ div.headerstyle {
 }
 
 .articlecontainer {
-	width: 75%;
-	margin: auto;
+	  max-width: 70rem;
+   display: block;
+   margin: auto;
+   margin-bottom: 10rem;
 }
 
 /**
@@ -319,8 +321,10 @@ https://www.w3schools.com/css/tryit.asp?filename=trycss_form_button
 	background-color: white;
 	border: solid 2px;
 	padding: 1em;
+	margin:  2em 0;
 	display: inline-block;
 	text-decoration: none;
+	width: 30%;
 }
 
 .button:hover {
