@@ -31,7 +31,7 @@
 	max-width: 70em;
     margin-left: auto;
     margin-right: auto;
-	align-items: center;
+	align-items: flex-end;
 	margin-bottom: 1em;
 	margin-top: 2em;
 }
@@ -136,6 +136,8 @@ section {
    display: block;
    margin: auto;
    margin-bottom: 10rem;
+   padding-left: 1em;
+   padding-right: 1em;
 }
 
 

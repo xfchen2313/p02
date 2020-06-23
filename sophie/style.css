@@ -32,7 +32,7 @@ img {
 	max-width: 70em;
     margin-left: auto;
     margin-right: auto;
-	align-items: center;
+	align-items: flex-end;
 	margin-bottom: 1em;
 	margin-top: 2em;
 }
@@ -63,13 +63,13 @@ section:nth-of-type(even) {
 	
 }
 
-.section{
-	
-
+section{
    max-width: 70rem;
    display: block;
    margin: auto;
    margin-bottom: 10rem;
+   padding-left: 1em;
+   padding-right: 1em;
 }
 
 h1, h2 {
@@ -82,20 +82,26 @@ p, label{
 }
 
 .slideshow {
-	max-width: 100%;
-	position: relative;
-	margin: auto;
+	
+	   
+   display: block;
+   margin: auto;
+   max-width: 70rem;
+   margin-bottom: 10rem;
 }
 
 .slide {
 	display: none;
 }
 
+
+
 .prev, .next {
 	cursor: pointer;
 	position: absolute;
 	top: 50%;
 	width: auto;
+	max-width: 70rem;
 	margin-top: -22px;
 	padding: 16px;
 	color: white;
@@ -108,7 +114,9 @@ p, label{
 
 .next {
 	right: 0;
+	
 	border-radius: 3px 0 0 3px;
+
 }
 
 .prev:hover, .next:hover {
@@ -119,6 +127,7 @@ p, label{
 	text-align: center;
 	margin-top: -2em;
 	position: relative;
+	top: -10rem;
 	z-index: 2;
 }
 
@@ -219,6 +228,15 @@ div.headerstyle {
 	flex-grow: 2;
 	margin-left: 1em;
 
+}
+
+.about-content{
+	
+
+   max-width: 70rem;
+   display: block;
+   margin: auto;
+   margin-bottom: 10rem;
 }
 
 .col {
