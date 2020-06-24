@@ -130,7 +130,7 @@ code {
 
 section {
 	
-	background-color: #ededed;
+	background-color: #ffffff;
 	
 	 max-width: 70rem;
    display: block;
@@ -565,4 +565,8 @@ a.hub-link:active{
 
 .hub-img:hover {
 	opacity: 0.6;
+}
+
+.confirm{
+	text-align: center;
 }
