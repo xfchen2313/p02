@@ -377,6 +377,17 @@ https://www.w3schools.com/css/tryit.asp?filename=trycss_form_button
 	font-family: Din Condensed;
 }
 
+.home-list{
+	background-color: #ffffff;
+	
+   max-width: 70rem;
+   display: block;
+   margin: auto;
+   margin-bottom: 10rem;
+   padding-left: 1em;
+   padding-right: 1em;
+}
+
 .prod-name{
 	font-size: 1.5rem;
 	font-family: Din Condensed;
