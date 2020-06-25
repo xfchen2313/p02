@@ -227,13 +227,26 @@ p{
 	font-weight: 300;
 }
 
+#pay{
+	
+	width: 10em;
+	height: 3em;
+	margin: auto;
+	margin-top: 5em;
+	display: block;
+	align-self: center;
+
+}
+
 .button {
 	font-family: "Khand", sans-serif;
 	background-color: white;
 	border: solid 2px;
 	padding: 1em;
+	margin:  2em 0;
 	display: inline-block;
 	text-decoration: none;
+	width: 30%;
 }
 
 .button:hover {
@@ -244,6 +257,7 @@ p{
 .button:visited {
 	color: #ffbe00;
 }
+
 
 
 
@@ -439,6 +453,11 @@ fieldset, label { margin: 0; padding: 0; }
 	margin-top: 1em;
 }
 
+.total-text{
+	display: block;
+	float: right;
+}
+
 .cart-header{
 	margin-top: 0px;
 	position: relative;
@@ -463,6 +482,18 @@ fieldset, label { margin: 0; padding: 0; }
 	padding-right: 10px;
 }
 
+#coupon-cart{
+	width: 300px;
+	height: 1.5rem;
+	padding-right: 10px;
+}
+
+.coupon-form{
+	display: block;
+	float: right;
+	align-content: right;
+}
+
 .inline-cart {
   display: flex;
   flex-wrap: row wrap;
@@ -480,16 +511,6 @@ fieldset, label { margin: 0; padding: 0; }
 	float: right;
 }
 
-#pay{
-	
-	width: 10em;
-	height: 3em;
-	margin: auto;
-	margin-top: 5em;
-	display: block;
-	align-self: center;
-
-}
 
 
  #cart-list{

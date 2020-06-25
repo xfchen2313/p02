@@ -7,6 +7,7 @@
 	<link href="https://fonts.googleapis.com/css2?family=Khand:wght@300;400;500&family=Lato:wght@100;300;400&display=swap" rel="stylesheet">  
 </head>
  
+ 
 <nav class="grid-wrapper header-wrapper">
 		<div class="nav-header">
 			<div class="columns headerstyle">
@@ -97,16 +98,48 @@
 		</div>
 
 		<div class="container grid-wrapper">
-			<div class="colums-content cart-text ">
-			<h3 id="total"> Total $80</h3>
-			</div></div>
+			<div class="colums-content total-text ">
+			<h3 id="total"> Tax $9.60</h3><br>
+			
+			</div>
+			
+		</div>
+
+		<div class="container grid-wrapper">
+			<div class="colums-content total-text ">
+			
+			<form class="coupon-form">
+				<p id="cart-d">Enter Coupon Code </p>
+				<input type="text" name="coupon" id="coupon-cart">
+						
+			</form>
+
+			</div>
+			
+		</div>
+
+		<div class="container grid-wrapper">
+			<div class="colums-content total-text ">
+			
+			<h3 id="total"> Discount -$9.96</h3><br>
+			</div>
+			
+		</div>
+
+		<div class="container grid-wrapper">
+			<div class="colums-content total-text ">
+			
+			<h3 id="total"> Total $89.64</h3><br>
+			</div>
+			
+		</div>
 		
 			
 		</form>
-		<div class="pay-button">
-		<button onclick="window.location.href='checkout.html';" id="pay">Check Out</button>
+		
+		<button class="button" onclick="window.location.href='checkout.html';" id="pay">Check Out</button>
 							
-		</div>
+		
 		
 		
 	</section>
