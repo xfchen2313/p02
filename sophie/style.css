@@ -63,15 +63,6 @@ section:nth-of-type(even) {
 	
 }
 
-section{
-	 max-width: 70rem;
-   display: block;
-   margin: auto;
-   margin-bottom: 1rem;
-   padding-left: 1em;
-   padding-right: 1em;
-  
-}
 
 h1, h2 {
 	font-family: "Khand", sans-serif;
@@ -271,7 +262,6 @@ div.headerstyle {
 }
 
 .articlecontainer {
-	width: 75%;
    	max-width: 70rem;
    	display: block;
    	margin: auto;
