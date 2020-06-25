@@ -63,10 +63,6 @@ section:nth-of-type(even) {
 }
 
 section{
-   max-width: 70rem;
-   display: block;
-   margin: auto;
-   margin-bottom: 10rem;
    padding-left: 1em;
    padding-right: 1em;
 }
@@ -269,10 +265,10 @@ div.headerstyle {
 }
 
 .articlecontainer {
-	  max-width: 70rem;
-   display: block;
-   margin: auto;
-   margin-bottom: 10rem;
+	width: 75%;
+   	max-width: 70rem;
+   	display: block;
+   	margin: auto;
 }
 
 /**
