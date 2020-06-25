@@ -219,10 +219,10 @@ div.headerstyle {
 }
 
 .abouttextbox {
-	max-width: 63%;
+	max-width: 60%;
 	flex-grow: 2;
 	margin-left: 1em;
-
+	margin-right: 1em;
 }
 
 .about-content{
