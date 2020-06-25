@@ -210,7 +210,7 @@ div.headerstyle {
 	display: -webkit-flex;
 	display: -ms-flex;
 	display: flex;
-	flex-flow: row wrap-reverse;
+	flex-flow: row wrap;
 	max-width: 70rem;
   
    margin: auto;
