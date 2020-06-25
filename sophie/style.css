@@ -63,10 +63,6 @@ section:nth-of-type(even) {
 }
 
 section{
-   max-width: 70rem;
-   display: block;
-   margin: auto;
-   margin-bottom: 10rem;
    padding-left: 1em;
    padding-right: 1em;
 }
@@ -210,7 +206,7 @@ div.headerstyle {
 	display: -webkit-flex;
 	display: -ms-flex;
 	display: flex;
-	flex-flow: row wrap-reverse;
+	flex-flow: row wrap;
 	max-width: 70rem;
   
    margin: auto;
@@ -223,10 +219,10 @@ div.headerstyle {
 }
 
 .abouttextbox {
-	max-width: 63%;
+	max-width: 60%;
 	flex-grow: 2;
 	margin-left: 1em;
-
+	margin-right: 1em;
 }
 
 .about-content{
@@ -269,10 +265,10 @@ div.headerstyle {
 }
 
 .articlecontainer {
-	  max-width: 70rem;
-   display: block;
-   margin: auto;
-   margin-bottom: 10rem;
+	width: 75%;
+   	max-width: 70rem;
+   	display: block;
+   	margin: auto;
 }
 
 /**
