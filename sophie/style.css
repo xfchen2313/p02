@@ -12,7 +12,6 @@ img {
 	align: center; 
 }
 
-
 .logo-name{
 	font-family: "Din Condensed";
 	font-size: 4em;
@@ -363,8 +362,7 @@ https://www.w3schools.com/css/tryit.asp?filename=trycss_form_button
 
 .box-item:hover {
     
-    height:35% !important;
-    width:35% !important;
+    
 
     opacity: 0.6;
 }
@@ -392,5 +390,7 @@ https://www.w3schools.com/css/tryit.asp?filename=trycss_form_button
 	font-size: 1.5rem;
 	font-family: Din Condensed;
 }
+
+
 
 

@@ -8,6 +8,7 @@
 	display: flex;
 }
 
+
 .swatch-wrapper > *{
 	flex-grow: 1;
 	flex-basis: 33%;
