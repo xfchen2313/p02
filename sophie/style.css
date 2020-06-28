@@ -5,6 +5,7 @@ slidehow from https://www.w3schools.com/howto/howto_js_slideshow.asp
   box-sizing: border-box; 
 }
 
+
 body{ margin: 0px; }
 
 img {
@@ -18,6 +19,7 @@ img {
 	position: relative;
 	top: -10px;
 }
+
 .header-wrapper > {
 	flex-grow: 1;
 	justify-content: space-between;
@@ -56,10 +58,22 @@ img {
 .logo {
 	width:5em;
 }
-section:nth-of-type(even) {
+
+/* section:nth-of-type(even) {
 	margin-top:7em;
 	margin-bottom: 7em;
+} */
+
+section {
 	
+	background-color: #ffffff;
+	
+   max-width: 70rem;
+   display: block;
+   margin: auto;
+   margin-bottom: 10rem;
+   padding-left: 1em;
+   padding-right: 1em;
 }
 
 
@@ -73,8 +87,7 @@ p, label{
 }
 
 .slideshow {
-	
-	   
+   
    display: block;
    margin: auto;
    max-width: 70rem;
@@ -171,7 +184,6 @@ p, label{
 	padding-bottom: 3em;
 	padding-right: 1em;
 }
-
 .header {
 	font-family: "Impact", "DIN Condensed Bold", Helvetica, sans-serif;
 	font-size: 3em;
@@ -326,7 +338,7 @@ https://www.w3schools.com/css/tryit.asp?filename=trycss_form_button
 	color: #ffbe00;
 }
 
-#flexbox{
+#flexbox-home{
 	position: relative;
 	top: -12rem;
 }
@@ -352,7 +364,7 @@ https://www.w3schools.com/css/tryit.asp?filename=trycss_form_button
 
 
 
-.box-item{
+.box-item-home{
     height: 25%;
     width: 25%;
     padding: 1em 1em;
@@ -360,7 +372,7 @@ https://www.w3schools.com/css/tryit.asp?filename=trycss_form_button
     transition: .5s ease;
 }
 
-.box-item:hover {
+.box-item-home:hover {
     
     
 
