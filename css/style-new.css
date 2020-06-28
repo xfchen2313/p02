@@ -35,6 +35,8 @@ input {
 	margin-bottom: 1em;
 }
 
+
+
 h1 {
 	font-family: "Khand", sans-serif;
     display: block;
@@ -66,8 +68,10 @@ select {
 }
 
 #inline {   /*Header bar title  */
-}
+
 	 display: inline;
+
+}
 
 #footer {
 	background-color: #ededed ;
@@ -280,7 +284,7 @@ a.cat:active{
 	background-color: white;
 	border: solid 2px;
 	padding: 1em;
-	padding-bottom: 2em;
+	padding-bottom: 1em;
 	margin:  2em 0;
 	display: inline-block;
 	text-decoration: none;
@@ -592,4 +596,14 @@ a.hub-link:active{
    	max-width: 70rem;
    	display: block;
    	margin: auto;
+}
+
+a {
+	color: #d37f00;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #ffbe00;
+	text-decoration: underline;
 }
