@@ -256,6 +256,9 @@ a.cat:active{
 	.grid-wrapper{
 		flex-flow: column wrap;
 	}
+	.articlecontainer{
+		padding: 1em;	
+	}
 }
 
 .ul-list li::before { /* probably for reviews */
