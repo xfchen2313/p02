@@ -237,11 +237,11 @@ a.cat:active{
 	.textgridcontainer {
 		flex-flow: column wrap;
 	}
-	.aboutimgbox{
+	.onethirdbox{
 		max-width: 100%;
 		margin: auto;
 	}
-	.abouttextbox {
+	.twothirdbox {
 		max-width: 100%;
 		flex-grow: 2;
 		margin: auto;
@@ -565,12 +565,12 @@ a.hub-link:active{
    margin-bottom: 10rem;
 }
 
-.aboutimgbox {
+.onethirdbox {
 	max-width: 33%;
 	flex-grow: 1;
 }
 
-.abouttextbox {
+.twothirdbox {
 	max-width: 60%;
 	flex-grow: 2;
 	margin-left: 1em;
