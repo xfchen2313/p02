@@ -137,6 +137,10 @@ select {
 	opacity: 80%
 }
 
+.featureddate {
+	color: #ffbe00;
+}
+
 .grid-wrapper{
 	display: -webkit-flex;
 	display: -ms-flex;
@@ -258,6 +262,9 @@ a.cat:active{
 	}
 	.articlecontainer{
 		padding: 1em;	
+	}
+	.featurreddate{
+		font-size: 2em;	
 	}
 }
 
