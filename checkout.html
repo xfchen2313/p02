@@ -8,7 +8,11 @@
 	<link href="https://fonts.googleapis.com/css2?family=Khand:wght@300;400;500&family=Lato:wght@100;300;400&display=swap" rel="stylesheet"> 
 </head>
 
+
 <body>
+
+	
+		
 	<nav class="grid-wrapper header-wrapper">
 		<div class="nav-header">
 			<div class="columns headerstyle">
@@ -28,84 +32,91 @@
 		</div>
 	</nav>
 	
+	<section id="checkout-form">
+
 	<div class="articlecontainer ship">
 		<h1>Shipping and Payment Information</h1>
 		<form action="/action_page.php" method="get" class="body-txt">
-		<div class="row">
-			<div class="col">
-				<label for="fname">First Name</label>
-				<input type="text" id="fname" name="fname">
-			</div>
-			
-			<div class="col">
-				<label for="lname">Last Name</label>
-				<input type="text" id="lname" name="lname">
-			</div>
-		</div>
-		
-		<div class="row">
-			<label for="add1">Address 1</label>
-			<input type="text" id="add1" name="add1">
-		</div>
-		
-		<div class="row">	
-			<label for="add2">Address 2</label>
-			<input type="text" id="add2" name="add2">
-		</div>
-		
-		<div class="row">	
-			<label for="city">City</label>
-			<input type="text" id="city" name="city">
-		</div>
-		
-		<div class="row">
-			<div class="col">
-				<label for="province">Province/State</label>
-				<input type="text" id="province" name="province">
-			</div>
-			
-			<div class="col">
-				<label for="zip">ZIP</label>
-				<input type="text" id="zip" name="zip" placeholder="V6B 3W8">
-			</div>
-		</div>	
-		
-		<div class="row">	
-			<label for="country">Country</label>
-			<select id="country" name="country">
-				<option value="canada">Canada</option>
-				<option value="usa">USA</option>
-			</select>
-		</div>
-		
-		<div class="row">
-			<label for="phone">Phone</label>
-			<input type="tel" id="phone" name="phone" placeholder="6046748110">
+
+		<div class="col">
+					<div class="row">
+						<div class="col">
+							<label for="fname">First Name</label>
+							<input type="text" id="fname" name="fname">
+						</div>
+						
+						<div class="col">
+							<label for="lname">Last Name</label>
+							<input type="text" id="lname" name="lname">
+						</div>
+					</div>
+					
+					<div class="row">
+						<label for="add1">Address 1</label>
+						<input type="text" id="add1" name="add1">
+					</div>
+					
+					<div class="row">	
+						<label for="add2">Address 2</label>
+						<input type="text" id="add2" name="add2">
+					</div>
+					
+					<div class="row">	
+						<label for="city">City</label>
+						<input type="text" id="city" name="city">
+					</div>
+					
+					<div class="row">
+						<div class="col">
+							<label for="province">Province/State</label>
+							<input type="text" id="province" name="province">
+						</div>
+						
+						<div class="col">
+							<label for="zip">ZIP</label>
+							<input type="text" id="zip" name="zip" placeholder="V6B 3W8">
+						</div>
+					</div>	
+					
+					<div class="row">	
+						<label for="country">Country</label>
+						<select id="country" name="country">
+							<option value="canada">Canada</option>
+							<option value="usa">USA</option>
+						</select>
+					</div>
+					
+					<div class="row">
+						<label for="phone">Phone</label>
+						<input type="tel" id="phone" name="phone" placeholder="6046748110">
+					</div>
+
 		</div>
 
-		<div class="row">
+		<div class="col">
+			<div class="row">
 
-			<div class="col">
-				<label for="ccname">Name on Card</label>
-				<input type="text" id="ccname" name="ccname">
-			</div>
-			<div class="col">
-				<label for="ccnumber">Credit Card Number</label>
-				<input type="text" id="ccnumber" name="CCnumber">
-			</div>
-			
-			<div class="col">
-				<label for="date">Expiration Date</label>
-				<input type="text" id="date" name="date" >
-			</div>
+				<div class="col">
+					<label for="ccname">Name on Card</label>
+					<input type="text" id="ccname" name="ccname">
+				</div>
+				<div class="col">
+					<label for="ccnumber">Credit Card Number</label>
+					<input type="text" id="ccnumber" name="CCnumber">
+				</div>
+				
+				<div class="col">
+					<label for="date">Expiration Date</label>
+					<input type="text" id="date" name="date" >
+				</div>
 
-			<div class="col">
-				<label for="cvv">CVV</label>
-				<input type="text" id="cvv" name="security" >
-			</div>
-		</div>	
-	
+				<div class="col">
+					<label for="cvv">CVV</label>
+					<input type="text" id="cvv" name="security" >
+				</div>
+			</div>	
 		
+		</div>
 		</form>
 
 	
@@ -116,11 +127,16 @@
 		<div class="row">
 
 			
-			<button class="button" onclick="window.location.href='confirmation.html';" id="confirm">Confirm and Pay</button>
+			<button class="button confirm-button" onclick="window.location.href='confirmation.html';" id="confirm">Confirm and Pay</button>
 			
 		</div>
 	</div>
+
+	</section>
 </body>
+
+
+
 <footer id="footer">
     
 	<p>Created by Sophie Chen and Sebastian Peng for IAT 339 Summer 2020</p>
