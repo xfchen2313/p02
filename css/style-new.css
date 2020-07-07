@@ -30,7 +30,6 @@ img {
 section {
 	
 	background-color: #ffffff;
-	
    max-width: 70rem;
    display: block;
    margin: auto;
@@ -176,6 +175,27 @@ select {
 	object-fit: cover;
 	opacity: 80%
 }
+
+#main-color { /*styleguide*/
+	background-color: white;
+	text-align: center;
+	border: solid;
+	padding: 1em;
+}
+
+#other-main-color {
+	background-color: black;
+	color: white;
+	text-align: center;
+	padding: 1em;
+}
+
+#secondary-color {
+	background-color: #ffbe00;
+	text-align: center;
+	padding: 1em;
+}
+
 
 .featureddate {
 	color: #d37f00;
@@ -430,7 +450,7 @@ fieldset, label { margin: 0; padding: 0; }
 	
 }
 
-.box{ /* grid tructure boxes*/
+.box{ /* grid structure boxes*/
 	display: -webkit-flex;
 	display:  -ms-flex;
 	display:  flex;

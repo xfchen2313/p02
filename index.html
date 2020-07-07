@@ -7,7 +7,6 @@
 	<link href="https://fonts.googleapis.com/css2?family=Khand:wght@300;400;500&family=Lato:wght@100;300;400&display=swap" rel="stylesheet"> 
 </head>
 
-
 <body>
 	<nav class="grid-wrapper header-wrapper">
 		<div class="nav-header">
@@ -30,13 +29,15 @@
 		
 	</nav>
 	
-	<h1>Style Guide & Pattern Library</h1><br>
+	
+	<section>
+
+		<h1>Style Guide & Pattern Library</h1><br>
 
 	<h2>Git Link</h2>
 	<a href="https://github.com/xfchen2313/p02">https://github.com/xfchen2313/p02</a>
 
 	<h2>Basic Interactive Elements</h2>
-	<section>
 		<h3>In-text Link</h3>
 		<p><strong>Name: </strong></p>
 		<p><strong>Example: </strong></p>
@@ -68,7 +69,7 @@
 		<h3>Call to Action Button</h3>
 		<p><strong>Name: </strong></p>
 		<p><strong>Example: </strong></p>
-		<a href="citations.html" class="button">Click me for citations!</a>
+		<input type="submit" value="Submit" class="button">
 		<p><strong>Code: </strong></p> 
 		<div class="container grid-wrapper">
 			<div class="columns">
@@ -107,8 +108,8 @@
 		<form action="/action_page.php" method="get" class="form">
 			<label for="txt">Try typing here:</label>
 			<input type="text" id="txt" name="txt">
-			<button type="submit" value="Submit">Submit</button>
-			<button type="reset" value="Reset">Reset</button>
+			<button  class="button"  type="submit" value="Submit">Submit</button>
+			<button class="button" type="reset" value="Reset">Reset</button>
 		</form>
 		<p><strong>Code: </strong></p> 
 		<div class="container grid-wrapper">
@@ -224,8 +225,9 @@
 	    </div>		
 	</section>
 	
-	<h2>Text Styling</h2>
+	
 	<section>
+		<h2>Text Styling</h2>
 		<h3>Headings</h3>
 		<p><strong>Name: </strong>Heading Styles</p>
 		<p><strong>Example: </strong></p>
@@ -361,8 +363,9 @@
 	    </div>		
 	</section>
 	
-	<h2>Modular Pattern Elements</h2>
+	
 	<section>
+		<h2>Modular Pattern Elements</h2>
 		<h3>Main Navigation Module</h3>
 		<p><strong>Name: </strong>Main Navigation</p>
 		<p><strong>Example: </strong></p>
@@ -461,7 +464,7 @@
 			</div>
 	    </div>		
 		
-		<h3>Product Detailed Listing</h3>
+		<h3 id="detail">Product Detailed Listing</h3>
 		<p><strong>Name: </strong>Product Listing</p>
 		<p><strong>Example: </strong></p>
 		<div class="product-list">
@@ -479,19 +482,49 @@
 				</ul>
 			</div>
 		</div>
-			   <div class="container grid-wrapper">
+			   <div class="product-list items">
+		<div class="container grid-wrapper ">
 			   		<div class="columns content">
-						<img src="img/product.jpg" class="product">
+						   <h2 class="product-header">[Foil] Torii Charms</h2>
+						<img src="img/img1.jpg" class="product">
 			  		 </div>
 
-					<div class="columns content">
+					<div class="columns content item-text">
 						<div class="product-text">
-							<h2 class="product-header">Product Name</h2><h3 class="product-price">$20</h3>
+							<h3 class="product-price">$15</h3><p>Only 10 Left!</p>
 						</div>
-						<p class="product-body-txt">Cat ipsum dolor sit amet, kitty singapura for puma. Tabby mouser abyssinian , tomcat so mouser lynx savannah. Balinese american bobtail. Russian blue. Singapura kitten bengal turkish angora so balinese and siamese, so ocelot. Scottish fold puma or thai, yet russian blue savannah. Balinese kitty. Puma. Siamese ocelot. Bengal panther for leopard so siberian. Tabby norwegian forest but cougar norwegian forest and leopard leopard or siberian. Jaguar tom donskoy or malkin panther so havana brown cougar. Burmese. Norwegian forest maine coon but puma bombay. </p>
+						<p class="product-body-txt">Well, it was a temari originally but then I drew the torii and everyone started calling it that so torii it is. The foil makes it nice and shiny.</p>
+						<br>
+
+						<div id="specs-list">
+						<h3 >Specs</h3>
+						<ul class="body-txt ul-list">
+							<li>Approx. 6cm/2.5in.</li>
+							<li>Gold/Silver Foil</li>
+							<li>Double sided clear acrylic with epoxy</li>
+							<li>Tassel tail</li>
+							<li>Bronze bell attachment</li>
+						</ul>
+						</div>
+						<br>
+						
+					
+							<div class="item-type-choice">
+							<label for="type">Choose a type:</label>
+
+								<select name="type" id="item-type">
+										<option value="sakura">Sakura</option>
+										<option value="hanabi">Hanabi</option>
+								
+								</select>
+
+							</div>
+							<button class="button pay-button" onclick="window.location.href='#detail';" id="pay">Buy</button>
+							
 					</div>
 
-			   </div>
+		</div>
+	</div>
 		</div>
 		<p><strong>Code: </strong></p> 
 		<div class="container grid-wrapper">
@@ -667,53 +700,74 @@
 		<p><strong>Example: </strong></p>	
 
 
-		<div class="flex-row1, box">	
+		
+	<h1>All Products</h1>
+		
+	
+
+		<div class="flex-row, box">	
 
 			<div class="flex-main-item box-item">
-				<img src="img/product.jpg" >
+				<a href="#flexbox">
+				<img src="img/img1.jpg" ></a>
 				<div class="overlay";>
-				<div class="label"> Product  Name </div>
-				</div>
-			</div>
-			<div class="flex-main-item box-item">
-				<img src="img/product.jpg" >
-				<div class="overlay";>
-				<div class="label"> Product  Name </div>
-				</div>
-			</div>
-			<div class="flex-main-item box-item">
-				<img src="img/product.jpg" >
-				<div class="overlay";>
-				<div class="label"> Product  Name </div>
+				<div class="label"> <span class="prod-name" >  [Foil] Torii Charms</span> <span class="price">$15 </span><br>
+				<p>The gates of destiny await you...</p> </div>
 				</div>
 			</div>
 			
+			<div class="flex-main-item box-item">
+				<a href="#flexbox">
+				<img src="img/img2.jpg" ></a>
+				<div class="overlay";>
+				<div class="label"><span class="prod-name" >  [Foil] Clock Charms </span> <span class="price">$15 </span><br>
+				<p>Tick tok, tick tock. </p> </div>
+				</div>
+			</div>
+			<div class="flex-main-item box-item">
+				<a href="#flexbox">
+				<img src="img/img3.jpg" ></a>
+				<div class="overlay";>
+				<div class="label"> <span class="prod-name" >  [Utapri] Gashapon Chamrs </span> <span class="price">$10 </span><br>
+				<p>Who doesn't love gashapon and cat ears?</p> </div>
+				</div>
+			</div>
+			 
 			
 		</div>
 		
-		<div class="flex-row2, box">
+
+		<div class="flex-row, box">
 
 			<div class="flex-main-item box-item">
-				
-				<img src="img/product.jpg" >
+				<a href="#flexbox">
+				<img src="img/img10.jpg" ></a>
 				<div class="overlay";>
-				<div class="label"> Product  Name </div>
+				<div class="label"> <span class="prod-name" >  [Original] OC Buttons </span> <span class="price">$2.50 </span><br>
+				<p>Part of the Original Character (OC) series.</p> </div>
 				</div>
 			</div>
 			<div class="flex-main-item box-item">
-				<img src="img/product.jpg" >
+				<a href="#flexbox">
+				<img src="img/img11.jpg" ></a>
 				<div class="overlay";>
-				<div class="label"> Product  Name </div>
+				<div class="label"> <span class="prod-name" >  [Pokemon] WOOPERDUPER Button </span> <span class="price">$2.50 </span><br>
+				<p>You might want to sit down for this one it's a long story.</p></div>
 				</div>
 			</div>
 			<div class="flex-main-item box-item">
-				<img src="img/product.jpg" >
+				<a href="#flexbox">
+				<img src="img/img12.jpg" ></a>
 				<div class="overlay";>
-				<div class="label""> Product  Name </div>
+				<div class="label""> <span class="prod-name" >  [Pokemon] Detective Pikachu? Button </span> <span class="price">$3 </span><br>
+				<p>Does this Pikachu look a little... off to you?</p> </div>
 				</div>
 			</div>
 			
 		</div>
+
+		
+		
 
 	<p><strong>Code: </strong></p> 
 		<div class="container grid-wrapper">
@@ -819,6 +873,258 @@
 
 
 	</section>
+
+	<section id="category">
+	<h2 > Category Nav </h2>
+	<div class="cat-list boxn">
+ 	 
+	 <a class="cat boxn-item cat-active" href="#category">All Items</a>
+	 <a class="cat boxn-item" href="#category">Charms</a>
+ 	<a class="cat boxn-item" href="#category">Stickers</a>
+	 <a class="cat boxn-item" href="#category">Buttons</a>
+	</div>
+	</section>
+
+
+	<section id="about-hub">
+		<h2> About Hub</h2>
+		<div class="container grid-wrapper about-box">
+			<div class="colums-content  about">
+			<div class="holder">
+				<a href="#about-hub" class="hub-link">
+				<img  src="img/aboutimg.png" id="about1" class="hub-img">
+				<div class="centered"><h1 class="logo-name">My Story</h1></div>
+				</a>
+			</div>
+			</div>
+
+			<div class="colums-content  about">
+			<div class="holder">
+				<a href="#about-hub" class="hub-link">
+				<img src="img/pwimg5.jpg" id="about2" class="hub-img">
+				<div class="centered"><h1 class="logo-name"> Personal Works</h1></div>
+				</a>
+			</div>
+			<div class="holder">
+			<a href="#about-hub" class="hub-link">
+			<img src="img/contactimg.PNG" id="about3" class="hub-img">
+			<div class="centered"><h1 class="logo-name">Contact</h1></div>
+			</a>
+			</div>
+			</div>
+
+		</div>
+
+	</section>
+
+
+<section id="cart-list">
+		<form>
+			<h1> Cart </h1>
+		<div class="container grid-wrapper">
+			
+				<div class="colums-content inline-cart">
+				
+					 <img src="img/img5.jpg" class="product-cart">
+					 <h2 class="cart-header">[OC] Valerian Charm</h2>
+				</div>
+				<div class="colums-content cart-text">
+					
+					<div class="inline-cart">
+						 <p id="cart-d">The second charm in the Original Character (OC) series! </p>
+						 <label for="amt"class="cart-price"> <p>$10 x </p></label>
+						 
+						<input type="number" name="amt" value="1" id="amt-cart">
+						
+				</div>
+			</div>
+		</div>
+		<div class="container grid-wrapper">
+				<div class="colums-content inline-cart">
+				
+					 <img src="img/img3.jpg" class="product-cart">
+					 <h2 class="cart-header">[Utapri] Gashapon Charms </h2>
+					 
+				</div>
+				<div class="colums-content cart-text">
+					
+					<div class="inline-cart">
+						 <p id="cart-d">Who doesn't love gashapon and cat ears? </p>
+						 <label for="amt"class="cart-price"> <p>$10 x </p></label>
+						<input type="number" name="amt" value="1" id="amt-cart">
+						
+				</div>
+			</div>
+		</div>
+		<div class="container grid-wrapper">
+				<div class="colums-content inline-cart">
+				
+					 <img src="img/img11.jpg" class="product-cart">
+					 <h2 class="cart-header">[Pokemon] WOOPERDUPER Button</h2>
+					 
+				</div>
+				<div class="colums-content cart-text">
+					
+					<div class="inline-cart">
+						 <p id="cart-d">You might want to sit down for this one it's a long story. </p>
+						 <label for="amt"class="cart-price"> <p>$2.50 x </p></label>
+						<input type="number" name="amt" value="1" id="amt-cart">
+						
+				</div>
+				</div>
+		</div>
+		<div class="container grid-wrapper">
+				<div class="colums-content inline-cart">
+				
+					 <img src="img/img4.jpg" class="product-cart">
+					 <h2 class="cart-header">[GBF] Stained Glass Charms</h2>
+					 
+				</div>
+				<div class="colums-content cart-text">
+					
+					<div class="inline-cart">
+						 <p id="cart-d">Gotta love those details but hey, they look pretty in the sun. </p>
+						 <label for="amt"class="cart-price"> <p>$10 x </p></label>
+						<input type="number" name="amt" value="1" id="amt-cart">
+						
+				</div>
+			</div>
+		</div>
+
+		<div class="container grid-wrapper">
+			<div class="colums-content total-text  ">
+			
+			<form >
+				
+				<input class="coupon-form" type="text" name="coupon" id="coupon-cart">
+				<label for="coupon"class="coupon-form coupon-label"> Enter Coupon Code </label>		
+			</form>
+
+			</div>
+			
+		</div>
+
+
+		<div class="container grid-wrapper">
+			<div class="colums-content total-text ">
+			<h3 id="total"> Tax $3.84</h3><br>
+			
+			</div>
+			
+		</div>
+
+		
+		<div class="container grid-wrapper">
+			<div class="colums-content total-text ">
+			
+			<h3 id="total"> Discount -$3.20</h3><br>
+			</div>
+			
+		</div>
+
+		<div class="container grid-wrapper">
+			<div class="colums-content total-text ">
+			
+			<h3 id="total"> Total $32.64</h3><br>
+			</div>
+			
+		</div>
+		
+			
+		</form>
+		
+		<button class="button pay-cart" onclick="window.location.href='#cart-list';" id="pay">Pay Now</button>
+							
+		
+		
+		
+	</section>
+
+
+
+	<section id="article">
+	<h2>Article </h2>
+	<div class="articlecontainer textgridcontainer">
+		<div class="onethirdbox">
+			<h3 class="featureddate">June 20, 2020</h3>
+		</div>
+		<div class="twothirdbox">
+			
+				<img id="one" src="img/homebanner.jpg">
+			
+			
+				<h2>Summer Sale Begins!</h2>
+				<p>The summer season has begun! What better way to kick off the summer during the strangest times than with a sale? By using the code WEBSUMMER20 you can receive 10% off all orders! This code is reusable so feel free to use it all summer for your retail therapy needs. Summer is the time to shop and have a good time with friends and this summer will be no exception, even if it's from the comfort of home. Enjoy a piece of the convention experience with some summer sales!</p>
+				<p>This year has been difficult for artists and convention-goers alike with the current pandemic shutting down large gatherings such as conventions. Even though, I haven't been part of the convention scene for very long, I miss being able to interact with friends, fellow artists, and attendees who share similar interests. While there have been many virtual conventions and artist spotlights, the con experience is something that is difficult to replicate online.</p>
+				<p>To all those waiting for the day that they can go out and attend conventions safely once more, I'm with you. Until then, we can only do our best to stay safe, stay kind and sit tight.</p>
+			
+		</div>
+		</div>
+		</section>
+		
+<section id="about-module">
+	<h2> About  Module</h2>
+		<div class="about-content">
+	<div class="textgridcontainer">
+		<div class="onethirdbox">
+			<img src="img/aboutimg.png">
+		</div>
+		<div class="twothirdbox">
+			<h1>About the Artist</h1>
+			<p><em>"Hiya! So you want to hear my story, huh? Well, it all started at an ungodly hour early last year, you know, like all crazy ideas do... Just kidding! The actual story is a lot more mundane than that..."</em></p>
+			<p>After attending anime events and conventions following her exchange trip to Japan, Nekomatan decided to try her hand in the exciting world of tabling at a convention. Together with her friend, giraffudon, the two decided to make their official convention debut at SFU Summer Festival 2019 following months of research, product design, and manufacturing. The convention was a success and Nekomatan vowed to table at more conventions the following year. Unfortunately, COVID-19 ashed those dreams but that didn't stop Nekomatan from coming up with new ideas or tinkering with table displays whenever she finds the time or insperation.</p>	
+		</div>
+	</div>	
 	
+	<div class="textgridcontainer">
+		<div class="twothirdbox">
+			<p>Nekomatan considers her style still in the work in progress stage as she tries many styles and product types to find out what works and what doesn't. Her love of Japan and its language and culture remains a constant, however, and Japanese inspired elements appear in her art and her table display. Currently, her table design goal is to create a table display inspired by wooden ramen carts with a modern twist. </p>
+			<p>When she isn't occupied by work, school or art/convention related things, Nekomatan spends her time playing Animal Crossing and mobile games such as Granblue Fantasy. Her favorite places in the world are Tokyo and Zurich and she hopes to be able to live in either of those places one day. She enjoys travelling and wants to travel to Dubai, Okinawa, and Hokkaido one day.</p>
+		</div>
+		<div class="onethirdbox">
+			<img src="img/aboutimg2.jpg">
+		</div>
+		
+	</div>	
+	</div>
+	
+</section>
+	
+<section id="contact">
+
+	<h2> Contact Form</h2>
+
+	<div class="contactgridcontainer"> 
+		
+		<div class="col">
+			<h1>Contact</h1>
+			<p>If you have any questions, comments, etc. feel free to fill out the contact form or send a message through any of the channels listed below.</p>
+			<p>Email: <a href="mailto:nekomata442@outlook.com">nekomata442@outlook.com</a></p>
+			<p>Twitter: <a href="https://twitter.com/nekomatan">@nekomatan</a></p>
+			<p>Instagram: <a href="https://www.instagram.com/nekomata442/">@nekomata442</a></p>
+		</div>
+		
+		<div class="col">
+			<h1>Contact Form</h1>
+			<div class="formcontainer">
+				<form action="/action_page.php" method="get" class="body-txt">
+					<label for="name">Name</label>
+					<input type="text" id="name" name="name">
+			
+					<label for="email">Email</label>
+					<input type="email" id="email" name="email">
+			
+					<label for="comment">Comment</label>
+					<textarea id="comment" name="comment"></textarea>
+			
+					<input type="submit" value="Submit" class="button">
+				</form>
+			</div>
+		</div>
+		
+	</div>
+
+</section>
+
 </body>
 </html>
