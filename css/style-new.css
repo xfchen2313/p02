@@ -178,7 +178,9 @@ select {
 }
 
 .featureddate {
-	color: #d37f00;;
+	color: #d37f00;
+	font-size: 2em;
+	margin-top: -0.25em;
 }
 
 .grid-wrapper{
@@ -288,11 +290,11 @@ a.cat:active{
 		flex-flow: column wrap;
 	}
 	.onethirdbox{
-		max-width: 100%;
+		max-width: 100% !important; 
 		margin: auto;
 	}
 	.twothirdbox {
-		max-width: 100%;
+		max-width: 100% !important;
 		margin: auto;
 	}
 	.col{
@@ -308,8 +310,8 @@ a.cat:active{
 	.articlecontainer{
 		padding: 1em;	
 	}
-	.featurreddate{
-		font-size: 2em;	
+	.featureddate{
+		font-size: 1.5em;	
 	}
 }
 
@@ -442,7 +444,7 @@ fieldset, label { margin: 0; padding: 0; }
 	align-content: center;
 }
 
-.flex-row{
+.flex-row {
 	display: inline-block;
 	transition:  background-color 0.5s ease-out;
 }
@@ -658,13 +660,15 @@ a.hub-link:active{
 .onethirdbox {
 	max-width: 33%;
 	flex-grow: 1;
+	padding-left: 1em;
+	padding-right: 1em;
 }
 
 .twothirdbox {
 	max-width: 60%;
 	flex-grow: 2;
-	margin-left: 1em;
-	margin-right: 1em;
+	padding-left: 1em;
+	padding-right: 1em;
 }
 
 .about-content{
@@ -687,7 +691,6 @@ a.hub-link:active{
 
 .articlecontainer {
    	max-width: 70rem;
-   	
    	margin: auto;
 }
 
