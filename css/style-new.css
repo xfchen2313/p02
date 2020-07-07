@@ -293,7 +293,6 @@ a.cat:active{
 	}
 	.twothirdbox {
 		max-width: 100%;
-		flex-grow: 2;
 		margin: auto;
 	}
 	.col{
