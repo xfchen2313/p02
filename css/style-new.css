@@ -751,7 +751,6 @@ a:hover {
 	.col:nth-of-type(odd){
 		padding-right: 0em;
 	}
-
 	.nav-header{
 		flex-flow: column wrap;
 	}
@@ -770,13 +769,32 @@ a:hover {
 		align-content: center;
 	}
 	.logo {
-		position: relative;
-		left:7.3em;
+		position: absolute;
+		left:11em;
 	}
 	.navbar-item a {
 		text-align: left;
 	}
 	.navbar {
 		margin-left:-1.75em;
+	}
+	.items, .more-img, .prod-reviews {
+		margin-right: 1em;
+		margin-left: 1em;
+	}
+	.item-text{
+	margin-top: 0em;
+	}
+	.product-text{
+		text-align: center;
+	}
+	h3.product-price {
+		display: block;
+		text-align: center;
+		margin-top:0em;
+		margin-bottom: -0.5em;
+	}
+	#specs-list {
+		margin-left:0em;
 	}
 }
