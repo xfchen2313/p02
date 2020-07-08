@@ -107,6 +107,7 @@ select {
 
 
 
+
 #flexbox-home{ /*new products flexbox*/
 	position: relative;
 	top: -8rem;
@@ -262,6 +263,9 @@ div.headerstyle {
 }
 .logo { /* logo in header */
 	width:5em;
+}
+.logo-footer{
+	width:4.5em;
 }
 
 .cat { /*cateogries on shop page*/
