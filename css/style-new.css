@@ -769,8 +769,8 @@ a:hover {
 		align-content: center;
 	}
 	.logo {
-		position: absolute;
-		left:11em;
+		position: relative; 
+		left:7.3em; 
 	}
 	.navbar-item a {
 		text-align: left;
