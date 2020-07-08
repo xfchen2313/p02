@@ -730,3 +730,17 @@ a:hover {
 	padding: .5em;
 	margin-bottom: 2em;
 }
+
+.link-item{
+	font-family: Lato;
+	margin: 2em;
+	
+}
+
+.sm-item{
+	width: 2em;
+	height: auto;
+	margin: 1em;
+	
+	
+}
