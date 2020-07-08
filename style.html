@@ -1,0 +1,1232 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>P01: Process</title>
+	<link href="css/style-new.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Khand:wght@300;400;500&family=Lato:wght@100;300;400&display=swap" rel="stylesheet"> 
+</head>
+
+<body>
+	<nav class="grid-wrapper header-wrapper">
+		<div class="nav-header">
+			<div class="columns headerstyle">
+				<img src="img/logo.png" class="logo">
+				<h1 class="logo-name" id="inline">NEKOMATAN</h1>
+			</div>
+			<div class="columns headerstyle">
+				<ul class="navbar">
+					<li class="navbar-item"><a href="citations.html">Citations</a></li>
+					<li class="navbar-item"><a href="wireframes.html">Wireframes</a></li>
+					<li class="navbar-item"><a href="sitemap.html">Sitemap</a></li>
+					<li class="navbar-item"><a href="style.html">Style Guide</a></li>
+					
+					<li class="navbar-item"><a href="index.html">Store</a></li>
+				</ul>
+			</div>
+		</div>
+		
+	</nav>
+	
+	
+	<section>
+
+		<h1>Style Guide & Pattern Library</h1><br>
+
+	<h2>Git Link</h2>
+	<a href="https://github.com/xfchen2313/p02">https://github.com/xfchen2313/p02</a>
+
+	<h2>Basic Interactive Elements</h2>
+		<h3>In-text Link</h3>
+		<p><strong>Name: </strong></p>
+		<p><strong>Example: </strong></p>
+		<p class="body-txt">Click <a href="wireframes.html" class="links">HERE</a> for wireframes.</p>
+		<p><strong>Code: </strong></p> 
+		<div class="container grid-wrapper">
+			<div class="columns">
+				<h4>HTML</h4>
+				<code>
+					&lt;p class="body-txt"&gt;Click &lt;a href="wireframes.html" class="links"&gt;HERE&lt;/a&gt; for wireframes.&lt;/p&gt;
+				</code>
+			</div>
+			<div class="columns">
+				<h4>CSS</h4>
+				<code>
+					.links { <br>
+						color: #ffbe00; <br>
+						text-decoration: none; <br>
+					} <br><br>
+
+					a:hover.links { <br>
+						color: #ff9900; <br>
+						text-decoration: underline; <br>
+					}
+				</code>
+			</div>
+	    </div>		
+		
+		<h3>Call to Action Button</h3>
+		<p><strong>Name: </strong></p>
+		<p><strong>Example: </strong></p>
+		<input type="submit" value="Submit" class="button">
+		<p><strong>Code: </strong></p> 
+		<div class="container grid-wrapper">
+			<div class="columns">
+				<h4>HTML</h4>
+				<code>
+					&lt;a href="citations.html" class="button"&gt;Click me for citations!&lt;/a&gt;
+				</code>
+			</div>
+			<div class="columns">
+				<h4>CSS</h4>
+				<code>
+					.button { <br>
+						font-family: "Khand", sans-serif; <br>
+						background-color: white; <br>
+						border: solid 2px; <br>
+						padding: 1em; <br>
+						display: inline-block; <br>
+						text-decoration: none; <br>
+					} <br><br>
+
+					.button:hover { <br>
+						background-color: black; <br>
+						color: white; <br>
+					} <br><br>
+
+					.button:visited { <br>
+						color: #ffbe00; <br>
+					}
+				</code>
+			</div>
+	    </div>		
+		
+		<h3>Submit & Reset Button for Forms</h3>
+		<p><strong>Name: </strong> </p>
+		<p><strong>Example: </strong></p>
+		<form action="/action_page.php" method="get" class="form">
+			<label for="txt">Try typing here:</label>
+			<input type="text" id="txt" name="txt">
+			<button  class="button"  type="submit" value="Submit">Submit</button>
+			<button class="button" type="reset" value="Reset">Reset</button>
+		</form>
+		<p><strong>Code: </strong></p> 
+		<div class="container grid-wrapper">
+			<div class="columns">
+				<h4>HTML</h4>
+				<code>
+					&lt;form action=&quot;/action_page.php&quot; method=&quot;get&quot; class=&quot;form&quot;&gt;<br>
+					&lt;label for=&quot;txt&quot;&gt;Try typing here:&lt;/label&gt;<br>
+					&lt;input type=&quot;text&quot; id=&quot;txt&quot; name=&quot;txt&quot;&gt;<br>
+					&lt;button type=&quot;submit&quot; value=&quot;Submit&quot;&gt;Submit&lt;/button&gt;<br>
+					&lt;button type=&quot;reset&quot; value=&quot;Reset&quot;&gt;Reset&lt;/button&gt;<br>
+					&lt;/form&gt;
+				</code>
+			</div>
+			<div class="columns">
+				<h4>CSS</h4>
+				<code>
+					input {<br>
+						width: 100%;<br>
+						height: 5em;<br>
+						
+					}<br><br>
+
+
+					.form{<br>
+						max-width: 70%;<br>
+						padding-right: 10em;<br>
+						font-family: "Lato", sans-serif;<br>
+						font-weight: 300;<br>
+					}<br><br>
+				</code>
+			</div>
+	    </div>		
+		
+		<h3>Text Input Field with Label</h3>
+		<p><strong>Name: </strong> Text Input</p>
+		<p><strong>Example: </strong></p>
+		<form action="/action_page.php" class="form">
+			<label for="txtin">Text Input</label>
+			<input type="text" id="txtin" name="textinput" placeholder="Start typing here...">
+		</form>
+		<p><strong>Code: </strong></p> 
+		<div class="container grid-wrapper">
+			<div class="columns">
+				<h4>HTML</h4>
+				<code>
+					&lt;form action=&quot;/action_page.php&quot; class=&quot;form&quot;&gt;<br>
+					&lt;label for=&quot;txtin&quot;&gt;Text Input&lt;/label&gt;<br>
+					&lt;input type=&quot;text&quot; id=&quot;txtin&quot; name=&quot;textinput&quot; placeholder=&quot;Start typing here...&quot;&gt;<br>
+					&lt;/form&gt;
+				</code>
+			</div>
+			<div class="columns">
+				<h4>CSS</h4>
+				<code>
+					input {<br>
+						width: 100%;<br>
+						height: 5em;<br>
+						
+					}<br><br>
+
+
+					.form{<br>
+						max-width: 70%;<br>
+						padding-right: 10em;<br>
+						font-family: "Lato", sans-serif;<br>
+						font-weight: 300;<br>
+					}<br><br>
+				</code>
+			</div>
+	    </div>		
+		
+		<h3>Website Colour Swatches</h3>
+		<p><strong>Name: </strong>Colour Guide</p>
+		<p><strong>Example: </strong></p>
+		<div class="grid-wrapper swatch-wrapper body-txt">
+			<div id="main-color"><p>Main Text/Background Colour <br> #ffffff</p></div>
+			<div id="other-main-color"><p>Main Text/Background Colour <br> #000000</p></div>
+			<div id="secondary-color"><p>Secondary Colour/Emphasis <br> #ffbe00</p></div>
+		</div>
+		<p><strong>Code: </strong></p> 
+		<div class="container grid-wrapper">
+			<div class="columns">
+				<h4>HTML</h4>
+				<code>
+					&lt;div class="grid-wrapper swatch-wrapper body-txt"&gt; <br>
+						&lt;div id="main-color"&gt;&lt;p&gt;Main Text/Background Colour &lt;br&gt; #ffffff&lt;/p&gt;&lt;/div&gt; <br>
+						&lt;div id="other-main-color"&gt;&lt;p&gt;Main Text/Background Colour &lt;br&gt; #000000&lt;/p&gt;&lt;/div&gt; <br>
+						&lt;div id="secondary-color"&gt;&lt;p&gt;Secondary Colour/Emphasis &lt;br&gt; #ffbe00&lt;/p&gt;&lt;/div&gt; <br>
+					&lt;/div&gt;
+				</code>
+			</div>
+			<div class="columns">
+				<h4>CSS</h4>
+				<code>
+					#main-color { <br>
+						background-color: white; <br>
+						text-align: center; <br>
+					} <br><br>
+
+					#other-main-color { <br>
+						background-color: black; <br>
+						color: white; <br>
+						text-align: center; <br>
+					} <br><br>
+
+					#secondary-color { <br>
+						background-color: #ffbe00; <br>
+						text-align: center; <br>
+					}
+				</code>
+			</div>
+	    </div>		
+	</section>
+	
+	
+	<section>
+		<h2>Text Styling</h2>
+		<h3>Headings</h3>
+		<p><strong>Name: </strong>Heading Styles</p>
+		<p><strong>Example: </strong></p>
+		<h1 class="logo-name">BRAND HEADING</h1>
+		<h2 class="main-header">Article Heading</h2>
+		<h3 class="sub-header">Sub Heading</h3>
+		<p><strong>Code: </strong></p>
+		<div class="container grid-wrapper">
+			<div class="columns">
+				<h4>HTML</h4>
+				<code>
+					&lt;h1 class="header"&gt;Brand Heading&lt;/h1&gt;<br>
+					&lt;h2 class="main-header"&gt;Article Heading&lt;/h2&gt;<br>
+					&lt;h3 class="sub-header"&gt;Sub Heading&lt;/h3&gt;
+				</code>
+			</div>
+			<div class="columns">
+				<h4>CSS</h4>
+				<code>
+					.header { <br>
+						font-family: "Impact", "DIN Condensed Bold", Helvetica, sans-serif; <br>
+						font-size: 3em; <br>
+					} <br><br>
+
+					.main-header { <br>
+						font-family: "Khand", sans-serif; <br>
+					} <br><br>
+
+					.sub-header { <br>
+						font-family: "Khand", sans-serif; <br>
+						font-weight: 300; <br>
+					} <br><br>
+				</code>
+			</div>
+	    </div>
+		
+		<h3>Paragraph</h3>
+		<p><strong>Name: </strong>Paragraph Style</p>
+		<p><strong>Example: </strong></p>
+		<p class="body-txt">Cat ipsum dolor sit amet, kitty singapura for puma. Tabby mouser abyssinian , tomcat so mouser lynx savannah. Balinese american bobtail. Russian blue. Singapura kitten bengal turkish angora so balinese and siamese, so ocelot. Scottish fold puma or thai, yet russian blue savannah. Balinese kitty. Puma. Siamese ocelot. Bengal panther for leopard so siberian. Tabby norwegian forest but cougar norwegian forest and leopard leopard or siberian. Jaguar tom donskoy or malkin panther so havana brown cougar. Burmese. Norwegian forest maine coon but puma bombay. </p>
+		<p><strong>Code: </strong></p>
+		<div class="container grid-wrapper">
+			<div class="columns">
+				<h4>HTML</h4>
+				<code>
+					&lt;p&gt;Cat ipsum dolor sit amet, kitty singapura for puma. Tabby mouser abyssinian , tomcat so mouser lynx savannah. Balinese american bobtail. Russian blue. Singapura kitten bengal turkish angora so balinese and siamese, so ocelot. Scottish fold puma or thai, yet russian blue savannah. Balinese kitty. Puma. Siamese ocelot. Bengal panther for leopard so siberian. Tabby norwegian forest but cougar norwegian forest and leopard leopard or siberian. Jaguar tom donskoy or malkin panther so havana brown cougar. Burmese. Norwegian forest maine coon but puma bombay. &lt;/p&gt;
+				</code>
+			</div>
+			<div class="columns">
+				<h4>CSS</h4>
+				<code>
+					.body-txt { <br>
+						font-family: "Lato", sans-serif; <br>
+						font-weight: 300; <br>
+					}
+				</code>
+			</div>
+	    </div>
+			
+		<h3>Bulleted Lists</h3>
+		<p><strong>Name: </strong>Bulleted List Style</p>
+		<p><strong>Example: </strong></p>
+		<ul class="body-txt ul-list">
+			<li>Munchkin</li>
+			<li>Snowshoe</li>
+			<li>Scottish Fold</li>
+			<li>Turkish Van</li>
+			<li>Russian Blue</li>
+		</ul>
+		<p><strong>Code: </strong></p>
+		<div class="container grid-wrapper">
+			<div class="columns">
+				<h4>HTML</h4>
+				<code>
+					&lt;ul class="body-txt ul-list"&gt; <br>
+						&lt;li&gt;Munchkin&lt;/li&gt; <br>
+						&lt;li&gt;Snowshoe&lt;/li&gt; <br>
+						&lt;li&gt;Scottish Fold&lt;/li&gt; <br>
+						&lt;li&gt;Turkish Van&lt;/li&gt; <br>
+						&lt;li&gt;Russian Blue&lt;/li&gt; <br>
+					&lt;/ul&gt;
+				</code>
+			</div>
+			<div class="columns">
+				<h4>CSS</h4>
+				<code>
+					ul { <br>
+						list-style: none; <br>
+					} <br><br>
+
+					.ul-list li::before {<br>
+						content: "\2022";  <br>
+						color: #ffbe00; <br>
+						font-weight: bold; <br>
+						display: inline-block; <br>
+						width: 1em; <br>
+						margin-left: -1em; <br>
+					}
+				</code>
+			</div>
+	    </div>
+			
+		<h3>Numbered Lists</h3>
+		<p><strong>Name: </strong>Numbered List Style</p>
+		<p><strong>Example: </strong></p>
+		<ol class="body-txt">
+			<li>Munchkin</li>
+			<li>Snowshoe</li>
+			<li>Scottish Fold</li>
+			<li>Turkish Van</li>
+			<li>Russian Blue</li>
+		</ol>
+		<p><strong>Code: </strong></p> 
+		<div class="container grid-wrapper">
+			<div class="columns">
+				<h4>HTML</h4>
+				<code>
+					&lt;ol class="body-txt"&gt; <br>
+						&lt;li&gt;Munchkin&lt;/li&gt; <br>
+						&lt;li&gt;Snowshoe&lt;/li&gt; <br>
+						&lt;li&gt;Scottish Fold&lt;/li&gt; <br>
+						&lt;li&gt;Turkish Van&lt;/li&gt; <br>
+						&lt;li&gt;Russian Blue&lt;/li&gt; <br>
+					&lt;/ol&gt;
+				</code>
+			</div>
+			<div class="columns">
+				<h4>CSS</h4>
+				<code>
+					none
+				</code>
+			</div>
+	    </div>		
+	</section>
+	
+	
+	<section>
+		<h2>Modular Pattern Elements</h2>
+		<h3>Main Navigation Module</h3>
+		<p><strong>Name: </strong>Main Navigation</p>
+		<p><strong>Example: </strong></p>
+		<div class="grid-wrapper header-wrapper">
+			<div class="columns headerstyle">
+				<img src="img/logo.png" class="logo">
+				<h1 class="logo-name" id="inline">NEKOMATAN</h1>
+			</div>
+			<div class="columns headerstyle">
+				<ul class="navbar">
+					<li class="navbar-item"><a href="#">Featured</a></li>
+					<li class="navbar-item"><a href="#">Shop</a></li>
+					<li class="navbar-item"><a href="#">About</a></li>
+					<li class="navbar-item"><a href="#">Cart</a></li>
+				</ul>
+			</div>
+		</div>
+		<p><strong>Code: </strong></p> 
+		<div class="container grid-wrapper">
+			<div class="columns">
+				<h4>HTML</h4>
+				<code>
+					&lt;div class="grid-wrapper header-wrapper"&gt; <br>
+							&lt;div class="columns headerstyle"&gt; <br>
+								&lt;img src="img/logo.png" class="logo"&gt; <br>
+								&lt;h1 class="header" id="inline"&gt;Nekomatan&lt;/h1&gt; <br>
+							&lt;/div&gt; <br>
+							&lt;div class="columns headerstyle"&gt; <br>
+								&lt;ul class="navbar"&gt; <br>
+									&lt;li class="navbar-item"&gt;&lt;a href="#"&gt;Featured&lt;/a&gt;&lt;/li&gt; <br>
+									&lt;li class="navbar-item"&gt;&lt;a href="#"&gt;Shop&lt;/a&gt;&lt;/li&gt; <br>
+									&lt;li class="navbar-item"&gt;&lt;a href="#"&gt;About&lt;/a&gt;&lt;/li&gt; <br>
+									&lt;li class="navbar-item"&gt;&lt;a href="#"&gt;Cart&lt;/a&gt;&lt;/li&gt; <br>
+								&lt;/ul&gt; <br>
+							&lt;/div&gt; <br>
+					&lt;/div&gt;
+				</code>
+			</div>
+			<div class="columns">
+				<h4>CSS</h4>
+				<code>
+					*, *::after, *::before{ <br>
+						box-sizing: border-box; <br>
+					} <br><br>
+
+					.grid-wrapper{ <br>
+						display: -webkit-flex; <br>
+						display: -ms-flex; <br>
+						display: flex; <br>
+					} <br><br>
+
+					.header-wrapper > *{ <br>
+						flex-grow: 1; <br>
+						justify-content: space-between; <br>
+						align-items: flex-end; <br>
+						background-color: white; <br>
+					} <br><br>
+
+					.navbar { <br>
+						list-style-type: none; <br>
+						margin: 0; <br>
+						padding: 0; <br>
+						overflow: hidden; <br>
+						background-color: white; <br>
+					} <br><br>
+
+					.navbar-item { <br>
+						float: right; <br>
+					} <br><br>
+
+					.navbar-item a { <br>
+						color: black; <br>
+						display: block; <br>
+						font-family: "Khand", sans-serif; <br>
+						text-align: right; <br>
+						padding: 1em; <br>
+						text-decoration: none; <br>
+					} <br><br>
+
+					.navbar-item a:hover { <br>
+						color: #ffbe00; <br>
+					} <br><br>
+
+					.logo { <br>
+						width:3em; <br>
+					} <br><br>
+
+					div.headerstyle { <br>
+						padding: 0em; <br>
+					} <br><br>
+
+					#inline { <br>
+						display: inline; <br>
+					}
+				</code>
+			</div>
+	    </div>		
+		
+		<h3 id="detail">Product Detailed Listing</h3>
+		<p><strong>Name: </strong>Product Listing</p>
+		<p><strong>Example: </strong></p>
+		<div class="product-list">
+		<div class="grid-wrapper header-wrapper">
+			<div class="columns headerstyle">
+				<img src="img/logo.png" class="logo">
+				<h1 class="logo-name" id="inline">NEKOMATAN</h1>
+			</div>
+			<div class="columns headerstyle">
+				<ul class="navbar">
+					<li class="navbar-item"><a href="#">Featured</a></li>
+					<li class="navbar-item"><a href="#">Shop</a></li>
+					<li class="navbar-item"><a href="#">About</a></li>
+					<li class="navbar-item"><a href="#">Cart</a></li>
+				</ul>
+			</div>
+		</div>
+			   <div class="product-list items">
+		<div class="container grid-wrapper ">
+			   		<div class="columns content">
+						   <h2 class="product-header">[Foil] Torii Charms</h2>
+						<img src="img/img1.jpg" class="product">
+			  		 </div>
+
+					<div class="columns content item-text">
+						<div class="product-text">
+							<h3 class="product-price">$15</h3><p>Only 10 Left!</p>
+						</div>
+						<p class="product-body-txt">Well, it was a temari originally but then I drew the torii and everyone started calling it that so torii it is. The foil makes it nice and shiny.</p>
+						<br>
+
+						<div id="specs-list">
+						<h3 >Specs</h3>
+						<ul class="body-txt ul-list">
+							<li>Approx. 6cm/2.5in.</li>
+							<li>Gold/Silver Foil</li>
+							<li>Double sided clear acrylic with epoxy</li>
+							<li>Tassel tail</li>
+							<li>Bronze bell attachment</li>
+						</ul>
+						</div>
+						<br>
+						
+					
+							<div class="item-type-choice">
+							<label for="type">Choose a type:</label>
+
+								<select name="type" id="item-type">
+										<option value="sakura">Sakura</option>
+										<option value="hanabi">Hanabi</option>
+								
+								</select>
+
+							</div>
+							<button class="button pay-button" onclick="window.location.href='#detail';" id="pay">Buy</button>
+							
+					</div>
+
+		</div>
+	</div>
+		</div>
+		<p><strong>Code: </strong></p> 
+		<div class="container grid-wrapper">
+			<div class="columns">
+				<h4>HTML</h4>
+				<code>
+					&lt;div class=&quot;product-list&quot;&gt;<br>
+ &lt;div class=&quot;grid-wrapper header-wrapper&quot;&gt;<br>
+ &lt;div class=&quot;columns headerstyle&quot;&gt;<br>
+ &lt;img src=&quot;img/logo.png&quot; class=&quot;logo&quot;&gt;<br>
+ &lt;h1 class=&quot;logo-name&quot; id=&quot;inline&quot;&gt;NEKOMATAN&lt;/h1&gt;<br>
+ &lt;/div&gt;<br>
+ &lt;div class=&quot;columns headerstyle&quot;&gt;<br>
+ &lt;ul class=&quot;navbar&quot;&gt;<br>
+ &lt;li class=&quot;navbar-item&quot;&gt;&lt;a href=&quot;#&quot;&gt;Featured&lt;/a&gt;&lt;/li&gt;<br>
+ &lt;li class=&quot;navbar-item&quot;&gt;&lt;a href=&quot;#&quot;&gt;Shop&lt;/a&gt;&lt;/li&gt;<br>
+ &lt;li class=&quot;navbar-item&quot;&gt;&lt;a href=&quot;#&quot;&gt;About&lt;/a&gt;&lt;/li&gt;<br>
+ &lt;li class=&quot;navbar-item&quot;&gt;&lt;a href=&quot;#&quot;&gt;Cart&lt;/a&gt;&lt;/li&gt;<br>
+ &lt;/ul&gt;<br>
+ &lt;/div&gt;<br>
+ &lt;/div&gt;<br>
+ &lt;div class=&quot;container grid-wrapper&quot;&gt;<br>
+ &lt;div class=&quot;columns content&quot;&gt;<br>
+ &lt;img src=&quot;img/product.jpg&quot; class=&quot;product&quot;&gt;<br>
+ &lt;/div&gt;<br><br>
+
+ &lt;div class=&quot;columns content&quot;&gt;<br>
+ &lt;div class=&quot;product-text&quot;&gt;<br>
+ &lt;h2 class=&quot;product-header&quot;&gt;Product Name&lt;/h2&gt;&lt;h3 class=&quot;product-price&quot;&gt;$20&lt;/h3&gt;<br>
+ &lt;/div&gt;<br>
+ &lt;p class=&quot;product-body-txt&quot;&gt;Cat ipsum dolor sit amet, kitty singapura for puma. Tabby mouser abyssinian , tomcat so mouser lynx savannah. Balinese american bobtail. Russian blue. Singapura kitten bengal turkish angora so balinese and siamese, so ocelot. Scottish fold puma or thai, yet russian blue savannah. Balinese kitty. Puma. Siamese ocelot. Bengal panther for leopard so siberian. Tabby norwegian forest but cougar norwegian forest and leopard leopard or siberian. Jaguar tom donskoy or malkin panther so havana brown cougar. Burmese. Norwegian forest maine coon but puma bombay. &lt;/p&gt;<br>
+ &lt;/div&gt;<br>
+
+ &lt;/div&gt;<br>
+ &lt;/div&gt;
+				</code>
+			</div>
+			<div class="columns">
+				<h4>CSS</h4>
+				<code>
+					.product {<br>
+	width:70%;<br>
+	padding-top: 5em;<br>
+	padding-left: 10em;<br>
+}<br><br>
+
+.product-text{<br>
+	display: inline;<br>
+	margin-top: 5em;<br>
+}<br><br>
+
+.product-price{<br>
+	display: inline;<br>
+	
+}<br><br>
+
+
+.product-body-txt {<br>
+	font-family: "Lato", sans-serif;<br>
+	font-weight: 300;<br>
+	padding-top: 7em;<br>
+}<br><br>
+
+.navbar {<br>
+	list-style-type: none;<br>
+	margin: 0;<br>
+	padding: 0;<br>
+	overflow: hidden;<br>
+	background-color: white;<br>
+}<br><br>
+
+.navbar-item {<br>
+	float: right;<br>
+}<br><br>
+
+.navbar-item a {<br>
+	color: black;<br>
+	display: block;<br>
+	font-family: "Khand", sans-serif;<br>
+	text-align: right;<br>
+	padding: 1em;<br>
+	text-decoration: none;<br>
+}<br><br>
+
+.navbar-item a:hover {<br>
+	color: #ffbe00;<br>
+}<br><br>
+
+.logo {<br>
+	width:6em;<br>
+}<br><br>
+
+
+
+				</code>
+			</div>
+	    </div>		
+		
+		
+		<h3>Product Review</h3>
+		<p><strong>Name: </strong>Product Review</p>
+		<p><strong>Example: </strong></p>	
+		<form action="/action_page.php" method="get" class="form">
+			<!-- Pure CSS Star Rating Widget-->
+			<fieldset class="rating">
+				<input type="radio" id="star5" name="rating" value="5" /><label class = "full" for="star5" title="Awesome - 5 stars"></label>
+				<input type="radio" id="star4" name="rating" value="4" /><label class = "full" for="star4" title="Pretty good - 4 stars"></label>
+				<input type="radio" id="star3" name="rating" value="3" /><label class = "full" for="star3" title="Meh - 3 stars"></label>
+				<input type="radio" id="star2" name="rating" value="2" /><label class = "full" for="star2" title="Kinda bad - 2 stars"></label>
+				<input type="radio" id="star1" name="rating" value="1" /><label class = "full" for="star1" title="Sucks big time - 1 star"></label>
+			</fieldset>
+			<input type="text" id="review" name="review" placeholder="Write your review here...">
+			<button type="submit" value="Submit">Submit</button>
+		</form>
+		<p><strong>Code: </strong></p> 
+		<div class="container grid-wrapper">
+			<div class="columns">
+				<h4>HTML</h4>
+				<code>
+					&lt;form action="/action_page.php" method="get" class="form"&gt; <br>
+						&lt;fieldset class="rating"&gt; <br>
+							&lt;input type="radio" id="star5" name="rating" value="5" /&gt;&lt;label class = "full" for="star5" title="Awesome - 5 stars"&gt;&lt;/label&gt; <br>
+							&lt;input type="radio" id="star4" name="rating" value="4" /&gt;&lt;label class = "full" for="star4" title="Pretty good - 4 stars"&gt;&lt;/label&gt; <br>
+							&lt;input type="radio" id="star3" name="rating" value="3" /&gt;&lt;label class = "full" for="star3" title="Meh - 3 stars"&gt;&lt;/label&gt; <br>
+							&lt;input type="radio" id="star2" name="rating" value="2" /&gt;&lt;label class = "full" for="star2" title="Kinda bad - 2 stars"&gt;&lt;/label&gt; <br>
+							&lt;input type="radio" id="star1" name="rating" value="1" /&gt;&lt;label class = "full" for="star1" title="Sucks big time - 1 star"&gt;&lt;/label&gt; <br>
+						&lt;/fieldset&gt; <br>
+						&lt;input type="text" id="review" name="review" placeholder="Write your review here..."&gt; <br>
+						&lt;button type="submit" value="Submit"&gt;Submit&lt;/button&gt; <br>
+					&lt;/form&gt;
+				</code>
+			</div>
+			<div class="columns">
+				<h4>CSS</h4>
+				<code>
+					fieldset, label { margin: 0; padding: 0; } <br><br>
+
+					.rating {  <br>
+						border: none; <br>
+						float: left; <br>
+					} <br><br>
+
+					.rating > input { display: none; }  <br>
+					.rating > label:before {  <br>
+						margin: 5px; <br>
+						font-size: 1.25em; <br>
+						display: inline-block; <br>
+						content: "\2605"; <br>
+					} <br><br>
+
+					.rating > label {  <br>
+						color: #ddd;  <br>
+						float: right;  <br>
+					} <br><br>
+
+					.rating > input:checked ~ label, <br>
+					.rating:not(:checked) > label:hover,  <br>
+					.rating:not(:checked) > label:hover ~ label { color: #FFD700;  }  <br><br>
+
+					.rating > input:checked + label:hover,  <br>
+					.rating > input:checked ~ label:hover, <br>
+					.rating > label:hover ~ input:checked ~ label,  <br>
+					.rating > input:checked ~ label:hover ~ label { color: #FFED85;  } 
+				</code>
+			</div>
+	    </div>		
+	</section>
+
+
+	<section id="flexbox">
+		<h3>Product Listing</h3>
+		<p><strong>Name: </strong>Flexbox</p>
+		<p><strong>Example: </strong></p>	
+
+
+		
+	<h1>All Products</h1>
+		
+	
+
+		<div class="flex-row, box">	
+
+			<div class="flex-main-item box-item">
+				<a href="#flexbox">
+				<img src="img/img1.jpg" ></a>
+				<div class="overlay";>
+				<div class="label"> <span class="prod-name" >  [Foil] Torii Charms</span> <span class="price">$15 </span><br>
+				<p>The gates of destiny await you...</p> </div>
+				</div>
+			</div>
+			
+			<div class="flex-main-item box-item">
+				<a href="#flexbox">
+				<img src="img/img2.jpg" ></a>
+				<div class="overlay";>
+				<div class="label"><span class="prod-name" >  [Foil] Clock Charms </span> <span class="price">$15 </span><br>
+				<p>Tick tok, tick tock. </p> </div>
+				</div>
+			</div>
+			<div class="flex-main-item box-item">
+				<a href="#flexbox">
+				<img src="img/img3.jpg" ></a>
+				<div class="overlay";>
+				<div class="label"> <span class="prod-name" >  [Utapri] Gashapon Chamrs </span> <span class="price">$10 </span><br>
+				<p>Who doesn't love gashapon and cat ears?</p> </div>
+				</div>
+			</div>
+			 
+			
+		</div>
+		
+
+		<div class="flex-row, box">
+
+			<div class="flex-main-item box-item">
+				<a href="#flexbox">
+				<img src="img/img10.jpg" ></a>
+				<div class="overlay";>
+				<div class="label"> <span class="prod-name" >  [Original] OC Buttons </span> <span class="price">$2.50 </span><br>
+				<p>Part of the Original Character (OC) series.</p> </div>
+				</div>
+			</div>
+			<div class="flex-main-item box-item">
+				<a href="#flexbox">
+				<img src="img/img11.jpg" ></a>
+				<div class="overlay";>
+				<div class="label"> <span class="prod-name" >  [Pokemon] WOOPERDUPER Button </span> <span class="price">$2.50 </span><br>
+				<p>You might want to sit down for this one it's a long story.</p></div>
+				</div>
+			</div>
+			<div class="flex-main-item box-item">
+				<a href="#flexbox">
+				<img src="img/img12.jpg" ></a>
+				<div class="overlay";>
+				<div class="label""> <span class="prod-name" >  [Pokemon] Detective Pikachu? Button </span> <span class="price">$3 </span><br>
+				<p>Does this Pikachu look a little... off to you?</p> </div>
+				</div>
+			</div>
+			
+		</div>
+
+		
+		
+
+	<p><strong>Code: </strong></p> 
+		<div class="container grid-wrapper">
+			<div class="columns">
+				<h4>HTML</h4>
+				<code>
+					&lt;div class=&quot;flex-row1, box&quot;&gt; <br><br>
+					&lt;div class=&quot;flex-main-item box-item&quot;&gt;<br>
+					&lt;img src=&quot;img/product.jpg&quot; &gt;<br>
+					&lt;div class=&quot;overlay&quot;;&gt;<br>
+					&lt;div class=&quot;label&quot;&gt; Product Name &lt;/div&gt;<br>
+					&lt;/div&gt;<br>
+					&lt;/div&gt;<br><br>
+					&lt;div class=&quot;flex-main-item box-item&quot;&gt;<br>
+					&lt;img src=&quot;img/product.jpg&quot; &gt;<br>
+					&lt;div class=&quot;overlay&quot;;&gt;<br>
+					&lt;div class=&quot;label&quot;&gt; Product Name &lt;/div&gt;<br>
+					&lt;/div&gt;<br>
+					&lt;/div&gt;<br><br>
+					&lt;div class=&quot;flex-main-item box-item&quot;&gt;<br>
+					&lt;img src=&quot;img/product.jpg&quot; &gt;<br>
+					&lt;div class=&quot;overlay&quot;;&gt;<br>
+					&lt;div class=&quot;label&quot;&gt; Product Name &lt;/div&gt;<br>
+					&lt;/div&gt;<br>
+					&lt;/div&gt;<br>
+				 &lt;/div&gt;
+
+				 &lt;div class=&quot;flex-row2, box&quot;&gt; <br><br>
+					&lt;div class=&quot;flex-main-item box-item&quot;&gt;<br>
+					&lt;img src=&quot;img/product.jpg&quot; &gt;<br>
+					&lt;div class=&quot;overlay&quot;;&gt;<br>
+					&lt;div class=&quot;label&quot;&gt; Product Name &lt;/div&gt;<br>
+					&lt;/div&gt;<br>
+					&lt;/div&gt;<br><br>
+					&lt;div class=&quot;flex-main-item box-item&quot;&gt;<br>
+					&lt;img src=&quot;img/product.jpg&quot; &gt;<br>
+					&lt;div class=&quot;overlay&quot;;&gt;<br>
+					&lt;div class=&quot;label&quot;&gt; Product Name &lt;/div&gt;<br>
+					&lt;/div&gt;<br>
+					&lt;/div&gt;<br><br>
+					&lt;div class=&quot;flex-main-item box-item&quot;&gt;<br>
+					&lt;img src=&quot;img/product.jpg&quot; &gt;<br>
+					&lt;div class=&quot;overlay&quot;;&gt;<br>
+					&lt;div class=&quot;label&quot;&gt; Product Name &lt;/div&gt;<br>
+					&lt;/div&gt;<br>
+					&lt;/div&gt;<br>
+				 &lt;/div&gt;
+
+				</code>
+			</div>
+			<div class="columns">
+				<h4>CSS</h4>
+				<code>
+					.box{<br>
+						display: -webkit-flex;<br>
+						display:  -ms-flex;<br>
+						display:  flex;<br>
+						flex-wrap: wrap;<br>
+						
+
+						justify-content: space-around;<br>
+						margin-left:  auto;<br>
+						margin-right:  auto;<br>
+						width: 80%;<br>
+						align-content: center;<br>
+					}<br><br>
+
+					.flex-row1{<br>
+						display: inline-block;<br>
+						transition:  background-color 0.5s ease-out;<br>
+					}<br><br>
+					.flex-row2{<br>
+						display: inline-block;<br>
+						transition:  background-color 0.5s ease-out;<br>
+					}<br><br>
+
+					.box-item:hover {<br>
+						height:35%;<br>
+						width:35%;<br>
+						opacity: 0.6;<br>
+					}<br><br>
+					.box-item{<br>
+						height: 30%;<br>
+						width: 30%;<br>
+						padding: 1em 1em;<br>
+						flex: 1 1 30%;<br>
+						transition: .5s ease;<br>
+					}<br><br>
+
+					.label{<br>
+						font-family: Din Condensed;<br>
+					}<br><br>
+
+
+					@media(max-width: 50em){<br>
+						.box-item{<br>
+							flex: 1 1 100%;<br>
+						}<br>
+					}
+				</code>
+			</div>
+		</div>
+
+
+	</section>
+
+	<section id="category">
+	<h2 > Category Nav </h2>
+	<div class="cat-list boxn">
+ 	 
+	 <a class="cat boxn-item cat-active" href="#category">All Items</a>
+	 <a class="cat boxn-item" href="#category">Charms</a>
+ 	<a class="cat boxn-item" href="#category">Stickers</a>
+	 <a class="cat boxn-item" href="#category">Buttons</a>
+	</div>
+	</section>
+
+
+	<section id="about-hub">
+		<h2> About Hub</h2>
+		<div class="container grid-wrapper about-box">
+			<div class="colums-content  about">
+			<div class="holder">
+				<a href="#about-hub" class="hub-link">
+				<img  src="img/aboutimg.png" id="about1" class="hub-img">
+				<div class="centered"><h1 class="logo-name">My Story</h1></div>
+				</a>
+			</div>
+			</div>
+
+			<div class="colums-content  about">
+			<div class="holder">
+				<a href="#about-hub" class="hub-link">
+				<img src="img/pwimg5.jpg" id="about2" class="hub-img">
+				<div class="centered"><h1 class="logo-name"> Personal Works</h1></div>
+				</a>
+			</div>
+			<div class="holder">
+			<a href="#about-hub" class="hub-link">
+			<img src="img/contactimg.PNG" id="about3" class="hub-img">
+			<div class="centered"><h1 class="logo-name">Contact</h1></div>
+			</a>
+			</div>
+			</div>
+
+		</div>
+
+	</section>
+
+
+<section id="cart-list">
+		<form>
+			<h1> Cart </h1>
+		<div class="container grid-wrapper">
+			
+				<div class="colums-content inline-cart">
+				
+					 <img src="img/img5.jpg" class="product-cart">
+					 <h2 class="cart-header">[OC] Valerian Charm</h2>
+				</div>
+				<div class="colums-content cart-text">
+					
+					<div class="inline-cart">
+						 <p id="cart-d">The second charm in the Original Character (OC) series! </p>
+						 <label for="amt"class="cart-price"> <p>$10 x </p></label>
+						 
+						<input type="number" name="amt" value="1" id="amt-cart">
+						
+				</div>
+			</div>
+		</div>
+		<div class="container grid-wrapper">
+				<div class="colums-content inline-cart">
+				
+					 <img src="img/img3.jpg" class="product-cart">
+					 <h2 class="cart-header">[Utapri] Gashapon Charms </h2>
+					 
+				</div>
+				<div class="colums-content cart-text">
+					
+					<div class="inline-cart">
+						 <p id="cart-d">Who doesn't love gashapon and cat ears? </p>
+						 <label for="amt"class="cart-price"> <p>$10 x </p></label>
+						<input type="number" name="amt" value="1" id="amt-cart">
+						
+				</div>
+			</div>
+		</div>
+		<div class="container grid-wrapper">
+				<div class="colums-content inline-cart">
+				
+					 <img src="img/img11.jpg" class="product-cart">
+					 <h2 class="cart-header">[Pokemon] WOOPERDUPER Button</h2>
+					 
+				</div>
+				<div class="colums-content cart-text">
+					
+					<div class="inline-cart">
+						 <p id="cart-d">You might want to sit down for this one it's a long story. </p>
+						 <label for="amt"class="cart-price"> <p>$2.50 x </p></label>
+						<input type="number" name="amt" value="1" id="amt-cart">
+						
+				</div>
+				</div>
+		</div>
+		<div class="container grid-wrapper">
+				<div class="colums-content inline-cart">
+				
+					 <img src="img/img4.jpg" class="product-cart">
+					 <h2 class="cart-header">[GBF] Stained Glass Charms</h2>
+					 
+				</div>
+				<div class="colums-content cart-text">
+					
+					<div class="inline-cart">
+						 <p id="cart-d">Gotta love those details but hey, they look pretty in the sun. </p>
+						 <label for="amt"class="cart-price"> <p>$10 x </p></label>
+						<input type="number" name="amt" value="1" id="amt-cart">
+						
+				</div>
+			</div>
+		</div>
+
+		<div class="container grid-wrapper">
+			<div class="colums-content total-text  ">
+			
+			<form >
+				
+				<input class="coupon-form" type="text" name="coupon" id="coupon-cart">
+				<label for="coupon"class="coupon-form coupon-label"> Enter Coupon Code </label>		
+			</form>
+
+			</div>
+			
+		</div>
+
+
+		<div class="container grid-wrapper">
+			<div class="colums-content total-text ">
+			<h3 id="total"> Tax $3.84</h3><br>
+			
+			</div>
+			
+		</div>
+
+		
+		<div class="container grid-wrapper">
+			<div class="colums-content total-text ">
+			
+			<h3 id="total"> Discount -$3.20</h3><br>
+			</div>
+			
+		</div>
+
+		<div class="container grid-wrapper">
+			<div class="colums-content total-text ">
+			
+			<h3 id="total"> Total $32.64</h3><br>
+			</div>
+			
+		</div>
+		
+			
+		</form>
+		
+		<button class="button pay-cart" onclick="window.location.href='#cart-list';" id="pay">Pay Now</button>
+							
+		
+		
+		
+	</section>
+
+
+
+	<section id="article">
+	<h2>Article </h2>
+	<div class="articlecontainer textgridcontainer">
+		<div class="onethirdbox">
+			<h3 class="featureddate">June 20, 2020</h3>
+		</div>
+		<div class="twothirdbox">
+			
+				<img id="one" src="img/homebanner.jpg">
+			
+			
+				<h2>Summer Sale Begins!</h2>
+				<p>The summer season has begun! What better way to kick off the summer during the strangest times than with a sale? By using the code WEBSUMMER20 you can receive 10% off all orders! This code is reusable so feel free to use it all summer for your retail therapy needs. Summer is the time to shop and have a good time with friends and this summer will be no exception, even if it's from the comfort of home. Enjoy a piece of the convention experience with some summer sales!</p>
+				<p>This year has been difficult for artists and convention-goers alike with the current pandemic shutting down large gatherings such as conventions. Even though, I haven't been part of the convention scene for very long, I miss being able to interact with friends, fellow artists, and attendees who share similar interests. While there have been many virtual conventions and artist spotlights, the con experience is something that is difficult to replicate online.</p>
+				<p>To all those waiting for the day that they can go out and attend conventions safely once more, I'm with you. Until then, we can only do our best to stay safe, stay kind and sit tight.</p>
+			
+		</div>
+		</div>
+		</section>
+		
+<section id="about-module">
+	<h2> About  Module</h2>
+		<div class="about-content">
+	<div class="textgridcontainer">
+		<div class="onethirdbox">
+			<img src="img/aboutimg.png">
+		</div>
+		<div class="twothirdbox">
+			<h1>About the Artist</h1>
+			<p><em>"Hiya! So you want to hear my story, huh? Well, it all started at an ungodly hour early last year, you know, like all crazy ideas do... Just kidding! The actual story is a lot more mundane than that..."</em></p>
+			<p>After attending anime events and conventions following her exchange trip to Japan, Nekomatan decided to try her hand in the exciting world of tabling at a convention. Together with her friend, giraffudon, the two decided to make their official convention debut at SFU Summer Festival 2019 following months of research, product design, and manufacturing. The convention was a success and Nekomatan vowed to table at more conventions the following year. Unfortunately, COVID-19 ashed those dreams but that didn't stop Nekomatan from coming up with new ideas or tinkering with table displays whenever she finds the time or insperation.</p>	
+		</div>
+	</div>	
+	
+	<div class="textgridcontainer">
+		<div class="twothirdbox">
+			<p>Nekomatan considers her style still in the work in progress stage as she tries many styles and product types to find out what works and what doesn't. Her love of Japan and its language and culture remains a constant, however, and Japanese inspired elements appear in her art and her table display. Currently, her table design goal is to create a table display inspired by wooden ramen carts with a modern twist. </p>
+			<p>When she isn't occupied by work, school or art/convention related things, Nekomatan spends her time playing Animal Crossing and mobile games such as Granblue Fantasy. Her favorite places in the world are Tokyo and Zurich and she hopes to be able to live in either of those places one day. She enjoys travelling and wants to travel to Dubai, Okinawa, and Hokkaido one day.</p>
+		</div>
+		<div class="onethirdbox">
+			<img src="img/aboutimg2.jpg">
+		</div>
+		
+	</div>	
+	</div>
+	
+</section>
+	
+<section id="contact">
+
+	<h2> Contact Form</h2>
+
+	<div class="contactgridcontainer"> 
+		
+		<div class="col">
+			<h1>Contact</h1>
+			<p>If you have any questions, comments, etc. feel free to fill out the contact form or send a message through any of the channels listed below.</p>
+			<p>Email: <a href="mailto:nekomata442@outlook.com">nekomata442@outlook.com</a></p>
+			<p>Twitter: <a href="https://twitter.com/nekomatan">@nekomatan</a></p>
+			<p>Instagram: <a href="https://www.instagram.com/nekomata442/">@nekomata442</a></p>
+		</div>
+		
+		<div class="col">
+			<h1>Contact Form</h1>
+			<div class="formcontainer">
+				<form action="/action_page.php" method="get" class="body-txt">
+					<label for="name">Name</label>
+					<input type="text" id="name" name="name">
+			
+					<label for="email">Email</label>
+					<input type="email" id="email" name="email">
+			
+					<label for="comment">Comment</label>
+					<textarea id="comment" name="comment"></textarea>
+			
+					<button onclick="window.location.href='#contact';"  class="button">Submit</button>
+				</form>
+			</div>
+		</div>
+		
+	</div>
+
+</section>
+
+
+<section id="checkout-form">
+
+	<div class="articlecontainer ship">
+		<h1>Shipping and Payment Information</h1>
+		<form action="/action_page.php" method="get" class="body-txt">
+
+		<div class="col">
+					<div class="row">
+						<div class="col">
+							<label for="fname">First Name</label>
+							<input type="text" id="fname" name="fname">
+						</div>
+						
+						<div class="col">
+							<label for="lname">Last Name</label>
+							<input type="text" id="lname" name="lname">
+						</div>
+					</div>
+					
+					<div class="row">
+						<label for="add1">Address 1</label>
+						<input type="text" id="add1" name="add1">
+					</div>
+					
+					<div class="row">	
+						<label for="add2">Address 2</label>
+						<input type="text" id="add2" name="add2">
+					</div>
+					
+					<div class="row">	
+						<label for="city">City</label>
+						<input type="text" id="city" name="city">
+					</div>
+					
+					<div class="row">
+						<div class="col">
+							<label for="province">Province/State</label>
+							<input type="text" id="province" name="province">
+						</div>
+						
+						<div class="col">
+							<label for="zip">ZIP</label>
+							<input type="text" id="zip" name="zip" placeholder="V6B 3W8">
+						</div>
+					</div>	
+					
+					<div class="row">	
+						<label for="country">Country</label>
+						<select id="country" name="country">
+							<option value="canada">Canada</option>
+							<option value="usa">USA</option>
+						</select>
+					</div>
+					
+					<div class="row">
+						<label for="phone">Phone</label>
+						<input type="tel" id="phone" name="phone" placeholder="6046748110">
+					</div>
+
+		</div>
+
+		<div class="col">
+			<div class="row">
+
+				<div class="col">
+					<label for="ccname">Name on Card</label>
+					<input type="text" id="ccname" name="ccname">
+				</div>
+				<div class="col">
+					<label for="ccnumber">Credit Card Number</label>
+					<input type="text" id="ccnumber" name="CCnumber">
+				</div>
+				
+				<div class="col">
+					<label for="date">Expiration Date</label>
+					<input type="text" id="date" name="date" >
+				</div>
+
+				<div class="col">
+					<label for="cvv">CVV</label>
+					<input type="text" id="cvv" name="security" >
+				</div>
+			</div>	
+		
+		</div>
+		</form>
+
+	
+		
+	
+
+
+		<div class="row">
+
+			
+			<button class="button confirm-button" onclick="window.location.href='#checkout-form';" id="confirm">Confirm and Pay</button>
+			
+		</div>
+	</div>
+
+	</section>
+
+</body>
+</html>
