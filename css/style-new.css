@@ -531,14 +531,14 @@ fieldset, label { margin: 0; padding: 0; }
 .cart-header{
 	margin-top: 0px;
 	position: relative;
-	top: -3rem;
-	padding-left: 50px;
+	
+	
 }
 
 .product-cart{
-	width: 25%;
+	width: 50%;
 	align-self: left;
-	margin: 2rem 2rem;
+	
 }
 
 .cart-price{
