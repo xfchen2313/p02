@@ -297,44 +297,6 @@ a.cat:active{
 	margin-top: 8em;
 }
 
-
-
-@media(max-width: 50em){ /*  for shop page grid view*/
-	.box-item{
-		flex: 1 1 100%;
-	}
-}
-
-@media all and (max-width: 30em){
-	.textgridcontainer {
-		flex-flow: column wrap;
-	}
-	.onethirdbox{
-		max-width: 100% !important; 
-		margin: auto;
-	}
-	.twothirdbox {
-		max-width: 100% !important;
-		margin: auto;
-	}
-	.col{
-		width: 100%;
-	}
-	.col:nth-of-type(odd){
-		padding-right: 0em;
-	}
-
-	.grid-wrapper{
-		flex-flow: column wrap;
-	}
-	.articlecontainer{
-		padding: 1em;	
-	}
-	.featureddate{
-		font-size: 1.5em;	
-	}
-}
-
 .ul-list li::before { /* probably for reviews */
   content: "\2022";  
   color: #ffbe00; 
@@ -675,6 +637,7 @@ a.hub-link:active{
   
    margin: auto;
    margin-bottom: 10rem;
+   padding: 1em;
 }
 
 .onethirdbox {
@@ -743,4 +706,40 @@ a:hover {
 	margin: 1em;
 	
 	
+}
+
+@media(max-width: 50em){ /*  for shop page grid view*/
+	.box-item{
+		flex: 1 1 100%;
+	}
+}
+
+@media all and (max-width: 30em){
+	.textgridcontainer, .contactgridcontainer {
+		flex-flow: column wrap;
+	}
+	.onethirdbox{
+		max-width: 100% !important; 
+		margin: auto;
+	}
+	.twothirdbox {
+		max-width: 100% !important;
+		margin: auto;
+	}
+	.col{
+		width: 100%; 
+	}
+	.col:nth-of-type(odd){
+		padding-right: 0em;
+	}
+
+	.grid-wrapper{
+		flex-flow: column wrap;
+	}
+	.articlecontainer{
+		padding: 1em;	
+	}
+	.featureddate{
+		font-size: 1.5em;	
+	}
 }
