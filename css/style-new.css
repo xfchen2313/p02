@@ -76,9 +76,17 @@ select {
 }
 
 #stars{
-	max-width:10em;
+	max-width:8em;
+	min-width: 6em;
 	position: relative;
 	top: .5em;
+}
+
+#stars-header{
+	max-width:6em;
+	position: relative;
+	top: .5em;
+	margin-left: 1em;
 }
 
 #inline {   /*Header bar title  */
