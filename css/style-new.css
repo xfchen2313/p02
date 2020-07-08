@@ -730,7 +730,7 @@ a:hover {
 }
 
 @media all and (max-width: 30em){
-	.textgridcontainer, .contactgridcontainer {
+	.textgridcontainer, .contactgridcontainer, .grid-wrapper {
 		flex-flow: column wrap;
 	}
 	.onethirdbox{
@@ -748,7 +748,7 @@ a:hover {
 		padding-right: 0em;
 	}
 
-	.grid-wrapper{
+	.nav-header{
 		flex-flow: column wrap;
 	}
 	.articlecontainer{
@@ -756,5 +756,23 @@ a:hover {
 	}
 	.featureddate{
 		font-size: 1.5em;	
+	}
+	.logo-name {
+		visibility: hidden; 
+		display: none;
+	}
+	.columns {
+		padding-right:0em;
+		align-content: center;
+	}
+	.logo {
+		position: absolute;
+		left:11em;
+	}
+	.navbar-item a {
+		text-align: left;
+	}
+	.navbar {
+		margin-left:-1.75em;
 	}
 }
