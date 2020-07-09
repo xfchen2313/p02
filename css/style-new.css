@@ -715,7 +715,7 @@ a:hover {
 
 .link-item{
 	font-family: Lato;
-	margin: 2em;
+	margin: 1em;
 	
 }
 
@@ -774,6 +774,12 @@ a:hover {
 	}
 	.navbar-item a {
 		text-align: left;
+		padding: .85em;
+
+	}
+	.cat{
+		font-size: 1rem;
+		
 	}
 	.navbar {
 		margin-left:-1.75em;
