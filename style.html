@@ -20,7 +20,6 @@
 					<li class="navbar-item"><a href="wireframes.html">Wireframes</a></li>
 					<li class="navbar-item"><a href="sitemap.html">Sitemap</a></li>
 					<li class="navbar-item"><a href="style.html">Style Guide</a></li>
-					
 					<li class="navbar-item"><a href="index.html">Store</a></li>
 				</ul>
 			</div>
@@ -52,15 +51,16 @@
 			<div class="columns">
 				<h4>CSS</h4>
 				<code>
-					.links { <br>
-						color: #ffbe00; <br>
-						text-decoration: none; <br>
-					} <br><br>
+					
+					a {<br>
+					color: #d37f00;<br>
+					text-decoration: none;<br>
+						}<br><br>
 
-					a:hover.links { <br>
-						color: #ff9900; <br>
-						text-decoration: underline; <br>
-					}
+					a:hover {<br>
+					color: #ffbe00;<br>
+					text-decoration: underline;<br>
+									}<br>
 				</code>
 			</div>
 	    </div>		
@@ -81,12 +81,15 @@
 				<h4>CSS</h4>
 				<code>
 					.button { <br>
-						font-family: "Khand", sans-serif; <br>
-						background-color: white; <br>
-						border: solid 2px; <br>
-						padding: 1em; <br>
-						display: inline-block; <br>
-						text-decoration: none; <br>
+						font-family: "Khand", sans-serif;<br>
+						background-color: white;<br>
+						border: solid 2px;<br>
+						padding: 1em;<br>
+						padding-bottom: 1em;<br>
+						margin:  2em 0;<br>
+						display: inline-block;<br>
+						text-decoration: none;<br>
+						width: 30%;<br>
 					} <br><br>
 
 					.button:hover { <br>
@@ -97,6 +100,10 @@
 					.button:visited { <br>
 						color: #ffbe00; <br>
 					}
+
+		
+
+
 				</code>
 			</div>
 	    </div>		
@@ -423,13 +430,16 @@
 						background-color: white; <br>
 					} <br><br>
 
-					.navbar { <br>
-						list-style-type: none; <br>
-						margin: 0; <br>
-						padding: 0; <br>
-						overflow: hidden; <br>
-						background-color: white; <br>
-					} <br><br>
+					.nav-header{
+						display: flex;
+						max-width: 70em;
+						margin-left: auto;
+						margin-right: auto;
+						align-items: flex-end;
+						margin-bottom: 1em;
+						margin-top: 2em;
+					}
+
 
 					.navbar-item { <br>
 						float: right; <br>
@@ -530,91 +540,95 @@
 			<div class="columns">
 				<h4>HTML</h4>
 				<code>
-					&lt;div class=&quot;product-list&quot;&gt;<br>
- &lt;div class=&quot;grid-wrapper header-wrapper&quot;&gt;<br>
- &lt;div class=&quot;columns headerstyle&quot;&gt;<br>
- &lt;img src=&quot;img/logo.png&quot; class=&quot;logo&quot;&gt;<br>
- &lt;h1 class=&quot;logo-name&quot; id=&quot;inline&quot;&gt;NEKOMATAN&lt;/h1&gt;<br>
- &lt;/div&gt;<br>
- &lt;div class=&quot;columns headerstyle&quot;&gt;<br>
- &lt;ul class=&quot;navbar&quot;&gt;<br>
- &lt;li class=&quot;navbar-item&quot;&gt;&lt;a href=&quot;#&quot;&gt;Featured&lt;/a&gt;&lt;/li&gt;<br>
- &lt;li class=&quot;navbar-item&quot;&gt;&lt;a href=&quot;#&quot;&gt;Shop&lt;/a&gt;&lt;/li&gt;<br>
- &lt;li class=&quot;navbar-item&quot;&gt;&lt;a href=&quot;#&quot;&gt;About&lt;/a&gt;&lt;/li&gt;<br>
- &lt;li class=&quot;navbar-item&quot;&gt;&lt;a href=&quot;#&quot;&gt;Cart&lt;/a&gt;&lt;/li&gt;<br>
- &lt;/ul&gt;<br>
- &lt;/div&gt;<br>
- &lt;/div&gt;<br>
- &lt;div class=&quot;container grid-wrapper&quot;&gt;<br>
- &lt;div class=&quot;columns content&quot;&gt;<br>
- &lt;img src=&quot;img/product.jpg&quot; class=&quot;product&quot;&gt;<br>
- &lt;/div&gt;<br><br>
+					&lt;div class="product-list items"&gt; <br>
+ &lt;div class="container grid-wrapper "&gt; <br>
+ &lt;div class="columns content"&gt; <br>
+ &lt;h2 class="product-header"&gt;[Foil] Torii Charms&lt;img id="stars-header" src="img/stars2.jpg"&gt;&lt;/h2&gt; <br>
+ &lt;img src="img/img1.jpg" class="product"&gt; <br>
+ &lt;/div&gt; <br>
 
- &lt;div class=&quot;columns content&quot;&gt;<br>
- &lt;div class=&quot;product-text&quot;&gt;<br>
- &lt;h2 class=&quot;product-header&quot;&gt;Product Name&lt;/h2&gt;&lt;h3 class=&quot;product-price&quot;&gt;$20&lt;/h3&gt;<br>
- &lt;/div&gt;<br>
- &lt;p class=&quot;product-body-txt&quot;&gt;Cat ipsum dolor sit amet, kitty singapura for puma. Tabby mouser abyssinian , tomcat so mouser lynx savannah. Balinese american bobtail. Russian blue. Singapura kitten bengal turkish angora so balinese and siamese, so ocelot. Scottish fold puma or thai, yet russian blue savannah. Balinese kitty. Puma. Siamese ocelot. Bengal panther for leopard so siberian. Tabby norwegian forest but cougar norwegian forest and leopard leopard or siberian. Jaguar tom donskoy or malkin panther so havana brown cougar. Burmese. Norwegian forest maine coon but puma bombay. &lt;/p&gt;<br>
- &lt;/div&gt;<br>
+ &lt;div class="columns content item-text"&gt; <br>
+ &lt;div class="product-text"&gt; <br>
+ &lt;h3 class="product-price"&gt;$15&lt;/h3&gt;&lt;p&gt;Only 10 Left!&lt;/p&gt; <br>
+ &lt;/div&gt; <br>
+ &lt;p class="product-body-txt"&gt;Well, it was a temari originally but then I drew the torii and everyone started calling it that so torii it is. The foil makes it nice and shiny.&lt;/p&gt; <br>
+ &lt;br&gt; <br>
+ <br> 
+ &lt;div id="specs-list"&gt; <br>
+ &lt;h3 &gt;Specs&lt;/h3&gt; <br>
+ &lt;ul class="body-txt ul-list"&gt; <br>
+ &lt;li&gt;Approx. 6cm/2.5in.&lt;/li&gt; <br>
+ &lt;li&gt;Gold/Silver Foil&lt;/li&gt; <br>
+ &lt;li&gt;Double sided clear acrylic with epoxy&lt;/li&gt; <br>
+ &lt;li&gt;Tassel tail&lt;/li&gt; <br>
+ &lt;li&gt;Bronze bell attachment&lt;/li&gt; <br>
+ &lt;/ul&gt; <br>
+ &lt;/div&gt; <br>
+ &lt;br&gt; <br> <br>
+ 
+ 
+ &lt;div class="item-type-choice"&gt; <br>
+ &lt;label for="type"&gt;Choose a type:&lt;/label&gt; <br> <br>
 
- &lt;/div&gt;<br>
- &lt;/div&gt;
+ &lt;select name="type" id="item-type"&gt; <br>
+ &lt;option value="sakura"&gt;Sakura&lt;/option&gt; <br>
+ &lt;option value="hanabi"&gt;Hanabi&lt;/option&gt; <br> <br>
+ 
+ &lt;/select&gt; <br> <br>
+
+ &lt;/div&gt; <br>
+ &lt;button class="button pay-button" onclick="window.location.href='cart.html';" id="pay"&gt;Buy&lt;/button&gt; <br> <br>
+ 
+ &lt;/div&gt; <br> <br>
+
+ &lt;/div&gt; <br>
+ &lt;/div&gt; <br>
 				</code>
 			</div>
 			<div class="columns">
 				<h4>CSS</h4>
 				<code>
 					.product {<br>
-	width:70%;<br>
-	padding-top: 5em;<br>
-	padding-left: 10em;<br>
-}<br><br>
+						width:100%;<br>
+						padding-top: 2em;<br>
+						padding-left: 2em;<br>
+					}<br><br>
 
-.product-text{<br>
-	display: inline;<br>
-	margin-top: 5em;<br>
-}<br><br>
+					.product-header{<br>
+						font-size: 2em;<br>
+					}<br><br>
 
-.product-price{<br>
-	display: inline;<br>
-	
-}<br><br>
+					.product-text{<br>
+						display: inline;<br>
+						margin-top: 5em;<br>
+					}<br><br>
 
+					.product-price{<br>
+						display: inline;<br>
+						font-size: 3em;<br>
+						
+					}<br><br>
 
-.product-body-txt {<br>
-	font-family: "Lato", sans-serif;<br>
-	font-weight: 300;<br>
-	padding-top: 7em;<br>
-}<br><br>
+					.product-body-txt {<br>
+						font-family: "Lato", sans-serif;<br>
+						font-weight: 300;<br>
+						padding-top: 2em;<br>
+					}<br><br>
+					.items{ /* product detail spacing*/<br>
+						max-width: 70rem;<br>
+						display: block;<br>
+						margin: auto;<br>
+						margin-bottom: 10rem;<br>
+					}<br><br>
 
-.navbar {<br>
-	list-style-type: none;<br>
-	margin: 0;<br>
-	padding: 0;<br>
-	overflow: hidden;<br>
-	background-color: white;<br>
-}<br><br>
+					.item-type-choice{<br>
+						width: 10rem;<br>
+						display: block;<br>
+						margin:auto;<br>
+						margin-bottom: 5em;<br>
 
-.navbar-item {<br>
-	float: right;<br>
-}<br><br>
+					}<br><br>
 
-.navbar-item a {<br>
-	color: black;<br>
-	display: block;<br>
-	font-family: "Khand", sans-serif;<br>
-	text-align: right;<br>
-	padding: 1em;<br>
-	text-decoration: none;<br>
-}<br><br>
-
-.navbar-item a:hover {<br>
-	color: #ffbe00;<br>
-}<br><br>
-
-.logo {<br>
-	width:6em;<br>
-}<br><br>
 
 
 
@@ -654,6 +668,8 @@
 						&lt;input type="text" id="review" name="review" placeholder="Write your review here..."&gt; <br>
 						&lt;button type="submit" value="Submit"&gt;Submit&lt;/button&gt; <br>
 					&lt;/form&gt;
+
+					
 				</code>
 			</div>
 			<div class="columns">
@@ -686,7 +702,9 @@
 					.rating > input:checked + label:hover,  <br>
 					.rating > input:checked ~ label:hover, <br>
 					.rating > label:hover ~ input:checked ~ label,  <br>
-					.rating > input:checked ~ label:hover ~ label { color: #FFED85;  } 
+					.rating > input:checked ~ label:hover ~ label { color: #FFED85;  } <br>
+
+					
 				</code>
 			</div>
 	    </div>		
@@ -773,47 +791,34 @@
 			<div class="columns">
 				<h4>HTML</h4>
 				<code>
-					&lt;div class=&quot;flex-row1, box&quot;&gt; <br><br>
-					&lt;div class=&quot;flex-main-item box-item&quot;&gt;<br>
-					&lt;img src=&quot;img/product.jpg&quot; &gt;<br>
-					&lt;div class=&quot;overlay&quot;;&gt;<br>
-					&lt;div class=&quot;label&quot;&gt; Product Name &lt;/div&gt;<br>
-					&lt;/div&gt;<br>
-					&lt;/div&gt;<br><br>
-					&lt;div class=&quot;flex-main-item box-item&quot;&gt;<br>
-					&lt;img src=&quot;img/product.jpg&quot; &gt;<br>
-					&lt;div class=&quot;overlay&quot;;&gt;<br>
-					&lt;div class=&quot;label&quot;&gt; Product Name &lt;/div&gt;<br>
-					&lt;/div&gt;<br>
-					&lt;/div&gt;<br><br>
-					&lt;div class=&quot;flex-main-item box-item&quot;&gt;<br>
-					&lt;img src=&quot;img/product.jpg&quot; &gt;<br>
-					&lt;div class=&quot;overlay&quot;;&gt;<br>
-					&lt;div class=&quot;label&quot;&gt; Product Name &lt;/div&gt;<br>
-					&lt;/div&gt;<br>
-					&lt;/div&gt;<br>
-				 &lt;/div&gt;
+					&lt;div class="flex-row, box"&gt; <br>
 
-				 &lt;div class=&quot;flex-row2, box&quot;&gt; <br><br>
-					&lt;div class=&quot;flex-main-item box-item&quot;&gt;<br>
-					&lt;img src=&quot;img/product.jpg&quot; &gt;<br>
-					&lt;div class=&quot;overlay&quot;;&gt;<br>
-					&lt;div class=&quot;label&quot;&gt; Product Name &lt;/div&gt;<br>
-					&lt;/div&gt;<br>
-					&lt;/div&gt;<br><br>
-					&lt;div class=&quot;flex-main-item box-item&quot;&gt;<br>
-					&lt;img src=&quot;img/product.jpg&quot; &gt;<br>
-					&lt;div class=&quot;overlay&quot;;&gt;<br>
-					&lt;div class=&quot;label&quot;&gt; Product Name &lt;/div&gt;<br>
-					&lt;/div&gt;<br>
-					&lt;/div&gt;<br><br>
-					&lt;div class=&quot;flex-main-item box-item&quot;&gt;<br>
-					&lt;img src=&quot;img/product.jpg&quot; &gt;<br>
-					&lt;div class=&quot;overlay&quot;;&gt;<br>
-					&lt;div class=&quot;label&quot;&gt; Product Name &lt;/div&gt;<br>
-					&lt;/div&gt;<br>
-					&lt;/div&gt;<br>
-				 &lt;/div&gt;
+						&lt;div class="flex-main-item box-item"&gt;<br>
+						&lt;a href="#flexbox"&gt;<br>
+						&lt;img src="img/img10.jpg" &gt;&lt;/a&gt;<br>
+						&lt;div class="overlay";&gt;<br>
+						&lt;div class="label"&gt; &lt;span class="prod-name" &gt; [Original] OC Buttons &lt;/span&gt; &lt;span class="price"&gt;$2.50 &lt;/span&gt;&lt;br&gt;<br>
+						&lt;p&gt;Part of the Original Character (OC) series.&lt;/p&gt; &lt;/div&gt;<br>
+						&lt;/div&gt;<br>
+						&lt;/div&gt;<br>
+						&lt;div class="flex-main-item box-item"&gt;<br>
+						&lt;a href="#flexbox"&gt;<br>
+						&lt;img src="img/img11.jpg" &gt;&lt;/a&gt;<br>
+						&lt;div class="overlay";&gt;<br>
+						&lt;div class="label"&gt; &lt;span class="prod-name" &gt; [Pokemon] WOOPERDUPER Button &lt;/span&gt; &lt;span class="price"&gt;$2.50 &lt;/span&gt;&lt;br&gt;<br>
+						&lt;p&gt;You might want to sit down for this one it's a long story.&lt;/p&gt;&lt;/div&gt;<br>
+						&lt;/div&gt;<br>
+						&lt;/div&gt;<br>
+						&lt;div class="flex-main-item box-item"&gt;<br>
+						&lt;a href="#flexbox"&gt;<br>
+						&lt;img src="img/img12.jpg" &gt;&lt;/a&gt;<br>
+						&lt;div class="overlay";&gt;<br>
+						&lt;div class="label""&gt; &lt;span class="prod-name" &gt; [Pokemon] Detective Pikachu? Button &lt;/span&gt; &lt;span class="price"&gt;$3 &lt;/span&gt;&lt;br&gt;<br>
+						&lt;p&gt;Does this Pikachu look a little... off to you?&lt;/p&gt; &lt;/div&gt;<br>
+						&lt;/div&gt;<br>
+						&lt;/div&gt;<br>
+						
+						&lt;/div&gt;<br>
 
 				</code>
 			</div>
@@ -832,15 +837,6 @@
 						margin-right:  auto;<br>
 						width: 80%;<br>
 						align-content: center;<br>
-					}<br><br>
-
-					.flex-row1{<br>
-						display: inline-block;<br>
-						transition:  background-color 0.5s ease-out;<br>
-					}<br><br>
-					.flex-row2{<br>
-						display: inline-block;<br>
-						transition:  background-color 0.5s ease-out;<br>
 					}<br><br>
 
 					.box-item:hover {<br>
@@ -882,6 +878,81 @@
  	<a class="cat boxn-item" href="#category">Stickers</a>
 	 <a class="cat boxn-item" href="#category">Buttons</a>
 	</div>
+
+
+		<p><strong>Code: </strong></p> 
+		<div class="container grid-wrapper">
+			<div class="columns">
+				<h4>HTML</h4>
+				<code>
+
+						&lt;div class="cat-list boxn"&gt; <br>
+ 
+						&lt;a class="cat boxn-item cat-active" href="#category"&gt;All Items&lt;/a&gt;<br>
+						&lt;a class="cat boxn-item" href="#category"&gt;Charms&lt;/a&gt;<br>
+						&lt;a class="cat boxn-item" href="#category"&gt;Stickers&lt;/a&gt;<br>
+						&lt;a class="cat boxn-item" href="#category"&gt;Buttons&lt;/a&gt;<br>
+						&lt;/div&gt;<br>
+
+					
+				</code>
+			</div>
+
+			<div class="columns">
+				<h4>CSS</h4>
+				<code>
+
+						.cat { /*cateogries on shop page*/<br>
+							display: inline-block;<br>
+							color: black;<br>
+							background-color: rgb(224, 224, 224);<br>
+							font-size: 1.5rem;<br>
+							padding: 0.25rem 0.5rem;<br>
+							text-decoration: none;<br>
+							transition: background-color 0.5s ease-out;<br>
+							font-family: "Khand", sans-serif;<br>
+						}<br><br>
+
+						.cat-active{<br>
+							background-color: #ffe79e;<br>
+						}<br><br>
+
+						a.cat:link{<br>
+							color: black;<br>
+							text-decoration: none;<br>
+						}<br><br>
+						a.cat:visited{<br>
+							color: black;<br>
+							text-decoration: none;<br>
+						}<br><br>
+						a.cat:hover{<br>
+							color: #ffbe00;<br>
+							text-decoration: none;<br>
+						}<br>
+						a.cat:active{<br>
+							color: #fcedc3;<br>
+							text-decoration: none;<br>
+						}<br><br>
+
+						.boxn{ /* shop categories*/<br>
+							display: -webkit-flex;<br>
+							display:  -ms-flex;<br>
+							display:  flex;<br>
+							flex-wrap: wrap;<br>
+							max-width: 50em;<br>
+							margin: auto;<br>
+							
+
+							justify-content: space-around;<br>
+							
+						}<br><br>
+
+
+				</code>
+			</div>
+		</div>
+
+
 	</section>
 
 
@@ -892,7 +963,7 @@
 			<div class="holder">
 				<a href="#about-hub" class="hub-link">
 				<img  src="img/aboutimg.png" id="about1" class="hub-img">
-				<div class="centered"><h1 class="logo-name">My Story</h1></div>
+				<div class="centered"><h1 class="AH-name">My Story</h1></div>
 				</a>
 			</div>
 			</div>
@@ -901,36 +972,156 @@
 			<div class="holder">
 				<a href="#about-hub" class="hub-link">
 				<img src="img/pwimg5.jpg" id="about2" class="hub-img">
-				<div class="centered"><h1 class="logo-name"> Personal Works</h1></div>
+				<div class="centered"><h1 class="AH-name"> Personal Works</h1></div>
 				</a>
 			</div>
 			<div class="holder">
 			<a href="#about-hub" class="hub-link">
 			<img src="img/contactimg.PNG" id="about3" class="hub-img">
-			<div class="centered"><h1 class="logo-name">Contact</h1></div>
+			<div class="centered"><h1 class="AH-name">Contact</h1></div>
 			</a>
 			</div>
 			</div>
 
 		</div>
 
+<p><strong>Code: </strong></p> 
+		<div class="container grid-wrapper">
+			<div class="columns">
+				<h4>HTML</h4>
+				<code>
+						&lt;div class="container grid-wrapper about-box"&gt;<br>
+						&lt;div class="colums-content about"&gt;<br>
+						&lt;div class="holder"&gt;<br>
+						&lt;a href="#about-hub" class="hub-link"&gt;<br>
+						&lt;img src="img/aboutimg.png" id="about1" class="hub-img"&gt;<br>
+						&lt;div class="centered"&gt;&lt;h1 class="logo-name"&gt;My Story&lt;/h1&gt;&lt;/div&gt;<br>
+						&lt;/a&gt;<br>
+						&lt;/div&gt;<br>
+						&lt;/div&gt;<br><br>
+
+						&lt;div class="colums-content about"&gt;<br>
+						&lt;div class="holder"&gt;<br>
+						&lt;a href="#about-hub" class="hub-link"&gt;<br>
+						&lt;img src="img/pwimg5.jpg" id="about2" class="hub-img"&gt;<br>
+						&lt;div class="centered"&gt;&lt;h1 class="logo-name"&gt; Personal Works&lt;/h1&gt;&lt;/div&gt;<br>
+						&lt;/a&gt;<br>
+						&lt;/div&gt;<br>
+						&lt;div class="holder"&gt;<br>
+						&lt;a href="#about-hub" class="hub-link"&gt;<br>
+						&lt;img src="img/contactimg.PNG" id="about3" class="hub-img"&gt;<br>
+						&lt;div class="centered"&gt;&lt;h1 class="logo-name"&gt;Contact&lt;/h1&gt;&lt;/div&gt;<br>
+						&lt;/a&gt;<br>
+						&lt;/div&gt;<br>
+						&lt;/div&gt;<br><br>
+
+						&lt;/div&gt;<br>
+				</code>
+			</div>
+
+			<div class="columns">
+				<h4>CSS</h4>
+				<code>
+						.container > * {<br>
+							flex-grow: 1;<br>
+							flex-basis: 50%;<br>
+						}<br><br>
+
+						.grid-wrapper{<br>
+							display: -webkit-flex;<br>
+							display: -ms-flex;<br>
+							display: flex;<br>
+						}<br><br>
+
+						#about{<br>
+							display: inline-flex;<br>
+							flex-direction: column;<br>
+							flex-wrap: wrap;<br>
+						}<br><br>
+
+						#about1{<br>
+							height:40rem;<br>
+							object-fit: cover;<br>
+							opacity: 80%<br>
+						}<br><br>
+
+						#about2{<br>
+							height:20rem;<br>
+							object-fit: cover;<br>
+							opacity: 80%<br>
+						}<br><br>
+
+						#about3{<br>
+							position: relative;<br>
+							top: -0.25rem;<br>
+							height:20rem;<br>
+							object-fit: cover;<br>
+							opacity: 80%<br>
+						}<br><br>
+
+						.holder {<br>
+						position: relative;<br>
+						text-align: center;<br>
+						color: black;<br>
+						}<br><br>
+
+						a.hub-link:link{<br>
+							color: black;<br>
+							text-decoration: none;<br>
+						}<br><br>
+						a.hub-link:visited{<br>
+							color: black;<br>
+							text-decoration: none;<br>
+						}<br><br>
+						a.hub-link:hover{<br>
+							color: #ffbe00;<br>
+							text-decoration: none;<br>
+						}<br><br>
+						a.hub-link:active{<br>
+							color: #fcedc3;<br>
+							text-decoration: none;<br>
+						}<br><br>
+
+						.hub-img:hover {<br>
+							opacity: 0.6;<br>
+						}<br>
+
+						.AH-name{<br>
+							font-family: "Din Condensed";<br>
+							font-size: 4em;<br>
+							position: relative;<br>
+							top: -10px;<br>
+						}<br><br>
+
+				</code>
+			</div>
+		</div>
+
+
+
 	</section>
 
 
 <section id="cart-list">
-		<form>
+		
+			<form>
 			<h1> Cart </h1>
-		<div class="container grid-wrapper">
-			
-				<div class="colums-content inline-cart">
-				
-					 <img src="img/img5.jpg" class="product-cart">
-					 <h2 class="cart-header">[OC] Valerian Charm</h2>
-				</div>
-				<div class="colums-content cart-text">
-					
-					<div class="inline-cart">
-						 <p id="cart-d">The second charm in the Original Character (OC) series! </p>
+		<div class="flex-row, box">	
+
+			<div class="flex-main-item box-item">
+				<img src="img/img5.jpg" class="product-cart">
+
+
+			</div>
+
+			<div class="flex-main-item box-item">
+				<h2 class="cart-header">[OC] Valerian Charm</h2>
+				<p id="cart-d">The second charm in the Original Character (OC) series! </p>
+			</div>
+
+			<div class="flex-main-item box-item">
+				<div class="inline-cart">
+						 
 						 <label for="amt"class="cart-price"> <p>$10 x </p></label>
 						 
 						<input type="number" name="amt" value="1" id="amt-cart">
@@ -938,57 +1129,85 @@
 				</div>
 			</div>
 		</div>
-		<div class="container grid-wrapper">
-				<div class="colums-content inline-cart">
-				
-					 <img src="img/img3.jpg" class="product-cart">
-					 <h2 class="cart-header">[Utapri] Gashapon Charms </h2>
-					 
-				</div>
-				<div class="colums-content cart-text">
-					
-					<div class="inline-cart">
-						 <p id="cart-d">Who doesn't love gashapon and cat ears? </p>
+
+		<div class="flex-row, box">	
+
+			<div class="flex-main-item box-item">
+				<img src="img/img3.jpg" class="product-cart">
+
+
+			</div>
+
+			<div class="flex-main-item box-item">
+				<h2 class="cart-header">[Utapri] Gashapon Charms </h2>
+				<p id="cart-d">Who doesn't love gashapon and cat ears? </p>	
+			</div>
+
+			<div class="flex-main-item box-item">
+				<div class="inline-cart">
+						 
 						 <label for="amt"class="cart-price"> <p>$10 x </p></label>
+						 
 						<input type="number" name="amt" value="1" id="amt-cart">
 						
 				</div>
 			</div>
 		</div>
-		<div class="container grid-wrapper">
-				<div class="colums-content inline-cart">
+
+		<div class="flex-row, box">	
+
+			<div class="flex-main-item box-item">
+				 <img src="img/img11.jpg" class="product-cart">
+
+
+			</div>
+
+			<div class="flex-main-item box-item">
 				
-					 <img src="img/img11.jpg" class="product-cart">
-					 <h2 class="cart-header">[Pokemon] WOOPERDUPER Button</h2>
-					 
-				</div>
-				<div class="colums-content cart-text">
-					
-					<div class="inline-cart">
-						 <p id="cart-d">You might want to sit down for this one it's a long story. </p>
+				<h2 class="cart-header">[Pokemon] WOOPERDUPER Button</h2>
+				<p id="cart-d">You might want to sit down for this one it's a long story. </p>					
+			</div>
+
+			<div class="flex-main-item box-item">
+				<div class="inline-cart">
+						 
 						 <label for="amt"class="cart-price"> <p>$2.50 x </p></label>
-						<input type="number" name="amt" value="1" id="amt-cart">
-						
-				</div>
-				</div>
-		</div>
-		<div class="container grid-wrapper">
-				<div class="colums-content inline-cart">
-				
-					 <img src="img/img4.jpg" class="product-cart">
-					 <h2 class="cart-header">[GBF] Stained Glass Charms</h2>
-					 
-				</div>
-				<div class="colums-content cart-text">
-					
-					<div class="inline-cart">
-						 <p id="cart-d">Gotta love those details but hey, they look pretty in the sun. </p>
-						 <label for="amt"class="cart-price"> <p>$10 x </p></label>
+						 
 						<input type="number" name="amt" value="1" id="amt-cart">
 						
 				</div>
 			</div>
 		</div>
+
+
+		<div class="flex-row, box">	
+
+			<div class="flex-main-item box-item">
+				<img src="img/img4.jpg" class="product-cart">
+
+
+			</div>
+
+			<div class="flex-main-item box-item">
+				
+				<h2 class="cart-header">[GBF] Stained Glass Charms</h2>
+				<p id="cart-d">Gotta love those details but hey, they look pretty in the sun. </p>
+				
+			</div>
+
+			<div class="flex-main-item box-item">
+				<div class="inline-cart">
+						 
+						 <label for="amt"class="cart-price"> <p>$10 x </p></label>
+						 
+						<input type="number" name="amt" value="1" id="amt-cart">
+						
+				</div>
+			</div>
+		</div>
+
+
+
 
 		<div class="container grid-wrapper">
 			<div class="colums-content total-text  ">
@@ -1032,9 +1251,270 @@
 			
 		</form>
 		
-		<button class="button pay-cart" onclick="window.location.href='#cart-list';" id="pay">Pay Now</button>
-							
+		<button class="button pay-cart" onclick="window.location.href='checkout.html';" id="pay">Pay Now</button>
+
+
 		
+							
+		<p><strong>Code: </strong></p> 
+		<div class="container grid-wrapper">
+			<div class="columns">
+				<h4>HTML</h4>
+				<code>
+					&lt;form&gt; <br>
+					&lt;h1&gt; Cart &lt;/h1&gt;<br>
+					&lt;div class="flex-row, box"&gt; <br><br>
+
+					&lt;div class="flex-main-item box-item"&gt;<br>
+					&lt;img src="img/img5.jpg" class="product-cart"&gt;<br><br>
+
+
+					&lt;/div&gt;<br><br>
+
+					&lt;div class="flex-main-item box-item"&gt;<br>
+					&lt;h2 class="cart-header"&gt;[OC] Valerian Charm&lt;/h2&gt;<br>
+					&lt;p id="cart-d"&gt;The second charm in the Original Character (OC) series! &lt;/p&gt;<br>
+					&lt;/div&gt;<br><br>
+
+					&lt;div class="flex-main-item box-item"&gt;<br>
+					&lt;div class="inline-cart"&gt;<br><br>
+					
+					&lt;label for="amt"class="cart-price"&gt; &lt;p&gt;$10 x &lt;/p&gt;&lt;/label&gt;<br><br>
+					
+					&lt;input type="number" name="amt" value="1" id="amt-cart"&gt;<br><br>
+					
+					&lt;/div&gt;<br>
+					&lt;/div&gt;<br>
+					&lt;/div&gt;<br><br>
+
+					&lt;div class="flex-row, box"&gt; <br><br>
+
+					&lt;div class="flex-main-item box-item"&gt;<br>
+					&lt;img src="img/img3.jpg" class="product-cart"&gt;<br><br>
+
+
+					&lt;/div&gt;<br><br>
+
+					&lt;div class="flex-main-item box-item"&gt;<br>
+					&lt;h2 class="cart-header"&gt;[Utapri] Gashapon Charms &lt;/h2&gt;<br>
+					&lt;p id="cart-d"&gt;Who doesn't love gashapon and cat ears? &lt;/p&gt; <br>
+					&lt;/div&gt;<br><br>
+
+					&lt;div class="flex-main-item box-item"&gt;<br>
+					&lt;div class="inline-cart"&gt;<br><br>
+					
+					&lt;label for="amt"class="cart-price"&gt; &lt;p&gt;$10 x &lt;/p&gt;&lt;/label&gt;<br><br>
+					
+					&lt;input type="number" name="amt" value="1" id="amt-cart"&gt;<br><br>
+					
+					&lt;/div&gt;<br>
+					&lt;/div&gt;<br>
+					&lt;/div&gt;<br><br>
+
+					&lt;div class="flex-row, box"&gt; <br><br>
+
+					&lt;div class="flex-main-item box-item"&gt;<br>
+					&lt;img src="img/img11.jpg" class="product-cart"&gt;<br><br>
+
+
+					&lt;/div&gt;<br><br>
+
+					&lt;div class="flex-main-item box-item"&gt;<br><br>
+					
+					&lt;h2 class="cart-header"&gt;[Pokemon] WOOPERDUPER Button&lt;/h2&gt;<br>
+					&lt;p id="cart-d"&gt;You might want to sit down for this one it's a long story. &lt;/p&gt; <br>
+					&lt;/div&gt;<br><br>
+
+					&lt;div class="flex-main-item box-item"&gt;<br>
+					&lt;div class="inline-cart"&gt;<br><br>
+					
+					&lt;label for="amt"class="cart-price"&gt; &lt;p&gt;$2.50 x &lt;/p&gt;&lt;/label&gt;<br><br>
+					
+					&lt;input type="number" name="amt" value="1" id="amt-cart"&gt;<br><br>
+					
+					&lt;/div&gt;<br>
+					&lt;/div&gt;<br>
+					&lt;/div&gt;<br><br>
+
+
+					&lt;div class="flex-row, box"&gt; <br><br>
+
+					&lt;div class="flex-main-item box-item"&gt;<br>
+					&lt;img src="img/img4.jpg" class="product-cart"&gt;<br><br>
+
+
+					&lt;/div&gt;<br><br>
+
+					&lt;div class="flex-main-item box-item"&gt;<br><br>
+					
+					&lt;h2 class="cart-header"&gt;[GBF] Stained Glass Charms&lt;/h2&gt;<br>
+					&lt;p id="cart-d"&gt;Gotta love those details but hey, they look pretty in the sun. &lt;/p&gt;<br><br>
+					
+					&lt;/div&gt;<br><br>
+
+					&lt;div class="flex-main-item box-item"&gt;<br>
+					&lt;div class="inline-cart"&gt;<br><br>
+					
+					&lt;label for="amt"class="cart-price"&gt; &lt;p&gt;$10 x &lt;/p&gt;&lt;/label&gt;<br><br>
+					
+					&lt;input type="number" name="amt" value="1" id="amt-cart"&gt;<br><br>
+					
+					&lt;/div&gt;<br>
+					&lt;/div&gt;<br>
+					&lt;/div&gt;<br><br>
+
+
+
+
+					&lt;div class="container grid-wrapper"&gt;<br>
+					&lt;div class="colums-content total-text "&gt;<br>
+					<br>
+					&lt;form &gt;<br><br>
+					
+					&lt;input class="coupon-form" type="text" name="coupon" id="coupon-cart"&gt;<br>
+					&lt;label for="coupon"class="coupon-form coupon-label"&gt; Enter Coupon Code &lt;/label&gt; <br>
+					&lt;/form&gt;<br><br>
+
+					&lt;/div&gt;<br><br>
+					
+					&lt;/div&gt;<br><br>
+
+
+					&lt;div class="container grid-wrapper"&gt;<br>
+					&lt;div class="colums-content total-text "&gt;<br>
+					&lt;h3 id="total"&gt; Tax $3.84&lt;/h3&gt;&lt;br&gt;<br><br>
+					
+					&lt;/div&gt;<br><br>
+					
+					&lt;/div&gt;<br><br>
+
+					
+					&lt;div class="container grid-wrapper"&gt;<br>
+					&lt;div class="colums-content total-text "&gt;<br><br>
+					
+					&lt;h3 id="total"&gt; Discount -$3.20&lt;/h3&gt;&lt;br&gt;<br>
+					&lt;/div&gt;<br><br>
+					
+					&lt;/div&gt;<br>
+
+					&lt;div class="container grid-wrapper"&gt;<br>
+					&lt;div class="colums-content total-text "&gt;<br><br>
+					
+					&lt;h3 id="total"&gt; Total $32.64&lt;/h3&gt;&lt;br&gt;<br>
+					&lt;/div&gt;<br><br>
+					
+					&lt;/div&gt;<br><br>
+					
+					
+					&lt;/form&gt;<br><br>
+					
+					&lt;button class="button pay-cart" onclick="window.location.href='checkout.html';" id="pay"&gt;Pay Now&lt;/button&gt;<br><br>
+				</code>
+			</div>
+
+			<div class="columns">
+				<h4>CSS</h4>
+				<code>
+#amt-cart{<br>
+	width: 50px;<br>
+	height: 1.5rem;<br>
+	padding-right: 10px;<br>
+	margin-left: 1rem;<br>
+	position: relative;<br>
+	top: .5em;<br>
+}<br><br>
+
+#coupon-cart{<br>
+	width: 300px;<br>
+	height: 1.5rem;<br>
+	margin-right: 10px;<br>
+}<br><br>
+
+#cart-d{<br>
+	padding-right: 1rem;<br>
+}<br><br>
+#total{<br>
+	float: right;<br>
+}<br><br>
+#cart-list{<br>
+	 padding-bottom: 3em;<br>
+ }<br><br>
+
+ .box{ /* grid structure boxes*/<br>
+	display: -webkit-flex;<br>
+	display:  -ms-flex;<br>
+	display:  flex;<br>
+	flex-wrap: wrap;<br>
+	
+
+	justify-content: space-around;<br>
+	margin-left:  auto;<br>
+	margin-right:  auto;<br>
+	width: 80%;<br>
+	align-content: center;<br>
+}<br><br>
+
+.flex-row {<br>
+	display: inline-block;<br>
+	transition:  background-color 0.5s ease-out;<br>
+}<br><br>
+
+.pay-cart{ /*pay button for cart */<br>
+	display:block;<br>
+	margin: auto;<br>
+}<br><br>
+.cart-text{<br>
+	display: inline;<br>
+	margin-top: 1em;<br>
+}<br><br>
+
+.total-text{<br>
+	display: block;<br>
+	float: right;<br>
+}<br><br>
+
+.cart-header{<br>
+	margin-top: 0px;<br>
+	position: relative;<br>
+	
+	
+}<br><br>
+
+.product-cart{<br>
+	width: 50%;<br>
+	align-self: left;<br>
+	
+}<br><br>
+
+.cart-price{<br>
+	text-align: right;<br>
+	
+}<br><br>
+
+.coupon-form{<br>
+	display: block;<br>
+	float: right;<br>
+	align-content: right;<br>
+}<br><br>
+
+.coupon-label{<br>
+	font-family: "Lato", sans-serif;<br>
+	font-weight: 300;<br>
+	margin-right: 10px;<br>
+}<br><br>
+
+.inline-cart {<br>
+  display: flex;<br>
+  flex-wrap: row wrap;<br>
+
+  align-items: center;<br>
+  vertical-align: center;<br>
+  position: relative;<br>
+  float: right;<br>
+}<br><br>
+				</code>
+			</div>
+		</div>
 		
 		
 	</section>
@@ -1058,6 +1538,70 @@
 				<p>To all those waiting for the day that they can go out and attend conventions safely once more, I'm with you. Until then, we can only do our best to stay safe, stay kind and sit tight.</p>
 			
 		</div>
+		</div>
+
+
+		<p><strong>Code: </strong></p> 
+		<div class="container grid-wrapper">
+			<div class="columns">
+				<h4>HTML</h4>
+				<code>
+					&lt;div class="articlecontainer textgridcontainer"&gt;<br>
+					&lt;div class="onethirdbox"&gt;<br>
+					&lt;h3 class="featureddate"&gt;June 20, 2020&lt;/h3&gt;<br>
+					&lt;/div&gt;<br>
+					&lt;div class="twothirdbox"&gt;<br><br>
+					
+					&lt;img id="one" src="img/homebanner.jpg"&gt;<br><br>
+					
+					
+					&lt;h2&gt;Summer Sale Begins!&lt;/h2&gt;<br>
+					&lt;p&gt;The summer season has begun! What better way to kick off the summer during the strangest times than with a sale? By using the code WEBSUMMER20 you can receive 10% off all orders! This code is reusable so feel free to use it all summer for your retail therapy needs. Summer is the time to shop and have a good time with friends and this summer will be no exception, even if it's from the comfort of home. Enjoy a piece of the convention experience with some summer sales!&lt;/p&gt;<br>
+					&lt;p&gt;This year has been difficult for artists and convention-goers alike with the current pandemic shutting down large gatherings such as conventions. Even though, I haven't been part of the convention scene for very long, I miss being able to interact with friends, fellow artists, and attendees who share similar interests. While there have been many virtual conventions and artist spotlights, the con experience is something that is difficult to replicate online.&lt;/p&gt;<br>
+					&lt;p&gt;To all those waiting for the day that they can go out and attend conventions safely once more, I'm with you. Until then, we can only do our best to stay safe, stay kind and sit tight.&lt;/p&gt;<br>
+					
+					&lt;/div&gt;<br>
+					&lt;/div&gt;<br><br>
+				</code>
+			</div>
+
+			<div class="columns">
+				<h4>CSS</h4>
+				<code>
+					.articlecontainer { <br>
+						max-width: 70rem;<br>
+						margin: auto;<br>
+					}<br><br>
+
+					.textgridcontainer {<br>
+						display: -webkit-flex;<br>
+						display: -ms-flex;<br>
+						display: flex;<br>
+						flex-flow: row wrap;<br>
+					}<br><br>
+
+					.onethirdbox {<br>
+						max-width: 33%;<br>
+						flex-grow: 1;<br>
+						padding-left: 1em;<br>
+						padding-right: 1em;<br>
+					}<br><br>
+
+					.twothirdbox {<br>
+						max-width: 60%;<br>
+						flex-grow: 2;<br>
+						padding-left: 1em;<br>
+						padding-right: 1em;<br>
+					}<br><br>
+
+					.featureddate {<br>
+						color: #d37f00;<br>
+						font-size: 2em;<br>
+						margin-top: -0.25em;<br>
+					}<br><br>
+
+				</code>
+			</div>
 		</div>
 		</section>
 		
@@ -1086,6 +1630,72 @@
 		
 	</div>	
 	</div>
+
+	<p><strong>Code: </strong></p> 
+		<div class="container grid-wrapper">
+			<div class="columns">
+				<h4>HTML</h4>
+				<code>
+					&lt;div class="about-content"&gt; <br>
+					&lt;div class="textgridcontainer"&gt;<br>
+					&lt;div class="onethirdbox"&gt;<br>
+					&lt;img src="img/aboutimg.png"&gt;<br>
+					&lt;/div&gt;<br>
+					&lt;div class="twothirdbox"&gt;<br>
+					&lt;h1&gt;About the Artist&lt;/h1&gt;<br>
+					&lt;p&gt;&lt;em&gt;"Hiya! So you want to hear my story, huh? Well, it all started at an ungodly hour early last year, you know, like all crazy ideas do... Just kidding! The actual story is a lot more mundane than that..."&lt;/em&gt;&lt;/p&gt;<br>
+					&lt;p&gt;After attending anime events and conventions following her exchange trip to Japan, Nekomatan decided to try her hand in the exciting world of tabling at a convention. Together with her friend, giraffudon, the two decided to make their official convention debut at SFU Summer Festival 2019 following months of research, product design, and manufacturing. The convention was a success and Nekomatan vowed to table at more conventions the following year. Unfortunately, COVID-19 ashed those dreams but that didn't stop Nekomatan from coming up with new ideas or tinkering with table displays whenever she finds the time or insperation.&lt;/p&gt; <br>
+					&lt;/div&gt;<br>
+					&lt;/div&gt; <br>
+					
+					&lt;div class="textgridcontainer"&gt;<br>
+					&lt;div class="twothirdbox"&gt;<br>
+					&lt;p&gt;Nekomatan considers her style still in the work in progress stage as she tries many styles and product types to find out what works and what doesn't. Her love of Japan and its language and culture remains a constant, however, and Japanese inspired elements appear in her art and her table display. Currently, her table design goal is to create a table display inspired by wooden ramen carts with a modern twist. &lt;/p&gt;<br>
+					&lt;p&gt;When she isn't occupied by work, school or art/convention related things, Nekomatan spends her time playing Animal Crossing and mobile games such as Granblue Fantasy. Her favorite places in the world are Tokyo and Zurich and she hopes to be able to live in either of those places one day. She enjoys travelling and wants to travel to Dubai, Okinawa, and Hokkaido one day.&lt;/p&gt;<br>
+					&lt;/div&gt;<br>
+					&lt;div class="onethirdbox"&gt;<br>
+					&lt;img src="img/aboutimg2.jpg"&gt;<br>
+					&lt;/div&gt;<br>
+					
+					&lt;/div&gt; <br>
+					&lt;/div&gt;<br>
+				</code>
+			</div>
+
+			<div class="columns">
+				<h4>CSS</h4>
+				<code>
+					.about-content{ <br>
+					max-width: 70rem;<br>
+					display: block;<br>
+					margin: auto;<br>
+					margin-bottom: 10rem;<br>
+					}<br><br>
+
+					.textgridcontainer {<br>
+						display: -webkit-flex;<br>
+						display: -ms-flex;<br>
+						display: flex;<br>
+						flex-flow: row wrap;<br>
+					}<br><br>
+
+
+					.onethirdbox {<br>
+						max-width: 33%;<br>
+						flex-grow: 1;<br>
+						padding-left: 1em;<br>
+						padding-right: 1em;<br>
+					}<br><br>
+
+					.twothirdbox {<br>
+						max-width: 60%;<br>
+						flex-grow: 2;<br>
+						padding-left: 1em;<br>
+						padding-right: 1em;<br>
+					}<br><br>
+				</code>
+			</div>
+		</div>
 	
 </section>
 	
@@ -1122,6 +1732,85 @@
 		</div>
 		
 	</div>
+
+	<p><strong>Code: </strong></p> 
+		<div class="container grid-wrapper">
+			<div class="columns">
+				<h4>HTML</h4>
+				<code>
+					&lt;div class="contactgridcontainer"&gt; <br>
+					
+					&lt;div class="col"&gt;<br>
+					&lt;h1&gt;Contact&lt;/h1&gt;<br>
+					&lt;p&gt;If you have any questions, comments, etc. feel free to fill out the contact form or send a message through any of the channels listed below.&lt;/p&gt;<br>
+					&lt;p&gt;Email: &lt;a href="mailto:nekomata442@outlook.com"&gt;nekomata442@outlook.com&lt;/a&gt;&lt;/p&gt;<br>
+					&lt;p&gt;Twitter: &lt;a href="https://twitter.com/nekomatan"&gt;@nekomatan&lt;/a&gt;&lt;/p&gt;<br>
+					&lt;p&gt;Instagram: &lt;a href="https://www.instagram.com/nekomata442/"&gt;@nekomata442&lt;/a&gt;&lt;/p&gt;<br>
+					&lt;/div&gt;<br><br>
+					
+					&lt;div class="col"&gt;<br>
+					&lt;h1&gt;Contact Form&lt;/h1&gt;<br>
+					&lt;div class="formcontainer"&gt;<br>
+					&lt;form action="/action_page.php" method="get" class="body-txt"&gt;<br>
+					&lt;label for="name"&gt;Name&lt;/label&gt;<br>
+					&lt;input type="text" id="name" name="name"&gt;<br><br>
+					
+					&lt;label for="email"&gt;Email&lt;/label&gt;<br>
+					&lt;input type="email" id="email" name="email"&gt;<br><br>
+					
+					&lt;label for="comment"&gt;Comment&lt;/label&gt;<br>
+					&lt;textarea id="comment" name="comment"&gt;&lt;/textarea&gt;<br><br>
+					
+					&lt;button onclick="window.location.href='#contact';" class="button"&gt;Submit&lt;/button&gt;<br>
+					&lt;/form&gt;<br>
+					&lt;/div&gt;<br>
+					&lt;/div&gt;<br><br>
+					
+					&lt;/div&gt;<br><br>
+				</code>
+			</div>
+
+			<div class="columns">
+				<h4>CSS</h4>
+				<code>
+					.contactgridcontainer { <br>
+						display: -webkit-flex;<br>
+						display: -ms-flex;<br>
+						display: flex;<br>
+						flex-flow: row wrap;<br>
+						max-width: 70rem;<br>
+					
+					margin: auto;<br>
+					margin-bottom: 10rem;<br>
+					padding: 1em;<br>
+					}<br><br>
+					.col{<br>
+							width: 100%; <br>
+						}<br><br>
+
+						.button {<br>
+						font-family: "Khand", sans-serif;<br>
+						background-color: white;<br>
+						border: solid 2px;<br>
+						padding: 1em;<br>
+						padding-bottom: 1em;<br>
+						margin:  2em 0;<br>
+						display: inline-block;<br>
+						text-decoration: none;<br>
+						width: 30%;<br>
+					}<br><br>
+
+					.button:hover {<br>
+						background-color: black;<br>
+						color: white;<br>
+					}<br><br>
+
+					.button:visited {<br>
+						color: #ffbe00;<br>
+					}<br><br>
+				</code>
+			</div>
+		</div>
 
 </section>
 
@@ -1226,7 +1915,196 @@
 		</div>
 	</div>
 
-	</section>
 
+	
+
+	</section>
+<section>
+	<p><strong>Code: </strong></p> 
+		<div class="container grid-wrapper">
+			<div class="columns">
+				<h4>HTML</h4>
+				<code>
+					&lt;div class="articlecontainer ship"&gt;<br>
+					&lt;h1&gt;Shipping and Payment Information&lt;/h1&gt;<br>
+					&lt;form action="/action_page.php" method="get" class="body-txt"&gt;<br><br>
+
+					&lt;div class="col"&gt;<br>
+					&lt;div class="row"&gt;<br>
+					&lt;div class="col"&gt;<br>
+					&lt;label for="fname"&gt;First Name&lt;/label&gt;<br>
+					&lt;input type="text" id="fname" name="fname"&gt;<br>
+					&lt;/div&gt;<br><br>
+					
+					&lt;div class="col"&gt;<br>
+					&lt;label for="lname"&gt;Last Name&lt;/label&gt;<br>
+					&lt;input type="text" id="lname" name="lname"&gt;<br>
+					&lt;/div&gt;<br>
+					&lt;/div&gt;<br><br>
+					
+					&lt;div class="row"&gt;<br>
+					&lt;label for="add1"&gt;Address 1&lt;/label&gt;<br>
+					&lt;input type="text" id="add1" name="add1"&gt;<br>
+					&lt;/div&gt;<br><br>
+					
+					&lt;div class="row"&gt; <br>
+					&lt;label for="add2"&gt;Address 2&lt;/label&gt;<br>
+					&lt;input type="text" id="add2" name="add2"&gt;<br>
+					&lt;/div&gt;<br><br>
+					
+					&lt;div class="row"&gt; <br>
+					&lt;label for="city"&gt;City&lt;/label&gt;<br>
+					&lt;input type="text" id="city" name="city"&gt;<br>
+					&lt;/div&gt;<br><br>
+					
+					&lt;div class="row"&gt;<br>
+					&lt;div class="col"&gt;<br>
+					&lt;label for="province"&gt;Province/State&lt;/label&gt;<br>
+					&lt;input type="text" id="province" name="province"&gt;<br>
+					&lt;/div&gt;<br><br>
+					
+					&lt;div class="col"&gt;<br>
+					&lt;label for="zip"&gt;ZIP&lt;/label&gt;<br>
+					&lt;input type="text" id="zip" name="zip" placeholder="V6B 3W8"&gt;<br>
+					&lt;/div&gt;<br>
+					&lt;/div&gt; <br><br>
+					
+					&lt;div class="row"&gt; <br>
+					&lt;label for="country"&gt;Country&lt;/label&gt;<br>
+					&lt;select id="country" name="country"&gt;<br>
+					&lt;option value="canada"&gt;Canada&lt;/option&gt;<br>
+					&lt;option value="usa"&gt;USA&lt;/option&gt;<br>
+					&lt;/select&gt;<br>
+					&lt;/div&gt;<br><br>
+					
+					&lt;div class="row"&gt;<br>
+					&lt;label for="phone"&gt;Phone&lt;/label&gt;<br>
+					&lt;input type="tel" id="phone" name="phone" placeholder="6046748110"&gt;<br>
+					&lt;/div&gt;<br><br>
+
+					&lt;/div&gt;<br><br>
+
+					&lt;div class="col"&gt;<br>
+					&lt;div class="row"&gt;<br><br>
+
+					&lt;div class="col"&gt;<br>
+					&lt;label for="ccname"&gt;Name on Card&lt;/label&gt;<br>
+					&lt;input type="text" id="ccname" name="ccname"&gt;<br>
+					&lt;/div&gt;<br>
+					&lt;div class="col"&gt;<br>
+					&lt;label for="ccnumber"&gt;Credit Card Number&lt;/label&gt;<br>
+					&lt;input type="text" id="ccnumber" name="CCnumber"&gt;<br>
+					&lt;/div&gt;<br><br>
+					
+					&lt;div class="col"&gt;<br>
+					&lt;label for="date"&gt;Expiration Date&lt;/label&gt;<br>
+					&lt;input type="text" id="date" name="date" &gt;<br>
+					&lt;/div&gt;<br><br>
+
+					&lt;div class="col"&gt;<br>
+					&lt;label for="cvv"&gt;CVV&lt;/label&gt;<br>
+					&lt;input type="text" id="cvv" name="security" &gt;<br>
+					&lt;/div&gt;<br>
+					&lt;/div&gt; <br><br>
+					
+					&lt;/div&gt;<br>
+					&lt;/form&gt;<br><br>
+
+					
+					
+					
+
+
+					&lt;div class="row"&gt;<br><br>
+
+					
+					&lt;button class="button confirm-button" onclick="window.location.href='#checkout-form';" id="confirm"&gt;Confirm and Pay&lt;/button&gt;<br><br>
+					
+					&lt;/div&gt;<br>
+					&lt;/div&gt;<br><br>
+				</code>
+			</div>
+
+			<div class="columns">
+				<h4>CSS</h4>
+				<code>
+					.articlecontainer {<br>
+						max-width: 70rem;<br>
+						margin: auto;<br>
+					}<br><br>
+
+					.col {<br>
+						width: 50%;<br>
+						float: left;<br>
+					}<br><br>
+
+					p, label{<br>
+						font-family: "Lato", sans-serif;<br>
+						font-weight: 300;<br>
+					}<br><br>
+
+					.button {<br>
+						font-family: "Khand", sans-serif;<br>
+						background-color: white;<br>
+						border: solid 2px;<br>
+						padding: 1em;<br>
+						padding-bottom: 1em;<br>
+						margin:  2em 0;<br>
+						display: inline-block;<br>
+						text-decoration: none;<br>
+						width: 30%;<br>
+					}<br><br>
+
+					.button:hover {<br>
+						background-color: black;<br>
+						color: white;<br>
+					}<br><br>
+
+					.button:visited {<br>
+						color: #ffbe00;<br>
+					}<br><br>
+
+					.confirm{<br>
+						text-align: center;<br>
+					}<br><br>
+
+					.confirm-button{<br>
+						position: relative;<br>
+						display: block;<br>
+						margin: auto;<br>
+						top: 5rem;<br>
+						
+					}<br><br>
+				</code>
+			</div>
+		</div>
+</section>
 </body>
+
+<footer id="footer">
+
+	<div class="sm-links">
+		<a  href="https://www.instagram.com/nekomata442/"><img   class="sm-item"  src="img/instalogo.png"> </a>
+		<a  href="https://twitter.com/nekomatan"><img   class="sm-item"  src="img/twitterlogo.png"> </a>
+		<a  href="mailto:nekomata442@outlook.com"><img   class="sm-item"  src="img/maillogo.png"> </a>
+		
+
+	</div>
+    
+	<p>Created by Sophie Chen and Sebastian Peng for IAT 339 Summer 2020</p>
+	<img src="img/logo.png" class="logo-footer">
+	<p>Copyright Nekomatan 2020</p>
+
+
+
+
+	<div class="req-links">
+	<a class="link-item" href="citations.html"> Citations</a>
+	<a class="link-item" href="style.html">Style Guide</a>
+	<a class="link-item" href="https://github.com/xfchen2313/p02">Git Link</a>
+
+
+	</div>
+
+	</footer>
 </html>
